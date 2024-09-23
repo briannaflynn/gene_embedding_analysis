@@ -13,7 +13,6 @@ This Python script allows you to retrieve UniProt IDs, GO Biological Process (BP
   - [Fetch GO Term Details](#fetch-go-term-details)
   - [Fetch All GO BP Terms and Gene Counts](#fetch-all-go-bp-terms-and-gene-counts)
   - [Check Shared GO Terms](#check-shared-go-terms)
-- [License](#license)
 
 ## Requirements
 
