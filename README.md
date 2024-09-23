@@ -7,7 +7,6 @@ This Python script allows you to retrieve UniProt IDs, GO Biological Process (BP
 ## Table of Contents
 
 - [Requirements](#requirements)
-- [Installation](#installation)
 - [Usage](#usage)
   - [Convert Gene Name to UniProt ID](#convert-gene-name-to-uniprot-id)
   - [Get GO Biological Process Terms](#get-go-biological-process-terms)
