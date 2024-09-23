@@ -1,5 +1,3 @@
-# gene_embedding_analysis
-
 # Gene to GO Term API Integration
 
 This Python script allows you to retrieve UniProt IDs, GO Biological Process (BP) terms, and associated gene counts using the UniProt and QuickGO APIs. Additionally, it can check for shared GO terms between two genes and perform GO term data analysis for large datasets.
