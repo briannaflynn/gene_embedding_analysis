@@ -32,7 +32,8 @@ pip install requests bioservices
 
 ## Usage
 
-Convert Gene Name to UniProt ID
+### Convert Gene Name to UniProt ID
+
 This function converts a gene name to a UniProt ID.
 
 ```python
@@ -41,7 +42,10 @@ print(uniprot_id)
 ```
 * Input: A gene name or symbol (e.g., BRCA1).
 * Output: Corresponding UniProt ID (e.g., P38398 for BRCA1).
-Get GO Biological Process Terms. This function retrieves GO Biological Process terms associated with a given gene's UniProt ID using the QuickGO API.
+
+### get_gene_go_terms
+
+This function retrieves GO Biological Process terms associated with a given gene's UniProt ID using the QuickGO API.
 
 ```python
 terms = get_gene_go_terms('P38398')
@@ -49,7 +53,10 @@ print(terms)
 ```
 * Input: UniProt ID (e.g., P38398 for BRCA1).
 * Output: List of GO terms associated with the gene.
-Fetch GO Term Details. This function fetches detailed information about a given GO term from QuickGO.
+
+### fetch_go_term_details
+
+This function fetches detailed information about a given GO term from QuickGO.
 
 ```python
 term_data = fetch_go_term_details('GO:0008150')
@@ -57,14 +64,20 @@ print(term_data)
 ```
 * Input: GO term ID (e.g., GO:0008150).
 * Output: Dictionary of details for the GO term.
-Fetch All GO BP Terms and Gene Counts. This function fetches all GO Biological Process terms and their associated gene counts.
+
+### fetch_all_go_bp_terms_and_counts
+
+This function fetches all GO Biological Process terms and their associated gene counts.
 
 ```python
 term_gene_counts = fetch_all_go_bp_terms_and_counts()
 print(term_gene_counts)
 ```
 * Output: Dictionary where keys are GO term IDs and values are the counts of associated genes.
-Check Shared GO Terms. This function checks if two genes share a GO Biological Process term. It can also filter based on a threshold for the number of genes sharing the term.
+
+### check_shared_go_terms
+
+This function checks if two genes share a GO Biological Process term. It can also filter based on a threshold for the number of genes sharing the term.
 
 ```python
 shared = check_shared_go_terms('P38398', 'P04637', n_shared_threshold=10)
