@@ -112,3 +112,17 @@ Returns a dictionary where the key is a tuple of the two gene names and the valu
 ```bash
 {('BRCA1', 'TP53'): {'cosine_similarity': 0.7475048426524952, 'share_GOBP': True}}
 ```
+Optionally provide a threshold, for example - share_GOBP is True only if the terms shared in common have less than ```n``` hits, else False
+
+```python
+# in this example, share_GOBP True if genes share GO Terms and GO terms shared have less than 10000 genes associated
+
+threshold=10000
+result_filtered = check_shared_terms_and_cosine_similarity(embedding_dict1, embedding_dict2, n_shared_threshold=threshold)
+print(result_filtered)
+```
+```bash
+```bash
+# with threshold, now share_GOBP is False. This can be used to compute multiple ROC/PR curves for least to greatest specific GO terms shared
+{('BRCA1', 'TP53'): {'cosine_similarity': 0.7475048426524952, 'share_GOBP': False}}
+```
