@@ -3,6 +3,8 @@
 import requests
 from bioservices import QuickGO
 import time
+import numpy as np
+from scipy.spatial.distance import cosine
 
 def gene_name_to_uniprot_id(gene_name: str) -> str:
     """
@@ -244,12 +246,57 @@ def check_shared_go_terms(gene_1: str, gene_2: str, n_shared_threshold: int = No
     terms_2 = get_term_gene_counts(go_terms_2)
 
     def filter_terms(term_dict, thresh):
-      filt = {key: value for key, value in term_dict.items() if value >= thresh}
+      filt = {key: value for key, value in term_dict.items() if value <= thresh}
       return set(list(filt.keys()))
 
     shared_filtered_terms = filter_terms(terms_1, n_shared_threshold) & filter_terms(terms_2, n_shared_threshold)
 
     return 1 if shared_filtered_terms else 0
+
+def check_shared_terms_and_cosine_similarity(embedding_dict1: dict, embedding_dict2: dict, n_shared_threshold: int = None) -> dict:
+    """
+    This function takes two dictionaries, each containing a gene name as the key and 
+    an embedding vector as the value. It performs the following tasks:
+    
+    - Finds UniProt IDs for the gene names.
+    - Checks if the genes share a GO Biological Process term using the check_shared_go_terms function.
+    - Calculates the cosine similarity between the two embedding vectors.
+    
+    Args:
+        embedding_dict1 (dict): Dictionary with a gene name as the key and its embedding vector as the value.
+        embedding_dict2 (dict): Dictionary with a gene name as the key and its embedding vector as the value.
+        
+    Returns:
+        dict: A dictionary where the key is a tuple of the two gene names and the value is another dictionary
+              with 'cosine_similarity' and 'share_GOBP' as keys.
+    """
+
+    # unpack keys and values
+    gene1 = list(embedding_dict1.keys())[0]
+    gene2 = list(embedding_dict2.keys())[0]
+    embedding1 = np.array(list(embedding_dict1.values())[0])
+    embedding2 = np.array(list(embedding_dict2.values())[0])
+    
+    # get the UniProt IDs for both genes
+    uniprot_id1 = gene_name_to_uniprot_id(gene1)
+    uniprot_id2 = gene_name_to_uniprot_id(gene2)
+    
+    # check if the two genes share any GO Biological Process terms, threshold otherwise pass None
+    shared_go_bp = check_shared_go_terms(uniprot_id1, uniprot_id2, n_shared_threshold)
+    
+    # calculate cosine similarity between the two embedding vectors
+    cosine_similarity = 1 - cosine(embedding1, embedding2)
+    
+    result = {
+        (gene1, gene2): {
+            'cosine_similarity': cosine_similarity,
+            'share_GOBP': bool(shared_go_bp)  # 1 -> True, 0 -> False
+        }
+    }
+
+    # return dictionary with genes as tuple, cosine similarity (float) and share_GOBP (bool)
+    return result
+
 
 """
 DEMO
@@ -269,4 +316,15 @@ BRCA1 = "P38398"
 TP53 = "P04637"
 
 check_shared_go_terms(BRCA1, TP53)
+
+# example embedding comparison
+
+embedding_dict1 = {'BRCA1': np.random.rand(512)}
+embedding_dict2 = {'TP53': np.random.rand(512)}
+
+result = check_shared_terms_and_cosine_similarity(embedding_dict1, embedding_dict2)
+print(result)
+
+result_filtered = check_shared_terms_and_cosine_similarity(embedding_dict1, embedding_dict2, n_shared_threshold=10000)
+print(result_filtered)
 
