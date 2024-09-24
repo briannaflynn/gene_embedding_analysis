@@ -11,6 +11,7 @@ This Python script allows you to retrieve UniProt IDs, GO Biological Process (BP
   - [Fetch GO Term Details](#fetch-go-term-details)
   - [Fetch All GO BP Terms and Gene Counts](#fetch-all-go-bp-terms-and-gene-counts)
   - [Check Shared GO Terms](#check-shared-go-terms)
+  - [Check Shared Terms and Cosine Similarity](#check-shared-terms-and-cosine-similarity)
 
 ## Requirements
 
@@ -18,12 +19,14 @@ This script requires the following Python libraries:
 
 - `requests`
 - `bioservices`
+- `numpy`
+- `scipy`
 - `time`
 
 You can install them using `pip`:
 
 ```bash
-pip install requests bioservices
+pip install requests bioservices numpy scipy
 ```
 
 ## Usage
@@ -81,3 +84,29 @@ print(shared)
 ```
 * Input: Two UniProt IDs (e.g., P38398 for BRCA1 and P04637 for TP53).
 * Output: 1 if the genes share at least one GO term, 0 otherwise. Can be filtered by the number of genes sharing the GO term.
+
+### Check Shared Terms and Cosine Similarity
+
+This function takes two dictionaries containing gene names and their embedding vectors and performs the following tasks:
+
+1. Finds UniProt IDs for the gene names.
+2. Checks if the genes share a GO Biological Process term.
+3. Calculates the cosine similarity between the two embedding vectors.
+
+```python
+embedding_dict1 = {'BRCA1': np.random.rand(512)}
+embedding_dict2 = {'TP53': np.random.rand(512)}
+
+result = check_shared_terms_and_cosine_similarity(embedding_dict1, embedding_dict2)
+print(result)
+```
+
+Takes two dictionaries as arguments, each with a gene name as the key and an embedding vector as the value.
+
+Returns a dictionary where the key is a tuple of the two gene names and the value is another dictionary with two keys:
+```cosine_similarity```: The cosine similarity between the embedding vectors (float).
+```share_GOBP```: Whether the two genes share a GO Biological Process term (True/False).
+
+```bash
+{('BRCA1', 'TP53'): {'cosine_similarity': 0.7475048426524952, 'share_GOBP': True}}
+```
