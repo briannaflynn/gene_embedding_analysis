@@ -104,7 +104,9 @@ print(result)
 Takes two dictionaries as arguments, each with a gene name as the key and an embedding vector as the value.
 
 Returns a dictionary where the key is a tuple of the two gene names and the value is another dictionary with two keys:
+
 ```cosine_similarity```: The cosine similarity between the embedding vectors (float).
+
 ```share_GOBP```: Whether the two genes share a GO Biological Process term (True/False).
 
 ```bash
