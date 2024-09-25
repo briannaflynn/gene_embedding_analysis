@@ -123,6 +123,6 @@ print(result_filtered)
 ```
 
 ```bash
-# with threshold, now share_GOBP is False. This can be used to compute multiple ROC/PR curves for least to greatest specific GO terms shared
+# with threshold, now share_GOBP is False. This can be used to compute multiple ROC/PR curves 
 {('BRCA1', 'TP53'): {'cosine_similarity': 0.7475048426524952, 'share_GOBP': False}}
 ```
