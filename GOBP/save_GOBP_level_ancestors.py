@@ -2,7 +2,7 @@
 #Date: September 4, 2024; September 30, 2024
 #Author: Muyoung Lee
 #Description: Print [GOBP term ID, Level, Ancestor BP terms].
-#Usage: (scanpy) [THIS SCRIPT]
+#Usage: [THIS SCRIPT]
 
 #Ref: https://github.com/tanghaibao/goatools/blob/main/notebooks/parents_and_ancestors.ipynb
 #Ref2: https://github.com/tanghaibao/goatools/blob/main/notebooks/report_depth_level.ipynb
