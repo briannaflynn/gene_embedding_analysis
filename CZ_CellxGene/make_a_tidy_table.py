@@ -41,6 +41,7 @@ all_tissue_celltypes = {}
 24: tissue_original_name
 '''
 
+# https://cellxgene.cziscience.com/docs/04__Analyze%20Public%20Data/4_2__Gene%20Expression%20Documentation/4_2_6__Gene%20Expression%20Source%20Data
 with open("expression-summary-full-03-11-24.csv") as INPUT:
 	INPUT.readline()
 	for line in csv.reader(INPUT):
