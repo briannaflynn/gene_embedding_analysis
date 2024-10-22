@@ -30,7 +30,7 @@ python -m ipykernel install --user --name scgpt_conda --display-name "scgpt_cond
 
 # Install additional packages
 echo "Installing scgpt, gseapy, and gdown..."
-pip install scgpt gseapy gdown
+pip install scgpt gseapy gdown PyMuPdf fitz
 
 # Download files from Google Drive
 echo "Downloading data from Google Drive folder..."
