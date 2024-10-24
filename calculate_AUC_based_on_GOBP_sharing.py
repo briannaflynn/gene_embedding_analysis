@@ -3,11 +3,10 @@
 #Author: Muyoung Lee
 #Description:
 #1. From the reference human proteome genes, gather genes belonging to the input feature table.
-#2. Calculate Spearman correlataions between all gene pairs.
+#2. Calculate Spearman correlations between all gene pairs.
 #3. Sort gene pairs based on calculated correlations.
-#4. If the two genes in one gene pair share at least one GOBP term whose level is larger than 2 (deeper than 2), mark this gene pair as positive. Consider ancestors GOBP terms as well.
+#4. If the two genes in one gene pair share at least one GOBP term whose level is larger than 2 (deeper than 2), mark this gene pair as positive. Consider ancestor GOBP terms as well.
 #5. Based on steps 3 and 4, calculate AUROC and AUPRC.
-#Usage: (conda env: scanpy) [THIS SCRIPT]
 
 import pickle
 import numpy as np
