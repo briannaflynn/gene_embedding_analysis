@@ -119,7 +119,7 @@ with open("HumanRefProteome_UniProtACC_EnsGeneID.tsv") as INPUT:
 
 df = pd.read_csv("CellxGene/ratio_of_n_and_n_cells_cell_type.gene.tissue-celltype.tsv", sep="\t", header=0, index_col=0)
 
-# all proteins considered, so the intersection between dataframe and the human reference proteome
+# all proteins considered, so the intersection between the dataframe and the human reference proteome
 domain = list(set(df.index) & reference_proteome)
 print("domain:", len(domain))
 
@@ -152,8 +152,8 @@ total = []
 
 for (gene1, gene2) in list(gene_sorted_corr) + na_list:
 
-	# If a gene doesn't have any GOBP (level > 2) annotations...
-	# Should we include mark this gene as negative or exclude from the calculation?
+	# If a gene has no GOBP (level > 2) annotations...
+	# Should we mark this gene as negative or exclude it from the calculation?
 	if gene1 not in ensID_BPterms or gene2 not in ensID_BPterms:
 		continue
 	else:
