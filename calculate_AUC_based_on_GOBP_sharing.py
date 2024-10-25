@@ -97,6 +97,8 @@ with open("EnsID_GOid_GOterm_GOdomain.BP_only.tsv") as INPUT:
 				ensID_BPterms[ensID].update(ancestors)
 
 reference_proteome = set()
+# UniProt: Human Reference Proteome (accession -> HGNC ID)
+# HGNC: HGNC ID -> Ensemble ID
 with open("HumanRefProteome_UniProtACC_EnsGeneID.tsv") as INPUT:
 	for line in INPUT:
 		ensID = line.strip().split("\t")[1]
