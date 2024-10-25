@@ -58,25 +58,11 @@ def cal_AUPRC(sorted_gene_list, positive_set):
 def cal_AUPRC_percent(sorted_gene_list, positive_set, perc=1):
 	k = math.ceil(len(sorted_gene_list) / 100 * perc)
 	sorted_gene_list = sorted_gene_list[:k]
-	total = len(sorted_gene_list)
 	actual_positive = positive_set & set(sorted_gene_list)
 	if len(actual_positive) == 0:
 		return np.nan
-	# x: recall = (TP / Actual Positive)
-	# y: precision = (TP / Predicted Positive)
-	AP = len(actual_positive)
-	PP = 0
-	TP = 0
-	coordinates = []
-	for gene in sorted_gene_list:
-		PP += 1
-		if gene in actual_positive:
-			TP += 1
-		coordinates.append((TP/AP, TP/PP))
-	recall = [x[0] for x in coordinates]
-	precision = [x[1] for x in coordinates]
-	AUC = metrics.auc(recall, precision)
-	return AUC
+	else:
+		return cal_AUPRC(sorted_gene_list, positive_set)
 
 # GOBP_level: GOBP -> level
 with open("GOBP_level.pkl", "rb") as INPUT:
