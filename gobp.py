@@ -41,6 +41,41 @@ def gene_name_to_uniprot_id(gene_name: str) -> str:
         print(f"An error occurred while fetching UniProt ID for {gene_name}: {e}")
         return None
 
+def ensembl_id_to_uniprot_id(ensembl_id: str) -> str:
+    """
+    Converts an Ensembl gene ID to the corresponding UniProt ID for human genes using a direct UniProt API request.
+    
+    Args:
+        ensembl_id (str): The Ensembl gene ID (e.g., "ENSG00000139618").
+    
+    Returns:
+        str: The UniProt ID associated with the Ensembl ID, or None if not found.
+    """
+    url = "https://rest.uniprot.org/uniprotkb/search"
+    params = {
+        'query': f'{ensembl_id} AND organism_id:9606',  # Filtering for human (organism ID 9606)
+        'fields': 'accession',     # Fetch only the UniProt accession ID
+        'format': 'tsv',           # Requesting tab-separated values format
+        'size': 1                  # Limit results to one entry
+    }
+
+    try:
+        response = requests.get(url, params=params)
+        response.raise_for_status()  # Raise an error for HTTP error codes
+
+        # Parse the response content
+        lines = response.text.splitlines()
+        if len(lines) > 1:  # First line is the header, next lines contain data
+            uniprot_id = lines[1].split('\t')[0]  # Extract the UniProt ID from the first result
+            return uniprot_id
+        else:
+            print(f"No UniProt ID found for Ensembl ID: {ensembl_id}")
+            return None
+    
+    except requests.RequestException as e:
+        print(f"An error occurred: {e}")
+        return None
+
 def get_gene_go_terms(gene: str) -> list:
     """
     Returns a list of GO Biological Process terms associated with a gene using QuickGO.
