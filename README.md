@@ -7,6 +7,7 @@ This Python script allows you to retrieve UniProt IDs, GO Biological Process (BP
 - [Requirements](#requirements)
 - [Usage](#usage)
   - [Convert Gene Name to UniProt ID](#convert-gene-name-to-uniprot-id)
+  - [Convert Ensembl ID to UniProt ID](#convert-ensembl-id-to-uniprot-id)
   - [Get GO Biological Process Terms](#get-go-biological-process-terms)
   - [Fetch GO Term Details](#fetch-go-term-details)
   - [Fetch All GO BP Terms and Gene Counts](#fetch-all-go-bp-terms-and-gene-counts)
@@ -41,6 +42,18 @@ print(uniprot_id)
 ```
 * Input: A gene name or symbol (e.g., BRCA1).
 * Output: Corresponding UniProt ID (e.g., P38398 for BRCA1).
+
+### Convert Ensembl ID to UniProt ID
+
+This function converts an Ensembl ID to a UniProt ID.
+
+```python
+uniprot_id =  ensembl_id_to_uniprot_id('ENSG00000139618')
+print(uniprot_id)
+```
+* Input: An Ensembl ID (e.g., ENSG00000139618).
+* Output: Corresponding UniProt ID (e.g., A0A7P0TAP7 for ENSG00000139618).
+
 
 ### Get GO Biological Process Terms
 
