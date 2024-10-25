@@ -73,6 +73,7 @@ with open("GOBP_BP_ancestors.pkl", "rb") as INPUT:
 	GOBP_BPancestors = pickle.load(INPUT)
 
 ensID_BPterms = {}
+# From Ensembl BioMart
 with open("EnsID_GOid_GOterm_GOdomain.BP_only.tsv") as INPUT:
 	for line in INPUT:
 		words = line.strip().split("\t")
