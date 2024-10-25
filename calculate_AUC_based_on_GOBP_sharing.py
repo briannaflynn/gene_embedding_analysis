@@ -136,15 +136,14 @@ print("gene pairs with NA value:", len(na_list))
 gene_sorted_corr = dict(sorted(gene_gene2_corr.items(), key=lambda item: item[1], reverse=True))
 del gene_gene2_corr
 
-positive_set = set() # "gene2" that shares at least 1 GOBP (level>2) with "gene"
-total = []
+positive_set = set() # Gene pairs sharing at least 1 GOBP (level>2) term.
+total = [] # positive + negative gene pairs
 
 for (gene1, gene2) in list(gene_sorted_corr) + na_list:
-
-	# If a gene has no GOBP (level > 2) annotations...
-	# Should we mark this gene as negative or exclude it from the calculation?
+	# If a gene has no GOBP (level > 2) annotations,
+	# should we mark this gene as negative or exclude it from the calculation?
 	if gene1 not in ensID_BPterms or gene2 not in ensID_BPterms:
-		continue
+		continue # excluding this gene pair, for now
 	else:
 		total.append((gene1,gene2))
 
