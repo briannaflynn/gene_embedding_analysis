@@ -335,7 +335,7 @@ def check_shared_terms_and_cosine_similarity(embedding_dict1: dict, embedding_di
 
 """
 DEMO
-"""
+
 
 # Should print the UniProt ID for BRCA1, need Uniprot IDs for QuickGO API queries later
 uniprot_id = gene_name_to_uniprot_id('BRCA1')
@@ -363,3 +363,4 @@ print(result)
 result_filtered = check_shared_terms_and_cosine_similarity(embedding_dict1, embedding_dict2, n_shared_threshold=10000)
 print(result_filtered)
 
+"""
