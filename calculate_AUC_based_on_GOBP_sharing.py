@@ -140,8 +140,7 @@ positive_set = set() # Gene pairs sharing at least 1 GOBP (level>2) term.
 total = [] # positive + negative gene pairs
 
 for (gene1, gene2) in list(gene_sorted_corr) + na_list:
-	# If a gene has no GOBP (level > 2) annotations,
-	# should we mark this gene as negative or exclude it from the calculation?
+	# If a gene has no GOBP (level > 2) annotations, should we mark this gene as negative or exclude it from the calculation?
 	if gene1 not in ensID_BPterms or gene2 not in ensID_BPterms:
 		continue # excluding this gene pair, for now
 	else:
@@ -153,6 +152,22 @@ for (gene1, gene2) in list(gene_sorted_corr) + na_list:
 	if count > 0:
 		positive_set.add((gene1, gene2))
 
+count = 0
+for gene_pair in list(gene_sorted_corr):
+	if count == 1000:
+		break
+		
+	if gene_pair in total:
+		count += 1
+	else:
+		continue
+		
+	is_positive = 0
+	if gene_pair in positive_set:
+		is_positive = 1
+	print(gene_pair, gene_sorted_corr[gene_pair], is_positive, sep="\t")
+	
+'''
 print("positive gene pairs:", len(positive_set))
 print("total gene pairs considered:", len(total))
 
@@ -166,3 +181,4 @@ else:
 	AUPRC_1p = np.nan
 
 print(f"AUROC: {AUROC}, AUPRC: {AUPRC}, AUPRC_1%: {AUPRC_1p}")
+'''
