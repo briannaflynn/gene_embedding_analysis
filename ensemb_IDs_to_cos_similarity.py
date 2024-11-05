@@ -41,6 +41,8 @@ def convert_ensembl_ids_and_compute_similarity(df, embeddings_dict):
         pd.DataFrame: A DataFrame with Ensembl ID pairs, gene name pairs, Pearson correlations,
                       cosine similarities, and any additional columns from the original DataFrame.
     """
+    # Convert all keys to lower case to avoid case matching issues
+    embeddings_dict = {k.lower(): v for k, v in embeddings_dict.items()}
     # Initialize lists to store results
     ensembl_id_1, ensembl_id_2 = [], []
     gene_name_1, gene_name_2 = [], []
@@ -60,6 +62,10 @@ def convert_ensembl_ids_and_compute_similarity(df, embeddings_dict):
         # Check if gene names are missing
         if gene1 is None or gene2 is None:
             print(f"No associated gene name found for Ensembl ID pair: {ensembl_id1}, {ensembl_id2}")
+        
+        # Convert case to avoid matching issues
+        gene1 = gene1.lower() if gene1 else None
+        gene2 = gene2.lower() if gene2 else None
 
         print(gene1, gene2)
         
