@@ -7,6 +7,7 @@
 # 2. Calculate the number of cells with non-zero expression for each gene in a cell type & tissue pair.
 #Usage: [THIS SCRIPT]
 
+import sys
 import csv
 
 gene_tissue_cell_whole = {}
@@ -41,7 +42,6 @@ all_tissue_celltypes = {}
 24: tissue_original_name
 '''
 
-# https://cellxgene.cziscience.com/docs/04__Analyze%20Public%20Data/4_2__Gene%20Expression%20Documentation/4_2_6__Gene%20Expression%20Source%20Data
 with open("expression-summary-full-03-11-24.csv") as INPUT:
 	INPUT.readline()
 	for line in csv.reader(INPUT):
@@ -71,7 +71,8 @@ with open("expression-summary-full-03-11-24.csv") as INPUT:
 header = "gene\t"
 for tissue in sorted(all_tissue_celltypes):
 	for celltype in sorted(all_tissue_celltypes[tissue]):
-		pwd = f"{tissue.replace(' ', '_')}@{celltype.replace(' ', '_')}"
+		#pwd = f"{tissue.replace(' ', '_')}@{celltype.replace(' ', '_')}"
+		pwd = f"{celltype.replace(' ', '_')}@{tissue.replace(' ', '_')}"
 		header += f"{pwd}\t"
 print(header.rstrip())
 
@@ -83,8 +84,9 @@ for gene in sorted(gene_tissue_cell_whole):
 				if gene_tissue_cell_whole[gene][tissue][celltype] != 0:
 					value = gene_tissue_cell_exp[gene][tissue][celltype] / gene_tissue_cell_whole[gene][tissue][celltype]
 				else:
-					value = "N/A"
+					print("division by zero", file=sys.stderr)
+					break
 			else:
-				value = "N/A"
+				value = 0
 			outstr += f"{value}\t"
 	print(outstr.rstrip())
