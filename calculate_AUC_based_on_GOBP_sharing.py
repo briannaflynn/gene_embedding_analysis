@@ -8,6 +8,7 @@
 #4. If the two genes in one gene pair share at least one GOBP term whose level is larger than 2 (deeper than 2), mark this gene pair as positive. Consider ancestor GOBP terms as well.
 #5. Based on steps 3 and 4, calculate AUROC and AUPRC.
 
+import sys
 import pickle
 import numpy as np
 import pandas as pd
@@ -108,12 +109,21 @@ with open("HumanRefProteome_UniProtACC_EnsGeneID.tsv") as INPUT:
 
 df = pd.read_csv("CellxGene/ratio_of_n_and_n_cells_cell_type.gene.tissue-celltype.tsv", sep="\t", header=0, index_col=0)
 
-# all proteins considered, so the intersection between the dataframe and the human reference proteome
+# the intersection between the dataframe and the human reference proteome
 domain = list(set(df.index) & reference_proteome)
-print("domain:", len(domain))
+
+too_many_zero_genes = set()
+for gene in domain:
+	non_zero_count = (df.loc[gene] != 0).sum()
+	if non_zero_count < 30:
+		too_many_zero_genes.add(gene)
+print("genes with less than 30 observations:", len(too_many_zero_genes), file=sys.stderr)
+
+domain = set(domain) - too_many_zero_genes
+domain = list(domain)
+print(f"gene with at least 30 observations: {len(domain)}", file=sys.stderr)
 
 gene_gene2_corr = {}
-na_list = []
 for gene in domain:
 	for gene2 in domain:
 		if gene2 == gene:
@@ -121,25 +131,17 @@ for gene in domain:
 		gene, gene2 = sorted([gene, gene2])
 		if (gene, gene2) in gene_gene2_corr:
 			continue
-		elif (gene, gene2) in na_list:
-			continue
-		else:
-			cor_value = df.loc[gene].corr(df.loc[gene2], method="spearman", min_periods=30)
-			if np.isnan(cor_value):
-				na_list.append((gene, gene2))
-			else:
-				gene_gene2_corr[(gene,gene2)] = cor_value	
+		cor_value = df.loc[gene].corr(df.loc[gene2], method="spearman", min_periods=30)
+		gene_gene2_corr[(gene,gene2)] = cor_value	
 
-print("gene pairs with corr value:", len(gene_gene2_corr))
-print("gene pairs with NA value:", len(na_list))
-
+print(f"number of possible gene pairs: {len(gene_gene2_corr)}", file=sys.stderr)
 gene_sorted_corr = dict(sorted(gene_gene2_corr.items(), key=lambda item: item[1], reverse=True))
 del gene_gene2_corr
 
 positive_set = set() # Gene pairs sharing at least 1 GOBP (level>2) term.
 total = [] # positive + negative gene pairs
 
-for (gene1, gene2) in list(gene_sorted_corr) + na_list:
+for (gene1, gene2) in gene_sorted_corr:
 	# If a gene has no GOBP (level > 2) annotations, should we mark this gene as negative or exclude it from the calculation?
 	if gene1 not in ensID_BPterms or gene2 not in ensID_BPterms:
 		continue # excluding this gene pair, for now
@@ -152,25 +154,17 @@ for (gene1, gene2) in list(gene_sorted_corr) + na_list:
 	if count > 0:
 		positive_set.add((gene1, gene2))
 
-count = 0
+print(f"number of genes pairs satisfying the GOBP condition: {len(total)}", file=sys.stderr)
+print("positive gene pairs:", len(positive_set), file=sys.stderr)
+
 for gene_pair in list(gene_sorted_corr):
-	if count == 1000:
-		break
-		
-	if gene_pair in total:
-		count += 1
-	else:
-		continue
-		
+	if gene_pair not in total:
+		continue	
 	is_positive = 0
 	if gene_pair in positive_set:
 		is_positive = 1
 	print(gene_pair, gene_sorted_corr[gene_pair], is_positive, sep="\t")
 	
-'''
-print("positive gene pairs:", len(positive_set))
-print("total gene pairs considered:", len(total))
-
 if len(positive_set) > 0:
 	AUROC = cal_AUROC(total, positive_set)
 	AUPRC = cal_AUPRC(total, positive_set)
@@ -180,5 +174,4 @@ else:
 	AUPRC = np.nan
 	AUPRC_1p = np.nan
 
-print(f"AUROC: {AUROC}, AUPRC: {AUPRC}, AUPRC_1%: {AUPRC_1p}")
-'''
+print(f"AUROC: {AUROC}, AUPRC: {AUPRC}, AUPRC_1%: {AUPRC_1p}", file-sys.stderr)
