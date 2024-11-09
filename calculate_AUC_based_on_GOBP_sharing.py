@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Date: Sept 3, 2024; Oct 4, 2024; Oct 14, 2024; Oct 23, 2024
+#Date: Sept 3, 2024; Oct 4, 2024; Oct 14, 2024; Oct 23, 2024; Nov 9, 2024
 #Author: Muyoung Lee
 #Description:
 #1. From the reference human proteome genes, gather genes belonging to the input feature table.
@@ -12,7 +12,6 @@ import sys
 import pickle
 import numpy as np
 import pandas as pd
-import random
 import math
 from sklearn import metrics
 
@@ -107,7 +106,7 @@ with open("HumanRefProteome_UniProtACC_EnsGeneID.tsv") as INPUT:
 			ensID_list = ensID.split(",")
 			reference_proteome.update(ensID_list)
 
-df = pd.read_csv("CellxGene/ratio_of_n_and_n_cells_cell_type.gene.tissue-celltype.tsv", sep="\t", header=0, index_col=0)
+df = pd.read_csv("CellxGene/ratio_of_n_and_n_cells_cell_type.gene.tissue-celltype.ver2.tsv", sep="\t", header=0, index_col=0)
 
 # the intersection between the dataframe and the human reference proteome
 domain = list(set(df.index) & reference_proteome)
