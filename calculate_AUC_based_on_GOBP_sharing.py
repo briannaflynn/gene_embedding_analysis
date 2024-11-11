@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-#Date: Sept 3, 2024; Oct 4, 2024; Oct 14, 2024; Oct 23, 2024; Nov 9, 2024
+#Date: Sept 3, Oct 4, Oct 14, Oct 23, Nov 11, 2024
 #Author: Muyoung Lee
 #Description:
 #1. From the reference human proteome genes, gather genes belonging to the input feature table.
-#2. Calculate Spearman correlations between all gene pairs.
+#2. Calculate Spearman correlataions between all gene pairs.
 #3. Sort gene pairs based on calculated correlations.
-#4. If the two genes in one gene pair share at least one GOBP term whose level is larger than 2 (deeper than 2), mark this gene pair as positive. Consider ancestor GOBP terms as well.
+#4. If the two genes in one gene pair share at least one GOBP term whose level is larger than 2 (deeper than 2), mark this gene pair as positive. Consider ancestors GOBP terms as well.
 #5. Based on steps 3 and 4, calculate AUROC and AUPRC.
+# Nov 11: Adding the GOBP term size threshold
+#Usage: [THIS SCRIPT] [GOBP_term_size_threshold]
 
 import sys
 import pickle
@@ -65,16 +67,15 @@ def cal_AUPRC_percent(sorted_gene_list, positive_set, perc=1):
 		return cal_AUPRC(sorted_gene_list, positive_set)
 
 # GOBP_level: GOBP -> level
-with open("GOBP_level.pkl", "rb") as INPUT:
+with open("GOBP/GOBP_level.pkl", "rb") as INPUT:
 	GOBP_level = pickle.load(INPUT)
 
 # GOBP_BPancestors: GOBP -> Ancestor GOBP terms
-with open("GOBP_BP_ancestors.pkl", "rb") as INPUT:
+with open("GOBP/GOBP_BP_ancestors.pkl", "rb") as INPUT:
 	GOBP_BPancestors = pickle.load(INPUT)
 
 ensID_BPterms = {}
-# From Ensembl BioMart
-with open("EnsID_GOid_GOterm_GOdomain.BP_only.tsv") as INPUT:
+with open("GOBP/EnsID_GOid_GOterm_GOdomain.BP_only.tsv") as INPUT:
 	for line in INPUT:
 		words = line.strip().split("\t")
 		ensID, goid = words[0], words[1]
@@ -97,18 +98,32 @@ with open("EnsID_GOid_GOterm_GOdomain.BP_only.tsv") as INPUT:
 				ensID_BPterms[ensID].update(ancestors)
 
 reference_proteome = set()
-# UniProt: Human Reference Proteome (accession -> HGNC ID)
-# HGNC: HGNC ID -> Ensemble ID
-with open("HumanRefProteome_UniProtACC_EnsGeneID.tsv") as INPUT:
+with open("human_reference_proteome/HumanRefProteome_UniProtACC_EnsGeneID.tsv") as INPUT:
 	for line in INPUT:
 		ensID = line.strip().split("\t")[1]
 		if ensID != "N/A":
 			ensID_list = ensID.split(",")
 			reference_proteome.update(ensID_list)
 
-df = pd.read_csv("CellxGene/ratio_of_n_and_n_cells_cell_type.gene.tissue-celltype.ver2.tsv", sep="\t", header=0, index_col=0)
+large_BPterms = set()
+with open("GOBP/GOBP_size_reference_proteome_genes.tsv") as INPUT:
+	for line in INPUT:
+		GOBP, size = line.strip().split("\t")[:2]
+		if int(size) >= int(sys.argv[1]):
+			large_BPterms.add(GOBP)
 
-# the intersection between the dataframe and the human reference proteome
+print(f"GOBP term size threshold: {sys.argv[1]}", file=sys.stderr)
+
+adj_ensID_BPterms = {}
+for ensID in ensID_BPterms:
+	new_set = ensID_BPterms[ensID] - large_BPterms
+	if len(new_set) > 0:
+		adj_ensID_BPterms[ensID] = new_set
+del ensID_BPterms
+
+df = pd.read_csv("CZ_CellxGene/ratio_of_n_and_n_cells_cell_type.gene.tissue-celltype.ver2.tsv", sep="\t", header=0, index_col=0)
+
+# The intersection between dataframe and the human reference proteome
 domain = list(set(df.index) & reference_proteome)
 
 too_many_zero_genes = set()
@@ -116,8 +131,8 @@ for gene in domain:
 	non_zero_count = (df.loc[gene] != 0).sum()
 	if non_zero_count < 30:
 		too_many_zero_genes.add(gene)
-print("genes with less than 30 observations:", len(too_many_zero_genes), file=sys.stderr)
 
+print("genes with less than 30 observations:", len(too_many_zero_genes), file=sys.stderr)
 domain = set(domain) - too_many_zero_genes
 domain = list(domain)
 print(f"gene with at least 30 observations: {len(domain)}", file=sys.stderr)
@@ -127,28 +142,30 @@ for gene in domain:
 	for gene2 in domain:
 		if gene2 == gene:
 			continue
-		gene, gene2 = sorted([gene, gene2])
-		if (gene, gene2) in gene_gene2_corr:
+		gene_, gene2_ = sorted([gene, gene2])
+		if (gene_, gene2_) in gene_gene2_corr:
 			continue
-		cor_value = df.loc[gene].corr(df.loc[gene2], method="spearman", min_periods=30)
-		gene_gene2_corr[(gene,gene2)] = cor_value	
+		cor_value = df.loc[gene_].corr(df.loc[gene2_], method="spearman")
+		gene_gene2_corr[(gene_, gene2_)] = cor_value
 
 print(f"number of possible gene pairs: {len(gene_gene2_corr)}", file=sys.stderr)
 gene_sorted_corr = dict(sorted(gene_gene2_corr.items(), key=lambda item: item[1], reverse=True))
 del gene_gene2_corr
 
-positive_set = set() # Gene pairs sharing at least 1 GOBP (level>2) term.
-total = [] # positive + negative gene pairs
+positive_set = set() # "gene2" that shares at least 1 GOBP (level>2) with "gene"
+total = []
 
 for (gene1, gene2) in gene_sorted_corr:
-	# If a gene has no GOBP (level > 2) annotations, should we mark this gene as negative or exclude it from the calculation?
-	if gene1 not in ensID_BPterms or gene2 not in ensID_BPterms:
-		continue # excluding this gene pair, for now
+
+	# If a gene doesn't have any GOBP (level > 2) annotations...
+	# Should we include mark this gene as negative or exclude from the calculation?
+	if gene1 not in adj_ensID_BPterms or gene2 not in adj_ensID_BPterms:
+		continue # Exclude those cases
 	else:
 		total.append((gene1,gene2))
 
-	gene1_BP_set = ensID_BPterms[gene1]
-	gene2_BP_set = ensID_BPterms[gene2]
+	gene1_BP_set = adj_ensID_BPterms[gene1]
+	gene2_BP_set = adj_ensID_BPterms[gene2]
 	count = len(gene1_BP_set & gene2_BP_set)
 	if count > 0:
 		positive_set.add((gene1, gene2))
@@ -158,12 +175,12 @@ print("positive gene pairs:", len(positive_set), file=sys.stderr)
 
 for gene_pair in list(gene_sorted_corr):
 	if gene_pair not in total:
-		continue	
+		continue
 	is_positive = 0
 	if gene_pair in positive_set:
 		is_positive = 1
 	print(gene_pair, gene_sorted_corr[gene_pair], is_positive, sep="\t")
-	
+
 if len(positive_set) > 0:
 	AUROC = cal_AUROC(total, positive_set)
 	AUPRC = cal_AUPRC(total, positive_set)
@@ -173,4 +190,4 @@ else:
 	AUPRC = np.nan
 	AUPRC_1p = np.nan
 
-print(f"AUROC: {AUROC}, AUPRC: {AUPRC}, AUPRC_1%: {AUPRC_1p}", file-sys.stderr)
+print(f"AUROC: {AUROC:.3f}, AUPRC: {AUPRC:.3f}, AUPRC_1%: {AUPRC_1p:.3f}", file=sys.stderr)
