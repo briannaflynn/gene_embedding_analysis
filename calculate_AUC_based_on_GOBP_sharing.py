@@ -3,11 +3,12 @@
 #Author: Muyoung Lee
 #Description:
 #1. From the reference human proteome genes, gather genes belonging to the input feature table.
+#   Exclude genes less than 30 non-zero values (observations).
+#   Exclude genes which have only too broad GOBP terms.
 #2. Calculate Spearman correlataions between all gene pairs.
 #3. Sort gene pairs based on calculated correlations.
 #4. If the two genes in one gene pair share at least one GOBP term whose level is larger than 2 (deeper than 2), mark this gene pair as positive. Consider ancestors GOBP terms as well.
 #5. Based on steps 3 and 4, calculate AUROC and AUPRC.
-# Nov 11: Adding the GOBP term size threshold
 #Usage: [THIS SCRIPT] [GOBP_term_size_threshold]
 
 import sys
@@ -34,7 +35,7 @@ def cal_AUROC(sorted_gene_list, positive_set):
 			FP += 1
 		coordinates.append((FP/AN, TP/AP))
 	FPR = [x[0] for x in coordinates]
-	TPR = [x[1] for x in coordinates]	
+	TPR = [x[1] for x in coordinates]
 	AUC = metrics.auc(FPR, TPR)
 	return AUC
 
@@ -123,7 +124,7 @@ del ensID_BPterms
 
 df = pd.read_csv("CZ_CellxGene/ratio_of_n_and_n_cells_cell_type.gene.tissue-celltype.ver2.tsv", sep="\t", header=0, index_col=0)
 
-# The intersection between dataframe and the human reference proteome
+# all proteins considered, so the intersection between dataframe and the human reference proteome
 domain = list(set(df.index) & reference_proteome)
 
 too_many_zero_genes = set()
@@ -134,8 +135,10 @@ for gene in domain:
 
 print("genes with less than 30 observations:", len(too_many_zero_genes), file=sys.stderr)
 domain = set(domain) - too_many_zero_genes
-domain = list(domain)
 print(f"gene with at least 30 observations: {len(domain)}", file=sys.stderr)
+
+domain = domain & set(adj_ensID_BPterms)
+print(f"gene with at least 30 observations and GOBP terms: {len(domain)}", file=sys.stderr)
 
 gene_gene2_corr = {}
 for gene in domain:
@@ -148,34 +151,23 @@ for gene in domain:
 		cor_value = df.loc[gene_].corr(df.loc[gene2_], method="spearman")
 		gene_gene2_corr[(gene_, gene2_)] = cor_value
 
-print(f"number of possible gene pairs: {len(gene_gene2_corr)}", file=sys.stderr)
 gene_sorted_corr = dict(sorted(gene_gene2_corr.items(), key=lambda item: item[1], reverse=True))
 del gene_gene2_corr
 
-positive_set = set() # "gene2" that shares at least 1 GOBP (level>2) with "gene"
-total = []
+positive_set = set() # Gene pairs that share at least 1 GOBP (level>2) term.
+total = list(gene_sorted_corr)
 
 for (gene1, gene2) in gene_sorted_corr:
-
-	# If a gene doesn't have any GOBP (level > 2) annotations...
-	# Should we include mark this gene as negative or exclude from the calculation?
-	if gene1 not in adj_ensID_BPterms or gene2 not in adj_ensID_BPterms:
-		continue # Exclude those cases
-	else:
-		total.append((gene1,gene2))
-
 	gene1_BP_set = adj_ensID_BPterms[gene1]
 	gene2_BP_set = adj_ensID_BPterms[gene2]
 	count = len(gene1_BP_set & gene2_BP_set)
 	if count > 0:
 		positive_set.add((gene1, gene2))
 
-print(f"number of genes pairs satisfying the GOBP condition: {len(total)}", file=sys.stderr)
+print(f"number of genes pairs considered: {len(total)}", file=sys.stderr)
 print("positive gene pairs:", len(positive_set), file=sys.stderr)
 
-for gene_pair in list(gene_sorted_corr):
-	if gene_pair not in total:
-		continue
+for gene_pair in total:
 	is_positive = 0
 	if gene_pair in positive_set:
 		is_positive = 1
