@@ -1,0 +1,200 @@
+gene_pair	Spearman	Pos/Neg	gene1_symbol	gene2_symbol	gene1_name	gene2_name
+('ENSG00000198712', 'ENSG00000198938')	0.9305114961321003	1	MT-CO2	MT-CO3	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198712', 'ENSG00000198804')	0.9263622655045523	1	MT-CO2	MT-CO1	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded cytochrome c oxidase I
+('ENSG00000198804', 'ENSG00000198938')	0.9190419255233276	1	MT-CO1	MT-CO3	mitochondrially encoded cytochrome c oxidase I	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198899', 'ENSG00000198938')	0.9150874736052882	0	MT-ATP6	MT-CO3	mitochondrially encoded ATP synthase membrane subunit 6	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198727', 'ENSG00000198899')	0.9144907187630639	1	MT-CYB	MT-ATP6	mitochondrially encoded cytochrome b	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000198727', 'ENSG00000198938')	0.9132235674094442	0	MT-CYB	MT-CO3	mitochondrially encoded cytochrome b	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198712', 'ENSG00000198727')	0.9084448480281763	0	MT-CO2	MT-CYB	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded cytochrome b
+('ENSG00000198712', 'ENSG00000198899')	0.8921790982102399	0	MT-CO2	MT-ATP6	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000198886', 'ENSG00000198899')	0.8917359092101408	0	MT-ND4	MT-ATP6	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000204525', 'ENSG00000234745')	0.8887023214827399	1	HLA-C	HLA-B	major histocompatibility complex, class I, C	major histocompatibility complex, class I, B
+('ENSG00000223865', 'ENSG00000231389')	0.8870085582152097	1	HLA-DPB1	HLA-DPA1	major histocompatibility complex, class II, DP beta 1	major histocompatibility complex, class II, DP alpha 1
+('ENSG00000198727', 'ENSG00000198840')	0.8852631931584128	0	MT-CYB	MT-ND3	mitochondrially encoded cytochrome b	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3
+('ENSG00000198840', 'ENSG00000198938')	0.8836206136372677	0	MT-ND3	MT-CO3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198840', 'ENSG00000198899')	0.8834695328908625	0	MT-ND3	MT-ATP6	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000198727', 'ENSG00000198804')	0.8817321793445919	1	MT-CYB	MT-CO1	mitochondrially encoded cytochrome b	mitochondrially encoded cytochrome c oxidase I
+('ENSG00000198886', 'ENSG00000198938')	0.8810382339593815	0	MT-ND4	MT-CO3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198888', 'ENSG00000198899')	0.8800893539840695	0	MT-ND1	MT-ATP6	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000164587', 'ENSG00000177954')	0.8798891848427306	1	RPS14	RPS27	ribosomal protein S14	ribosomal protein S27
+('ENSG00000198727', 'ENSG00000198888')	0.8777396834536704	0	MT-CYB	MT-ND1	mitochondrially encoded cytochrome b	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000115268', 'ENSG00000164587')	0.8749258621743475	1	RPS15	RPS14	ribosomal protein S15	ribosomal protein S14
+('ENSG00000206503', 'ENSG00000234745')	0.874489045193895	1	HLA-A	HLA-B	major histocompatibility complex, class I, A	major histocompatibility complex, class I, B
+('ENSG00000198712', 'ENSG00000198840')	0.8739695852444096	0	MT-CO2	MT-ND3	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3
+('ENSG00000142937', 'ENSG00000171863')	0.8728777170190422	0	RPS8	RPS7	ribosomal protein S8	ribosomal protein S7
+('ENSG00000142937', 'ENSG00000233927')	0.8724554351956285	0	RPS8	RPS28	ribosomal protein S8	ribosomal protein S28
+('ENSG00000142937', 'ENSG00000186468')	0.8711975565291872	0	RPS8	RPS23	ribosomal protein S8	ribosomal protein S23
+('ENSG00000149273', 'ENSG00000164587')	0.8688870753254389	0	RPS3	RPS14	ribosomal protein S3	ribosomal protein S14
+('ENSG00000198804', 'ENSG00000198899')	0.868657479647473	0	MT-CO1	MT-ATP6	mitochondrially encoded cytochrome c oxidase I	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000142676', 'ENSG00000164587')	0.8684725970454461	0	RPL11	RPS14	ribosomal protein L11	ribosomal protein S14
+('ENSG00000196126', 'ENSG00000204287')	0.8673591930945751	1	HLA-DRB1	HLA-DRA	major histocompatibility complex, class II, DR beta 1	major histocompatibility complex, class II, DR alpha
+('ENSG00000105372', 'ENSG00000164587')	0.8672650245453916	1	RPS19	RPS14	ribosomal protein S19	ribosomal protein S14
+('ENSG00000196126', 'ENSG00000231389')	0.8669552878970052	1	HLA-DRB1	HLA-DPA1	major histocompatibility complex, class II, DR beta 1	major histocompatibility complex, class II, DP alpha 1
+('ENSG00000171863', 'ENSG00000233927')	0.8663144451200192	0	RPS7	RPS28	ribosomal protein S7	ribosomal protein S28
+('ENSG00000204525', 'ENSG00000206503')	0.8653584195506461	1	HLA-C	HLA-A	major histocompatibility complex, class I, C	major histocompatibility complex, class I, A
+('ENSG00000083845', 'ENSG00000204628')	0.8649789197182616	0	RPS5	RACK1	ribosomal protein S5	receptor for activated C kinase 1
+('ENSG00000115268', 'ENSG00000167526')	0.8647135337288089	0	RPS15	RPL13	ribosomal protein S15	ribosomal protein L13
+('ENSG00000164587', 'ENSG00000177600')	0.8619671135623319	0	RPS14	RPLP2	ribosomal protein S14	ribosomal protein lateral stalk subunit P2
+('ENSG00000142676', 'ENSG00000167526')	0.8617940649145768	0	RPL11	RPL13	ribosomal protein L11	ribosomal protein L13
+('ENSG00000198840', 'ENSG00000198888')	0.8605208092443709	0	MT-ND3	MT-ND1	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000110700', 'ENSG00000171863')	0.8602782800868994	0	RPS13	RPS7	ribosomal protein S13	ribosomal protein S7
+('ENSG00000105193', 'ENSG00000198755')	0.859771003305812	0	RPS16	RPL10A	ribosomal protein S16	ribosomal protein L10a
+('ENSG00000148303', 'ENSG00000171863')	0.8592605160157996	0	RPL7A	RPS7	ribosomal protein L7a	ribosomal protein S7
+('ENSG00000138326', 'ENSG00000142676')	0.858761597483964	0	RPS24	RPL11	ribosomal protein S24	ribosomal protein L11
+('ENSG00000115268', 'ENSG00000149273')	0.858754676875457	0	RPS15	RPS3	ribosomal protein S15	ribosomal protein S3
+('ENSG00000164587', 'ENSG00000167526')	0.8585982582861298	0	RPS14	RPL13	ribosomal protein S14	ribosomal protein L13
+('ENSG00000198727', 'ENSG00000198886')	0.8572680934838269	1	MT-CYB	MT-ND4	mitochondrially encoded cytochrome b	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4
+('ENSG00000100316', 'ENSG00000149273')	0.8564177392198534	0	RPL3	RPS3	ribosomal protein L3	ribosomal protein S3
+('ENSG00000149273', 'ENSG00000186468')	0.8560622820387541	0	RPS3	RPS23	ribosomal protein S3	ribosomal protein S23
+('ENSG00000149273', 'ENSG00000167526')	0.8557321707001624	0	RPS3	RPL13	ribosomal protein S3	ribosomal protein L13
+('ENSG00000110700', 'ENSG00000142937')	0.8556654549975324	0	RPS13	RPS8	ribosomal protein S13	ribosomal protein S8
+('ENSG00000142676', 'ENSG00000149273')	0.8556191639978409	0	RPL11	RPS3	ribosomal protein L11	ribosomal protein S3
+('ENSG00000105372', 'ENSG00000177954')	0.8555952989608121	1	RPS19	RPS27	ribosomal protein S19	ribosomal protein S27
+('ENSG00000110700', 'ENSG00000149273')	0.8555572602800772	0	RPS13	RPS3	ribosomal protein S13	ribosomal protein S3
+('ENSG00000105372', 'ENSG00000115268')	0.8552043552654525	1	RPS19	RPS15	ribosomal protein S19	ribosomal protein S15
+('ENSG00000171863', 'ENSG00000186468')	0.8551708049927703	0	RPS7	RPS23	ribosomal protein S7	ribosomal protein S23
+('ENSG00000186468', 'ENSG00000233927')	0.8548654598257669	0	RPS23	RPS28	ribosomal protein S23	ribosomal protein S28
+('ENSG00000147403', 'ENSG00000164587')	0.8547533985162022	0	RPL10	RPS14	ribosomal protein L10	ribosomal protein S14
+('ENSG00000171863', 'ENSG00000196531')	0.8546384053114606	0	RPS7	NACA	ribosomal protein S7	nascent polypeptide associated complex subunit alpha
+('ENSG00000110700', 'ENSG00000177600')	0.8544664074431534	0	RPS13	RPLP2	ribosomal protein S13	ribosomal protein lateral stalk subunit P2
+('ENSG00000138326', 'ENSG00000171863')	0.8541998530166881	0	RPS24	RPS7	ribosomal protein S24	ribosomal protein S7
+('ENSG00000149806', 'ENSG00000171863')	0.8541573692465851	0	FAU	RPS7	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein S7
+('ENSG00000204287', 'ENSG00000231389')	0.8537979913725869	1	HLA-DRA	HLA-DPA1	major histocompatibility complex, class II, DR alpha	major histocompatibility complex, class II, DP alpha 1
+('ENSG00000110700', 'ENSG00000142676')	0.8537481377318874	0	RPS13	RPL11	ribosomal protein S13	ribosomal protein L11
+('ENSG00000142676', 'ENSG00000142937')	0.8537395138129692	0	RPL11	RPS8	ribosomal protein L11	ribosomal protein S8
+('ENSG00000198918', 'ENSG00000233927')	0.8531636098366585	0	RPL39	RPS28	ribosomal protein L39	ribosomal protein S28
+('ENSG00000142676', 'ENSG00000147403')	0.8527567353455734	0	RPL11	RPL10	ribosomal protein L11	ribosomal protein L10
+('ENSG00000138326', 'ENSG00000186468')	0.8525043622373158	0	RPS24	RPS23	ribosomal protein S24	ribosomal protein S23
+('ENSG00000198712', 'ENSG00000198886')	0.8524837732031891	1	MT-CO2	MT-ND4	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4
+('ENSG00000164587', 'ENSG00000233927')	0.8524173268462276	1	RPS14	RPS28	ribosomal protein S14	ribosomal protein S28
+('ENSG00000142937', 'ENSG00000149273')	0.852338321296868	0	RPS8	RPS3	ribosomal protein S8	ribosomal protein S3
+('ENSG00000142937', 'ENSG00000198918')	0.8521512258234862	0	RPS8	RPL39	ribosomal protein S8	ribosomal protein L39
+('ENSG00000105372', 'ENSG00000147403')	0.852099806178858	0	RPS19	RPL10	ribosomal protein S19	ribosomal protein L10
+('ENSG00000142676', 'ENSG00000186468')	0.8520084112794221	0	RPL11	RPS23	ribosomal protein L11	ribosomal protein S23
+('ENSG00000114391', 'ENSG00000171863')	0.8517079061365488	0	RPL24	RPS7	ribosomal protein L24	ribosomal protein S7
+('ENSG00000110700', 'ENSG00000164587')	0.8515196061866952	0	RPS13	RPS14	ribosomal protein S13	ribosomal protein S14
+('ENSG00000142676', 'ENSG00000171863')	0.8507111877584307	1	RPL11	RPS7	ribosomal protein L11	ribosomal protein S7
+('ENSG00000122406', 'ENSG00000198755')	0.8506925537316521	0	RPL5	RPL10A	ribosomal protein L5	ribosomal protein L10a
+('ENSG00000198727', 'ENSG00000198786')	0.8505498138295823	1	MT-CYB	MT-ND5	mitochondrially encoded cytochrome b	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 5
+('ENSG00000105193', 'ENSG00000115268')	0.8504689828575569	0	RPS16	RPS15	ribosomal protein S16	ribosomal protein S15
+('ENSG00000164587', 'ENSG00000186468')	0.8503862131927223	0	RPS14	RPS23	ribosomal protein S14	ribosomal protein S23
+('ENSG00000138326', 'ENSG00000233927')	0.8503567800998212	0	RPS24	RPS28	ribosomal protein S24	ribosomal protein S28
+('ENSG00000115268', 'ENSG00000142676')	0.850286502962395	0	RPS15	RPL11	ribosomal protein S15	ribosomal protein L11
+('ENSG00000105372', 'ENSG00000142676')	0.8499211335780105	0	RPS19	RPL11	ribosomal protein S19	ribosomal protein L11
+('ENSG00000083845', 'ENSG00000198755')	0.8497156529405405	0	RPS5	RPL10A	ribosomal protein S5	ribosomal protein L10a
+('ENSG00000115268', 'ENSG00000177954')	0.8496968771136372	1	RPS15	RPS27	ribosomal protein S15	ribosomal protein S27
+('ENSG00000198886', 'ENSG00000198888')	0.8494382470862077	0	MT-ND4	MT-ND1	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000100316', 'ENSG00000164587')	0.8494229573941237	0	RPL3	RPS14	ribosomal protein L3	ribosomal protein S14
+('ENSG00000142676', 'ENSG00000233927')	0.8491223711322377	0	RPL11	RPS28	ribosomal protein L11	ribosomal protein S28
+('ENSG00000105372', 'ENSG00000149273')	0.8490958108825917	0	RPS19	RPS3	ribosomal protein S19	ribosomal protein S3
+('ENSG00000186468', 'ENSG00000198918')	0.8489384919341892	0	RPS23	RPL39	ribosomal protein S23	ribosomal protein L39
+('ENSG00000149273', 'ENSG00000177954')	0.8489160315234276	0	RPS3	RPS27	ribosomal protein S3	ribosomal protein S27
+('ENSG00000167526', 'ENSG00000177954')	0.8488678634184541	0	RPL13	RPS27	ribosomal protein L13	ribosomal protein S27
+('ENSG00000142937', 'ENSG00000148303')	0.8487736271883253	0	RPS8	RPL7A	ribosomal protein S8	ribosomal protein L7a
+('ENSG00000168028', 'ENSG00000171863')	0.848655492094429	0	RPSA	RPS7	ribosomal protein SA	ribosomal protein S7
+('ENSG00000198804', 'ENSG00000198840')	0.8484534665032947	0	MT-CO1	MT-ND3	mitochondrially encoded cytochrome c oxidase I	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3
+('ENSG00000188536', 'ENSG00000206172')	0.8476627728800885	1	HBA2	HBA1	hemoglobin subunit alpha 2	hemoglobin subunit alpha 1
+('ENSG00000167526', 'ENSG00000177600')	0.8476155266597117	0	RPL13	RPLP2	ribosomal protein L13	ribosomal protein lateral stalk subunit P2
+('ENSG00000142937', 'ENSG00000164587')	0.847220531887258	0	RPS8	RPS14	ribosomal protein S8	ribosomal protein S14
+('ENSG00000083845', 'ENSG00000168028')	0.8471326701693843	1	RPS5	RPSA	ribosomal protein S5	ribosomal protein SA
+('ENSG00000114391', 'ENSG00000122406')	0.8471207151588062	0	RPL24	RPL5	ribosomal protein L24	ribosomal protein L5
+('ENSG00000171863', 'ENSG00000198755')	0.8470706281007454	0	RPS7	RPL10A	ribosomal protein S7	ribosomal protein L10a
+('ENSG00000138326', 'ENSG00000142937')	0.8470212501612004	0	RPS24	RPS8	ribosomal protein S24	ribosomal protein S8
+('ENSG00000138326', 'ENSG00000164587')	0.8464376948167738	0	RPS24	RPS14	ribosomal protein S24	ribosomal protein S14
+('ENSG00000110700', 'ENSG00000186468')	0.84619470752508	0	RPS13	RPS23	ribosomal protein S13	ribosomal protein S23
+('ENSG00000198786', 'ENSG00000198888')	0.8461193743629087	0	MT-ND5	MT-ND1	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 5	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000105372', 'ENSG00000167526')	0.8460693334255718	0	RPS19	RPL13	ribosomal protein S19	ribosomal protein L13
+('ENSG00000142937', 'ENSG00000177600')	0.8460222608818313	0	RPS8	RPLP2	ribosomal protein S8	ribosomal protein lateral stalk subunit P2
+('ENSG00000142676', 'ENSG00000177600')	0.8460167783130674	0	RPL11	RPLP2	ribosomal protein L11	ribosomal protein lateral stalk subunit P2
+('ENSG00000149806', 'ENSG00000177600')	0.8457649804128731	0	FAU	RPLP2	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein lateral stalk subunit P2
+('ENSG00000110700', 'ENSG00000233927')	0.8455531079106193	0	RPS13	RPS28	ribosomal protein S13	ribosomal protein S28
+('ENSG00000134871', 'ENSG00000187498')	0.8450340667203585	1	COL4A2	COL4A1	collagen type IV alpha 2 chain	collagen type IV alpha 1 chain
+('ENSG00000105372', 'ENSG00000177600')	0.8450147371969511	0	RPS19	RPLP2	ribosomal protein S19	ribosomal protein lateral stalk subunit P2
+('ENSG00000147403', 'ENSG00000149273')	0.8446142526243032	0	RPL10	RPS3	ribosomal protein L10	ribosomal protein S3
+('ENSG00000177600', 'ENSG00000233927')	0.8445847780385369	0	RPLP2	RPS28	ribosomal protein lateral stalk subunit P2	ribosomal protein S28
+('ENSG00000114391', 'ENSG00000198755')	0.8444599382263073	0	RPL24	RPL10A	ribosomal protein L24	ribosomal protein L10a
+('ENSG00000115268', 'ENSG00000186468')	0.8444374251267415	0	RPS15	RPS23	ribosomal protein S15	ribosomal protein S23
+('ENSG00000147403', 'ENSG00000177954')	0.8443039103643503	0	RPL10	RPS27	ribosomal protein L10	ribosomal protein S27
+('ENSG00000105193', 'ENSG00000164587')	0.8440890171482978	0	RPS16	RPS14	ribosomal protein S16	ribosomal protein S14
+('ENSG00000164587', 'ENSG00000198918')	0.8440172810259503	0	RPS14	RPL39	ribosomal protein S14	ribosomal protein L39
+('ENSG00000198840', 'ENSG00000198886')	0.8439412641951493	0	MT-ND3	MT-ND4	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4
+('ENSG00000171863', 'ENSG00000198918')	0.8438651187134109	0	RPS7	RPL39	ribosomal protein S7	ribosomal protein L39
+('ENSG00000100316', 'ENSG00000115268')	0.8437342081729722	0	RPL3	RPS15	ribosomal protein L3	ribosomal protein S15
+('ENSG00000156508', 'ENSG00000167526')	0.8437056134288474	0	EEF1A1	RPL13	eukaryotic translation elongation factor 1 alpha 1	ribosomal protein L13
+('ENSG00000122406', 'ENSG00000204628')	0.8436720977137493	0	RPL5	RACK1	ribosomal protein L5	receptor for activated C kinase 1
+('ENSG00000168028', 'ENSG00000198755')	0.8436451902403175	0	RPSA	RPL10A	ribosomal protein SA	ribosomal protein L10a
+('ENSG00000115268', 'ENSG00000233927')	0.8435481105253149	1	RPS15	RPS28	ribosomal protein S15	ribosomal protein S28
+('ENSG00000115268', 'ENSG00000177600')	0.8432781762335573	0	RPS15	RPLP2	ribosomal protein S15	ribosomal protein lateral stalk subunit P2
+('ENSG00000136942', 'ENSG00000198755')	0.8432652409281065	1	RPL35	RPL10A	ribosomal protein L35	ribosomal protein L10a
+('ENSG00000198888', 'ENSG00000198938')	0.8431276862943049	0	MT-ND1	MT-CO3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000168028', 'ENSG00000204628')	0.8429034927668428	0	RPSA	RACK1	ribosomal protein SA	receptor for activated C kinase 1
+('ENSG00000196126', 'ENSG00000223865')	0.8428551694714822	1	HLA-DRB1	HLA-DPB1	major histocompatibility complex, class II, DR beta 1	major histocompatibility complex, class II, DP beta 1
+('ENSG00000083845', 'ENSG00000171863')	0.8428545018093702	0	RPS5	RPS7	ribosomal protein S5	ribosomal protein S7
+('ENSG00000083845', 'ENSG00000100316')	0.842464017377027	0	RPS5	RPL3	ribosomal protein S5	ribosomal protein L3
+('ENSG00000105193', 'ENSG00000114391')	0.8423682706733785	0	RPS16	RPL24	ribosomal protein S16	ribosomal protein L24
+('ENSG00000177600', 'ENSG00000186468')	0.8420359953210411	0	RPLP2	RPS23	ribosomal protein lateral stalk subunit P2	ribosomal protein S23
+('ENSG00000100316', 'ENSG00000142937')	0.8419874980722043	0	RPL3	RPS8	ribosomal protein L3	ribosomal protein S8
+('ENSG00000142937', 'ENSG00000147403')	0.8417725282735958	0	RPS8	RPL10	ribosomal protein S8	ribosomal protein L10
+('ENSG00000147403', 'ENSG00000233927')	0.8415398400896494	0	RPL10	RPS28	ribosomal protein L10	ribosomal protein S28
+('ENSG00000142676', 'ENSG00000198918')	0.8413408054804595	0	RPL11	RPL39	ribosomal protein L11	ribosomal protein L39
+('ENSG00000100316', 'ENSG00000177600')	0.8411232752101545	0	RPL3	RPLP2	ribosomal protein L3	ribosomal protein lateral stalk subunit P2
+('ENSG00000105193', 'ENSG00000110700')	0.8409891664332804	0	RPS16	RPS13	ribosomal protein S16	ribosomal protein S13
+('ENSG00000138326', 'ENSG00000167526')	0.840986445583338	0	RPS24	RPL13	ribosomal protein S24	ribosomal protein L13
+('ENSG00000177600', 'ENSG00000177954')	0.8409240135419508	0	RPLP2	RPS27	ribosomal protein lateral stalk subunit P2	ribosomal protein S27
+('ENSG00000149273', 'ENSG00000177600')	0.8408685327505091	0	RPS3	RPLP2	ribosomal protein S3	ribosomal protein lateral stalk subunit P2
+('ENSG00000198755', 'ENSG00000204628')	0.8407745201853679	0	RPL10A	RACK1	ribosomal protein L10a	receptor for activated C kinase 1
+('ENSG00000105193', 'ENSG00000177600')	0.840531653455715	0	RPS16	RPLP2	ribosomal protein S16	ribosomal protein lateral stalk subunit P2
+('ENSG00000138326', 'ENSG00000149273')	0.8401897942767217	0	RPS24	RPS3	ribosomal protein S24	ribosomal protein S3
+('ENSG00000083845', 'ENSG00000114391')	0.8400560503668212	0	RPS5	RPL24	ribosomal protein S5	ribosomal protein L24
+('ENSG00000171863', 'ENSG00000177600')	0.8399900214776103	0	RPS7	RPLP2	ribosomal protein S7	ribosomal protein lateral stalk subunit P2
+('ENSG00000142676', 'ENSG00000177954')	0.8398566123613409	0	RPL11	RPS27	ribosomal protein L11	ribosomal protein S27
+('ENSG00000115268', 'ENSG00000138326')	0.8398187406756003	0	RPS15	RPS24	ribosomal protein S15	ribosomal protein S24
+('ENSG00000105193', 'ENSG00000105372')	0.839684907593754	1	RPS16	RPS19	ribosomal protein S16	ribosomal protein S19
+('ENSG00000105372', 'ENSG00000186468')	0.8394744938874393	0	RPS19	RPS23	ribosomal protein S19	ribosomal protein S23
+('ENSG00000171858', 'ENSG00000171863')	0.8392908751652264	0	RPS21	RPS7	ribosomal protein S21	ribosomal protein S7
+('ENSG00000148303', 'ENSG00000204628')	0.839194833052754	0	RPL7A	RACK1	ribosomal protein L7a	receptor for activated C kinase 1
+('ENSG00000149273', 'ENSG00000198918')	0.8390314566843824	0	RPS3	RPL39	ribosomal protein S3	ribosomal protein L39
+('ENSG00000110700', 'ENSG00000122406')	0.8385925389318228	0	RPS13	RPL5	ribosomal protein S13	ribosomal protein L5
+('ENSG00000083845', 'ENSG00000122406')	0.8385714100687143	0	RPS5	RPL5	ribosomal protein S5	ribosomal protein L5
+('ENSG00000100316', 'ENSG00000186468')	0.8380690724351606	0	RPL3	RPS23	ribosomal protein L3	ribosomal protein S23
+('ENSG00000100316', 'ENSG00000233927')	0.8377877017499656	0	RPL3	RPS28	ribosomal protein L3	ribosomal protein S28
+('ENSG00000149273', 'ENSG00000233927')	0.8377745430101554	0	RPS3	RPS28	ribosomal protein S3	ribosomal protein S28
+('ENSG00000204388', 'ENSG00000204389')	0.8375731019904773	1	HSPA1B	HSPA1A	heat shock protein family A (Hsp70) member 1B	heat shock protein family A (Hsp70) member 1A
+('ENSG00000083845', 'ENSG00000148303')	0.8375145020900694	0	RPS5	RPL7A	ribosomal protein S5	ribosomal protein L7a
+('ENSG00000142937', 'ENSG00000149806')	0.8374486487294898	0	RPS8	FAU	ribosomal protein S8	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000164587', 'ENSG00000171863')	0.8373395597097831	0	RPS14	RPS7	ribosomal protein S14	ribosomal protein S7
+('ENSG00000100316', 'ENSG00000142676')	0.8373135592637484	0	RPL3	RPL11	ribosomal protein L3	ribosomal protein L11
+('ENSG00000105193', 'ENSG00000186468')	0.837134783375746	0	RPS16	RPS23	ribosomal protein S16	ribosomal protein S23
+('ENSG00000122406', 'ENSG00000168028')	0.8369876361105361	0	RPL5	RPSA	ribosomal protein L5	ribosomal protein SA
+('ENSG00000177954', 'ENSG00000233927')	0.8369704563734868	1	RPS27	RPS28	ribosomal protein S27	ribosomal protein S28
+('ENSG00000100316', 'ENSG00000122406')	0.836868152576803	0	RPL3	RPL5	ribosomal protein L3	ribosomal protein L5
+('ENSG00000122406', 'ENSG00000171863')	0.83665548211671	1	RPL5	RPS7	ribosomal protein L5	ribosomal protein S7
+('ENSG00000198804', 'ENSG00000198886')	0.8361456487392018	1	MT-CO1	MT-ND4	mitochondrially encoded cytochrome c oxidase I	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4
+('ENSG00000100316', 'ENSG00000110700')	0.8359486942139079	0	RPL3	RPS13	ribosomal protein L3	ribosomal protein S13
+('ENSG00000110700', 'ENSG00000148303')	0.8358023669212723	0	RPS13	RPL7A	ribosomal protein S13	ribosomal protein L7a
+('ENSG00000142937', 'ENSG00000167526')	0.8355042064523038	0	RPS8	RPL13	ribosomal protein S8	ribosomal protein L13
+('ENSG00000147403', 'ENSG00000167526')	0.8354080334172231	0	RPL10	RPL13	ribosomal protein L10	ribosomal protein L13
+('ENSG00000114391', 'ENSG00000138326')	0.8350112891751077	0	RPL24	RPS24	ribosomal protein L24	ribosomal protein S24
+('ENSG00000114391', 'ENSG00000204628')	0.8349899451317181	0	RPL24	RACK1	ribosomal protein L24	receptor for activated C kinase 1
+('ENSG00000115268', 'ENSG00000142937')	0.8348607920192271	0	RPS15	RPS8	ribosomal protein S15	ribosomal protein S8
+('ENSG00000115268', 'ENSG00000198755')	0.834833251334367	0	RPS15	RPL10A	ribosomal protein S15	ribosomal protein L10a
+('ENSG00000105372', 'ENSG00000110700')	0.8348259229429575	0	RPS19	RPS13	ribosomal protein S19	ribosomal protein S13
+('ENSG00000147403', 'ENSG00000186468')	0.8347047751012003	0	RPL10	RPS23	ribosomal protein L10	ribosomal protein S23
+('ENSG00000100316', 'ENSG00000114391')	0.8345999652487675	0	RPL3	RPL24	ribosomal protein L3	ribosomal protein L24
+('ENSG00000149273', 'ENSG00000171863')	0.834447646280719	0	RPS3	RPS7	ribosomal protein S3	ribosomal protein S7
+('ENSG00000186468', 'ENSG00000198755')	0.8344096122812574	0	RPS23	RPL10A	ribosomal protein S23	ribosomal protein L10a
+('ENSG00000198786', 'ENSG00000198899')	0.8344008880906759	0	MT-ND5	MT-ATP6	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 5	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000105193', 'ENSG00000171863')	0.8342903591475519	0	RPS16	RPS7	ribosomal protein S16	ribosomal protein S7
+('ENSG00000110700', 'ENSG00000115268')	0.8341816590966517	0	RPS13	RPS15	ribosomal protein S13	ribosomal protein S15
+('ENSG00000131469', 'ENSG00000198755')	0.8339409608725044	0	RPL27	RPL10A	ribosomal protein L27	ribosomal protein L10a
+('ENSG00000167526', 'ENSG00000186468')	0.8338770604257724	0	RPL13	RPS23	ribosomal protein L13	ribosomal protein S23
+('ENSG00000183324', 'ENSG00000188771')	0.8335165921263784	0	REC114	PLET1	REC114 meiotic recombination protein	placenta expressed transcript 1
+('ENSG00000149806', 'ENSG00000233927')	0.8335122682109439	0	FAU	RPS28	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein S28
+('ENSG00000115268', 'ENSG00000171863')	0.833368243680528	0	RPS15	RPS7	ribosomal protein S15	ribosomal protein S7
+('ENSG00000145526', 'ENSG00000185053')	0.8333255698971843	0	CDH18	SGCZ	cadherin 18	sarcoglycan zeta
+('ENSG00000152208', 'ENSG00000156687')	0.8333146492604142	0	GRID2	UNC5D	glutamate ionotropic receptor delta type subunit 2	unc-5 netrin receptor D
+('ENSG00000115268', 'ENSG00000147403')	0.8331924862319813	0	RPS15	RPL10	ribosomal protein S15	ribosomal protein L10
+('ENSG00000081237', 'ENSG00000081320')	0.8330015941552356	0	PTPRC	STK17B	protein tyrosine phosphatase receptor type C	serine/threonine kinase 17b
+('ENSG00000105193', 'ENSG00000149273')	0.8329474749666576	0	RPS16	RPS3	ribosomal protein S16	ribosomal protein S3
+('ENSG00000150275', 'ENSG00000185737')	0.8328066086299822	0	PCDH15	NRG3	protocadherin related 15	neuregulin 3
+('ENSG00000142937', 'ENSG00000198755')	0.8326762317972286	0	RPS8	RPL10A	ribosomal protein S8	ribosomal protein L10a
