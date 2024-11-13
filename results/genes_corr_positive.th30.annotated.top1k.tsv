@@ -1,0 +1,1000 @@
+gene_pair	Spearman	Pos/Neg	gene1_symbol	gene2_symbol	gene1_name	gene2_name
+('ENSG00000198712', 'ENSG00000198938')	0.9305114961321003	1	MT-CO2	MT-CO3	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198712', 'ENSG00000198804')	0.9263622655045523	1	MT-CO2	MT-CO1	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded cytochrome c oxidase I
+('ENSG00000198804', 'ENSG00000198938')	0.9190419255233276	1	MT-CO1	MT-CO3	mitochondrially encoded cytochrome c oxidase I	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198899', 'ENSG00000198938')	0.9150874736052882	0	MT-ATP6	MT-CO3	mitochondrially encoded ATP synthase membrane subunit 6	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198727', 'ENSG00000198899')	0.9144907187630639	1	MT-CYB	MT-ATP6	mitochondrially encoded cytochrome b	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000198727', 'ENSG00000198938')	0.9132235674094442	0	MT-CYB	MT-CO3	mitochondrially encoded cytochrome b	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198712', 'ENSG00000198727')	0.9084448480281763	0	MT-CO2	MT-CYB	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded cytochrome b
+('ENSG00000198712', 'ENSG00000198899')	0.8921790982102399	0	MT-CO2	MT-ATP6	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000198886', 'ENSG00000198899')	0.8917359092101408	0	MT-ND4	MT-ATP6	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000204525', 'ENSG00000234745')	0.8887023214827399	1	HLA-C	HLA-B	major histocompatibility complex, class I, C	major histocompatibility complex, class I, B
+('ENSG00000223865', 'ENSG00000231389')	0.8870085582152097	1	HLA-DPB1	HLA-DPA1	major histocompatibility complex, class II, DP beta 1	major histocompatibility complex, class II, DP alpha 1
+('ENSG00000198727', 'ENSG00000198840')	0.8852631931584128	0	MT-CYB	MT-ND3	mitochondrially encoded cytochrome b	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3
+('ENSG00000198840', 'ENSG00000198938')	0.8836206136372677	0	MT-ND3	MT-CO3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198840', 'ENSG00000198899')	0.8834695328908625	0	MT-ND3	MT-ATP6	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000198727', 'ENSG00000198804')	0.8817321793445919	1	MT-CYB	MT-CO1	mitochondrially encoded cytochrome b	mitochondrially encoded cytochrome c oxidase I
+('ENSG00000198886', 'ENSG00000198938')	0.8810382339593815	0	MT-ND4	MT-CO3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000198888', 'ENSG00000198899')	0.8800893539840695	0	MT-ND1	MT-ATP6	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000164587', 'ENSG00000177954')	0.8798891848427306	1	RPS14	RPS27	ribosomal protein S14	ribosomal protein S27
+('ENSG00000198727', 'ENSG00000198888')	0.8777396834536704	0	MT-CYB	MT-ND1	mitochondrially encoded cytochrome b	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000115268', 'ENSG00000164587')	0.8749258621743475	1	RPS15	RPS14	ribosomal protein S15	ribosomal protein S14
+('ENSG00000206503', 'ENSG00000234745')	0.874489045193895	1	HLA-A	HLA-B	major histocompatibility complex, class I, A	major histocompatibility complex, class I, B
+('ENSG00000198712', 'ENSG00000198840')	0.8739695852444096	0	MT-CO2	MT-ND3	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3
+('ENSG00000142937', 'ENSG00000171863')	0.8728777170190422	0	RPS8	RPS7	ribosomal protein S8	ribosomal protein S7
+('ENSG00000142937', 'ENSG00000233927')	0.8724554351956285	0	RPS8	RPS28	ribosomal protein S8	ribosomal protein S28
+('ENSG00000142937', 'ENSG00000186468')	0.8711975565291872	0	RPS8	RPS23	ribosomal protein S8	ribosomal protein S23
+('ENSG00000149273', 'ENSG00000164587')	0.8688870753254389	0	RPS3	RPS14	ribosomal protein S3	ribosomal protein S14
+('ENSG00000198804', 'ENSG00000198899')	0.868657479647473	0	MT-CO1	MT-ATP6	mitochondrially encoded cytochrome c oxidase I	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000142676', 'ENSG00000164587')	0.8684725970454461	0	RPL11	RPS14	ribosomal protein L11	ribosomal protein S14
+('ENSG00000196126', 'ENSG00000204287')	0.8673591930945751	1	HLA-DRB1	HLA-DRA	major histocompatibility complex, class II, DR beta 1	major histocompatibility complex, class II, DR alpha
+('ENSG00000105372', 'ENSG00000164587')	0.8672650245453916	1	RPS19	RPS14	ribosomal protein S19	ribosomal protein S14
+('ENSG00000196126', 'ENSG00000231389')	0.8669552878970052	1	HLA-DRB1	HLA-DPA1	major histocompatibility complex, class II, DR beta 1	major histocompatibility complex, class II, DP alpha 1
+('ENSG00000171863', 'ENSG00000233927')	0.8663144451200192	0	RPS7	RPS28	ribosomal protein S7	ribosomal protein S28
+('ENSG00000204525', 'ENSG00000206503')	0.8653584195506461	1	HLA-C	HLA-A	major histocompatibility complex, class I, C	major histocompatibility complex, class I, A
+('ENSG00000083845', 'ENSG00000204628')	0.8649789197182616	0	RPS5	RACK1	ribosomal protein S5	receptor for activated C kinase 1
+('ENSG00000115268', 'ENSG00000167526')	0.8647135337288089	0	RPS15	RPL13	ribosomal protein S15	ribosomal protein L13
+('ENSG00000164587', 'ENSG00000177600')	0.8619671135623319	0	RPS14	RPLP2	ribosomal protein S14	ribosomal protein lateral stalk subunit P2
+('ENSG00000142676', 'ENSG00000167526')	0.8617940649145768	0	RPL11	RPL13	ribosomal protein L11	ribosomal protein L13
+('ENSG00000198840', 'ENSG00000198888')	0.8605208092443709	0	MT-ND3	MT-ND1	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000110700', 'ENSG00000171863')	0.8602782800868994	0	RPS13	RPS7	ribosomal protein S13	ribosomal protein S7
+('ENSG00000105193', 'ENSG00000198755')	0.859771003305812	0	RPS16	RPL10A	ribosomal protein S16	ribosomal protein L10a
+('ENSG00000148303', 'ENSG00000171863')	0.8592605160157996	0	RPL7A	RPS7	ribosomal protein L7a	ribosomal protein S7
+('ENSG00000138326', 'ENSG00000142676')	0.858761597483964	0	RPS24	RPL11	ribosomal protein S24	ribosomal protein L11
+('ENSG00000115268', 'ENSG00000149273')	0.858754676875457	0	RPS15	RPS3	ribosomal protein S15	ribosomal protein S3
+('ENSG00000164587', 'ENSG00000167526')	0.8585982582861298	0	RPS14	RPL13	ribosomal protein S14	ribosomal protein L13
+('ENSG00000198727', 'ENSG00000198886')	0.8572680934838269	1	MT-CYB	MT-ND4	mitochondrially encoded cytochrome b	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4
+('ENSG00000100316', 'ENSG00000149273')	0.8564177392198534	0	RPL3	RPS3	ribosomal protein L3	ribosomal protein S3
+('ENSG00000149273', 'ENSG00000186468')	0.8560622820387541	0	RPS3	RPS23	ribosomal protein S3	ribosomal protein S23
+('ENSG00000149273', 'ENSG00000167526')	0.8557321707001624	0	RPS3	RPL13	ribosomal protein S3	ribosomal protein L13
+('ENSG00000110700', 'ENSG00000142937')	0.8556654549975324	0	RPS13	RPS8	ribosomal protein S13	ribosomal protein S8
+('ENSG00000142676', 'ENSG00000149273')	0.8556191639978409	0	RPL11	RPS3	ribosomal protein L11	ribosomal protein S3
+('ENSG00000105372', 'ENSG00000177954')	0.8555952989608121	1	RPS19	RPS27	ribosomal protein S19	ribosomal protein S27
+('ENSG00000110700', 'ENSG00000149273')	0.8555572602800772	0	RPS13	RPS3	ribosomal protein S13	ribosomal protein S3
+('ENSG00000105372', 'ENSG00000115268')	0.8552043552654525	1	RPS19	RPS15	ribosomal protein S19	ribosomal protein S15
+('ENSG00000171863', 'ENSG00000186468')	0.8551708049927703	0	RPS7	RPS23	ribosomal protein S7	ribosomal protein S23
+('ENSG00000186468', 'ENSG00000233927')	0.8548654598257669	0	RPS23	RPS28	ribosomal protein S23	ribosomal protein S28
+('ENSG00000147403', 'ENSG00000164587')	0.8547533985162022	0	RPL10	RPS14	ribosomal protein L10	ribosomal protein S14
+('ENSG00000171863', 'ENSG00000196531')	0.8546384053114606	0	RPS7	NACA	ribosomal protein S7	nascent polypeptide associated complex subunit alpha
+('ENSG00000110700', 'ENSG00000177600')	0.8544664074431534	0	RPS13	RPLP2	ribosomal protein S13	ribosomal protein lateral stalk subunit P2
+('ENSG00000138326', 'ENSG00000171863')	0.8541998530166881	0	RPS24	RPS7	ribosomal protein S24	ribosomal protein S7
+('ENSG00000149806', 'ENSG00000171863')	0.8541573692465851	0	FAU	RPS7	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein S7
+('ENSG00000204287', 'ENSG00000231389')	0.8537979913725869	1	HLA-DRA	HLA-DPA1	major histocompatibility complex, class II, DR alpha	major histocompatibility complex, class II, DP alpha 1
+('ENSG00000110700', 'ENSG00000142676')	0.8537481377318874	0	RPS13	RPL11	ribosomal protein S13	ribosomal protein L11
+('ENSG00000142676', 'ENSG00000142937')	0.8537395138129692	0	RPL11	RPS8	ribosomal protein L11	ribosomal protein S8
+('ENSG00000198918', 'ENSG00000233927')	0.8531636098366585	0	RPL39	RPS28	ribosomal protein L39	ribosomal protein S28
+('ENSG00000142676', 'ENSG00000147403')	0.8527567353455734	0	RPL11	RPL10	ribosomal protein L11	ribosomal protein L10
+('ENSG00000138326', 'ENSG00000186468')	0.8525043622373158	0	RPS24	RPS23	ribosomal protein S24	ribosomal protein S23
+('ENSG00000198712', 'ENSG00000198886')	0.8524837732031891	1	MT-CO2	MT-ND4	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4
+('ENSG00000164587', 'ENSG00000233927')	0.8524173268462276	1	RPS14	RPS28	ribosomal protein S14	ribosomal protein S28
+('ENSG00000142937', 'ENSG00000149273')	0.852338321296868	0	RPS8	RPS3	ribosomal protein S8	ribosomal protein S3
+('ENSG00000142937', 'ENSG00000198918')	0.8521512258234862	0	RPS8	RPL39	ribosomal protein S8	ribosomal protein L39
+('ENSG00000105372', 'ENSG00000147403')	0.852099806178858	0	RPS19	RPL10	ribosomal protein S19	ribosomal protein L10
+('ENSG00000142676', 'ENSG00000186468')	0.8520084112794221	0	RPL11	RPS23	ribosomal protein L11	ribosomal protein S23
+('ENSG00000114391', 'ENSG00000171863')	0.8517079061365488	0	RPL24	RPS7	ribosomal protein L24	ribosomal protein S7
+('ENSG00000110700', 'ENSG00000164587')	0.8515196061866952	0	RPS13	RPS14	ribosomal protein S13	ribosomal protein S14
+('ENSG00000142676', 'ENSG00000171863')	0.8507111877584307	1	RPL11	RPS7	ribosomal protein L11	ribosomal protein S7
+('ENSG00000122406', 'ENSG00000198755')	0.8506925537316521	0	RPL5	RPL10A	ribosomal protein L5	ribosomal protein L10a
+('ENSG00000198727', 'ENSG00000198786')	0.8505498138295823	1	MT-CYB	MT-ND5	mitochondrially encoded cytochrome b	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 5
+('ENSG00000105193', 'ENSG00000115268')	0.8504689828575569	0	RPS16	RPS15	ribosomal protein S16	ribosomal protein S15
+('ENSG00000164587', 'ENSG00000186468')	0.8503862131927223	0	RPS14	RPS23	ribosomal protein S14	ribosomal protein S23
+('ENSG00000138326', 'ENSG00000233927')	0.8503567800998212	0	RPS24	RPS28	ribosomal protein S24	ribosomal protein S28
+('ENSG00000115268', 'ENSG00000142676')	0.850286502962395	0	RPS15	RPL11	ribosomal protein S15	ribosomal protein L11
+('ENSG00000105372', 'ENSG00000142676')	0.8499211335780105	0	RPS19	RPL11	ribosomal protein S19	ribosomal protein L11
+('ENSG00000083845', 'ENSG00000198755')	0.8497156529405405	0	RPS5	RPL10A	ribosomal protein S5	ribosomal protein L10a
+('ENSG00000115268', 'ENSG00000177954')	0.8496968771136372	1	RPS15	RPS27	ribosomal protein S15	ribosomal protein S27
+('ENSG00000198886', 'ENSG00000198888')	0.8494382470862077	0	MT-ND4	MT-ND1	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000100316', 'ENSG00000164587')	0.8494229573941237	0	RPL3	RPS14	ribosomal protein L3	ribosomal protein S14
+('ENSG00000142676', 'ENSG00000233927')	0.8491223711322377	0	RPL11	RPS28	ribosomal protein L11	ribosomal protein S28
+('ENSG00000105372', 'ENSG00000149273')	0.8490958108825917	0	RPS19	RPS3	ribosomal protein S19	ribosomal protein S3
+('ENSG00000186468', 'ENSG00000198918')	0.8489384919341892	0	RPS23	RPL39	ribosomal protein S23	ribosomal protein L39
+('ENSG00000149273', 'ENSG00000177954')	0.8489160315234276	0	RPS3	RPS27	ribosomal protein S3	ribosomal protein S27
+('ENSG00000167526', 'ENSG00000177954')	0.8488678634184541	0	RPL13	RPS27	ribosomal protein L13	ribosomal protein S27
+('ENSG00000142937', 'ENSG00000148303')	0.8487736271883253	0	RPS8	RPL7A	ribosomal protein S8	ribosomal protein L7a
+('ENSG00000168028', 'ENSG00000171863')	0.848655492094429	0	RPSA	RPS7	ribosomal protein SA	ribosomal protein S7
+('ENSG00000198804', 'ENSG00000198840')	0.8484534665032947	0	MT-CO1	MT-ND3	mitochondrially encoded cytochrome c oxidase I	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3
+('ENSG00000188536', 'ENSG00000206172')	0.8476627728800885	1	HBA2	HBA1	hemoglobin subunit alpha 2	hemoglobin subunit alpha 1
+('ENSG00000167526', 'ENSG00000177600')	0.8476155266597117	0	RPL13	RPLP2	ribosomal protein L13	ribosomal protein lateral stalk subunit P2
+('ENSG00000142937', 'ENSG00000164587')	0.847220531887258	0	RPS8	RPS14	ribosomal protein S8	ribosomal protein S14
+('ENSG00000083845', 'ENSG00000168028')	0.8471326701693843	1	RPS5	RPSA	ribosomal protein S5	ribosomal protein SA
+('ENSG00000114391', 'ENSG00000122406')	0.8471207151588062	0	RPL24	RPL5	ribosomal protein L24	ribosomal protein L5
+('ENSG00000171863', 'ENSG00000198755')	0.8470706281007454	0	RPS7	RPL10A	ribosomal protein S7	ribosomal protein L10a
+('ENSG00000138326', 'ENSG00000142937')	0.8470212501612004	0	RPS24	RPS8	ribosomal protein S24	ribosomal protein S8
+('ENSG00000138326', 'ENSG00000164587')	0.8464376948167738	0	RPS24	RPS14	ribosomal protein S24	ribosomal protein S14
+('ENSG00000110700', 'ENSG00000186468')	0.84619470752508	0	RPS13	RPS23	ribosomal protein S13	ribosomal protein S23
+('ENSG00000198786', 'ENSG00000198888')	0.8461193743629087	0	MT-ND5	MT-ND1	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 5	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000105372', 'ENSG00000167526')	0.8460693334255718	0	RPS19	RPL13	ribosomal protein S19	ribosomal protein L13
+('ENSG00000142937', 'ENSG00000177600')	0.8460222608818313	0	RPS8	RPLP2	ribosomal protein S8	ribosomal protein lateral stalk subunit P2
+('ENSG00000142676', 'ENSG00000177600')	0.8460167783130674	0	RPL11	RPLP2	ribosomal protein L11	ribosomal protein lateral stalk subunit P2
+('ENSG00000149806', 'ENSG00000177600')	0.8457649804128731	0	FAU	RPLP2	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein lateral stalk subunit P2
+('ENSG00000110700', 'ENSG00000233927')	0.8455531079106193	0	RPS13	RPS28	ribosomal protein S13	ribosomal protein S28
+('ENSG00000134871', 'ENSG00000187498')	0.8450340667203585	1	COL4A2	COL4A1	collagen type IV alpha 2 chain	collagen type IV alpha 1 chain
+('ENSG00000105372', 'ENSG00000177600')	0.8450147371969511	0	RPS19	RPLP2	ribosomal protein S19	ribosomal protein lateral stalk subunit P2
+('ENSG00000147403', 'ENSG00000149273')	0.8446142526243032	0	RPL10	RPS3	ribosomal protein L10	ribosomal protein S3
+('ENSG00000177600', 'ENSG00000233927')	0.8445847780385369	0	RPLP2	RPS28	ribosomal protein lateral stalk subunit P2	ribosomal protein S28
+('ENSG00000114391', 'ENSG00000198755')	0.8444599382263073	0	RPL24	RPL10A	ribosomal protein L24	ribosomal protein L10a
+('ENSG00000115268', 'ENSG00000186468')	0.8444374251267415	0	RPS15	RPS23	ribosomal protein S15	ribosomal protein S23
+('ENSG00000147403', 'ENSG00000177954')	0.8443039103643503	0	RPL10	RPS27	ribosomal protein L10	ribosomal protein S27
+('ENSG00000105193', 'ENSG00000164587')	0.8440890171482978	0	RPS16	RPS14	ribosomal protein S16	ribosomal protein S14
+('ENSG00000164587', 'ENSG00000198918')	0.8440172810259503	0	RPS14	RPL39	ribosomal protein S14	ribosomal protein L39
+('ENSG00000198840', 'ENSG00000198886')	0.8439412641951493	0	MT-ND3	MT-ND4	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4
+('ENSG00000171863', 'ENSG00000198918')	0.8438651187134109	0	RPS7	RPL39	ribosomal protein S7	ribosomal protein L39
+('ENSG00000100316', 'ENSG00000115268')	0.8437342081729722	0	RPL3	RPS15	ribosomal protein L3	ribosomal protein S15
+('ENSG00000156508', 'ENSG00000167526')	0.8437056134288474	0	EEF1A1	RPL13	eukaryotic translation elongation factor 1 alpha 1	ribosomal protein L13
+('ENSG00000122406', 'ENSG00000204628')	0.8436720977137493	0	RPL5	RACK1	ribosomal protein L5	receptor for activated C kinase 1
+('ENSG00000168028', 'ENSG00000198755')	0.8436451902403175	0	RPSA	RPL10A	ribosomal protein SA	ribosomal protein L10a
+('ENSG00000115268', 'ENSG00000233927')	0.8435481105253149	1	RPS15	RPS28	ribosomal protein S15	ribosomal protein S28
+('ENSG00000115268', 'ENSG00000177600')	0.8432781762335573	0	RPS15	RPLP2	ribosomal protein S15	ribosomal protein lateral stalk subunit P2
+('ENSG00000136942', 'ENSG00000198755')	0.8432652409281065	1	RPL35	RPL10A	ribosomal protein L35	ribosomal protein L10a
+('ENSG00000198888', 'ENSG00000198938')	0.8431276862943049	0	MT-ND1	MT-CO3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000168028', 'ENSG00000204628')	0.8429034927668428	0	RPSA	RACK1	ribosomal protein SA	receptor for activated C kinase 1
+('ENSG00000196126', 'ENSG00000223865')	0.8428551694714822	1	HLA-DRB1	HLA-DPB1	major histocompatibility complex, class II, DR beta 1	major histocompatibility complex, class II, DP beta 1
+('ENSG00000083845', 'ENSG00000171863')	0.8428545018093702	0	RPS5	RPS7	ribosomal protein S5	ribosomal protein S7
+('ENSG00000083845', 'ENSG00000100316')	0.842464017377027	0	RPS5	RPL3	ribosomal protein S5	ribosomal protein L3
+('ENSG00000105193', 'ENSG00000114391')	0.8423682706733785	0	RPS16	RPL24	ribosomal protein S16	ribosomal protein L24
+('ENSG00000177600', 'ENSG00000186468')	0.8420359953210411	0	RPLP2	RPS23	ribosomal protein lateral stalk subunit P2	ribosomal protein S23
+('ENSG00000100316', 'ENSG00000142937')	0.8419874980722043	0	RPL3	RPS8	ribosomal protein L3	ribosomal protein S8
+('ENSG00000142937', 'ENSG00000147403')	0.8417725282735958	0	RPS8	RPL10	ribosomal protein S8	ribosomal protein L10
+('ENSG00000147403', 'ENSG00000233927')	0.8415398400896494	0	RPL10	RPS28	ribosomal protein L10	ribosomal protein S28
+('ENSG00000142676', 'ENSG00000198918')	0.8413408054804595	0	RPL11	RPL39	ribosomal protein L11	ribosomal protein L39
+('ENSG00000100316', 'ENSG00000177600')	0.8411232752101545	0	RPL3	RPLP2	ribosomal protein L3	ribosomal protein lateral stalk subunit P2
+('ENSG00000105193', 'ENSG00000110700')	0.8409891664332804	0	RPS16	RPS13	ribosomal protein S16	ribosomal protein S13
+('ENSG00000138326', 'ENSG00000167526')	0.840986445583338	0	RPS24	RPL13	ribosomal protein S24	ribosomal protein L13
+('ENSG00000177600', 'ENSG00000177954')	0.8409240135419508	0	RPLP2	RPS27	ribosomal protein lateral stalk subunit P2	ribosomal protein S27
+('ENSG00000149273', 'ENSG00000177600')	0.8408685327505091	0	RPS3	RPLP2	ribosomal protein S3	ribosomal protein lateral stalk subunit P2
+('ENSG00000198755', 'ENSG00000204628')	0.8407745201853679	0	RPL10A	RACK1	ribosomal protein L10a	receptor for activated C kinase 1
+('ENSG00000105193', 'ENSG00000177600')	0.840531653455715	0	RPS16	RPLP2	ribosomal protein S16	ribosomal protein lateral stalk subunit P2
+('ENSG00000138326', 'ENSG00000149273')	0.8401897942767217	0	RPS24	RPS3	ribosomal protein S24	ribosomal protein S3
+('ENSG00000083845', 'ENSG00000114391')	0.8400560503668212	0	RPS5	RPL24	ribosomal protein S5	ribosomal protein L24
+('ENSG00000171863', 'ENSG00000177600')	0.8399900214776103	0	RPS7	RPLP2	ribosomal protein S7	ribosomal protein lateral stalk subunit P2
+('ENSG00000142676', 'ENSG00000177954')	0.8398566123613409	0	RPL11	RPS27	ribosomal protein L11	ribosomal protein S27
+('ENSG00000115268', 'ENSG00000138326')	0.8398187406756003	0	RPS15	RPS24	ribosomal protein S15	ribosomal protein S24
+('ENSG00000105193', 'ENSG00000105372')	0.839684907593754	1	RPS16	RPS19	ribosomal protein S16	ribosomal protein S19
+('ENSG00000105372', 'ENSG00000186468')	0.8394744938874393	0	RPS19	RPS23	ribosomal protein S19	ribosomal protein S23
+('ENSG00000171858', 'ENSG00000171863')	0.8392908751652264	0	RPS21	RPS7	ribosomal protein S21	ribosomal protein S7
+('ENSG00000148303', 'ENSG00000204628')	0.839194833052754	0	RPL7A	RACK1	ribosomal protein L7a	receptor for activated C kinase 1
+('ENSG00000149273', 'ENSG00000198918')	0.8390314566843824	0	RPS3	RPL39	ribosomal protein S3	ribosomal protein L39
+('ENSG00000110700', 'ENSG00000122406')	0.8385925389318228	0	RPS13	RPL5	ribosomal protein S13	ribosomal protein L5
+('ENSG00000083845', 'ENSG00000122406')	0.8385714100687143	0	RPS5	RPL5	ribosomal protein S5	ribosomal protein L5
+('ENSG00000100316', 'ENSG00000186468')	0.8380690724351606	0	RPL3	RPS23	ribosomal protein L3	ribosomal protein S23
+('ENSG00000100316', 'ENSG00000233927')	0.8377877017499656	0	RPL3	RPS28	ribosomal protein L3	ribosomal protein S28
+('ENSG00000149273', 'ENSG00000233927')	0.8377745430101554	0	RPS3	RPS28	ribosomal protein S3	ribosomal protein S28
+('ENSG00000204388', 'ENSG00000204389')	0.8375731019904773	1	HSPA1B	HSPA1A	heat shock protein family A (Hsp70) member 1B	heat shock protein family A (Hsp70) member 1A
+('ENSG00000083845', 'ENSG00000148303')	0.8375145020900694	0	RPS5	RPL7A	ribosomal protein S5	ribosomal protein L7a
+('ENSG00000142937', 'ENSG00000149806')	0.8374486487294898	0	RPS8	FAU	ribosomal protein S8	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000164587', 'ENSG00000171863')	0.8373395597097831	0	RPS14	RPS7	ribosomal protein S14	ribosomal protein S7
+('ENSG00000100316', 'ENSG00000142676')	0.8373135592637484	0	RPL3	RPL11	ribosomal protein L3	ribosomal protein L11
+('ENSG00000105193', 'ENSG00000186468')	0.837134783375746	0	RPS16	RPS23	ribosomal protein S16	ribosomal protein S23
+('ENSG00000122406', 'ENSG00000168028')	0.8369876361105361	0	RPL5	RPSA	ribosomal protein L5	ribosomal protein SA
+('ENSG00000177954', 'ENSG00000233927')	0.8369704563734868	1	RPS27	RPS28	ribosomal protein S27	ribosomal protein S28
+('ENSG00000100316', 'ENSG00000122406')	0.836868152576803	0	RPL3	RPL5	ribosomal protein L3	ribosomal protein L5
+('ENSG00000122406', 'ENSG00000171863')	0.83665548211671	1	RPL5	RPS7	ribosomal protein L5	ribosomal protein S7
+('ENSG00000198804', 'ENSG00000198886')	0.8361456487392018	1	MT-CO1	MT-ND4	mitochondrially encoded cytochrome c oxidase I	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 4
+('ENSG00000100316', 'ENSG00000110700')	0.8359486942139079	0	RPL3	RPS13	ribosomal protein L3	ribosomal protein S13
+('ENSG00000110700', 'ENSG00000148303')	0.8358023669212723	0	RPS13	RPL7A	ribosomal protein S13	ribosomal protein L7a
+('ENSG00000142937', 'ENSG00000167526')	0.8355042064523038	0	RPS8	RPL13	ribosomal protein S8	ribosomal protein L13
+('ENSG00000147403', 'ENSG00000167526')	0.8354080334172231	0	RPL10	RPL13	ribosomal protein L10	ribosomal protein L13
+('ENSG00000114391', 'ENSG00000138326')	0.8350112891751077	0	RPL24	RPS24	ribosomal protein L24	ribosomal protein S24
+('ENSG00000114391', 'ENSG00000204628')	0.8349899451317181	0	RPL24	RACK1	ribosomal protein L24	receptor for activated C kinase 1
+('ENSG00000115268', 'ENSG00000142937')	0.8348607920192271	0	RPS15	RPS8	ribosomal protein S15	ribosomal protein S8
+('ENSG00000115268', 'ENSG00000198755')	0.834833251334367	0	RPS15	RPL10A	ribosomal protein S15	ribosomal protein L10a
+('ENSG00000105372', 'ENSG00000110700')	0.8348259229429575	0	RPS19	RPS13	ribosomal protein S19	ribosomal protein S13
+('ENSG00000147403', 'ENSG00000186468')	0.8347047751012003	0	RPL10	RPS23	ribosomal protein L10	ribosomal protein S23
+('ENSG00000100316', 'ENSG00000114391')	0.8345999652487675	0	RPL3	RPL24	ribosomal protein L3	ribosomal protein L24
+('ENSG00000149273', 'ENSG00000171863')	0.834447646280719	0	RPS3	RPS7	ribosomal protein S3	ribosomal protein S7
+('ENSG00000186468', 'ENSG00000198755')	0.8344096122812574	0	RPS23	RPL10A	ribosomal protein S23	ribosomal protein L10a
+('ENSG00000198786', 'ENSG00000198899')	0.8344008880906759	0	MT-ND5	MT-ATP6	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 5	mitochondrially encoded ATP synthase membrane subunit 6
+('ENSG00000105193', 'ENSG00000171863')	0.8342903591475519	0	RPS16	RPS7	ribosomal protein S16	ribosomal protein S7
+('ENSG00000110700', 'ENSG00000115268')	0.8341816590966517	0	RPS13	RPS15	ribosomal protein S13	ribosomal protein S15
+('ENSG00000131469', 'ENSG00000198755')	0.8339409608725044	0	RPL27	RPL10A	ribosomal protein L27	ribosomal protein L10a
+('ENSG00000167526', 'ENSG00000186468')	0.8338770604257724	0	RPL13	RPS23	ribosomal protein L13	ribosomal protein S23
+('ENSG00000183324', 'ENSG00000188771')	0.8335165921263784	0	REC114	PLET1	REC114 meiotic recombination protein	placenta expressed transcript 1
+('ENSG00000149806', 'ENSG00000233927')	0.8335122682109439	0	FAU	RPS28	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein S28
+('ENSG00000115268', 'ENSG00000171863')	0.833368243680528	0	RPS15	RPS7	ribosomal protein S15	ribosomal protein S7
+('ENSG00000145526', 'ENSG00000185053')	0.8333255698971843	0	CDH18	SGCZ	cadherin 18	sarcoglycan zeta
+('ENSG00000152208', 'ENSG00000156687')	0.8333146492604142	0	GRID2	UNC5D	glutamate ionotropic receptor delta type subunit 2	unc-5 netrin receptor D
+('ENSG00000115268', 'ENSG00000147403')	0.8331924862319813	0	RPS15	RPL10	ribosomal protein S15	ribosomal protein L10
+('ENSG00000081237', 'ENSG00000081320')	0.8330015941552356	0	PTPRC	STK17B	protein tyrosine phosphatase receptor type C	serine/threonine kinase 17b
+('ENSG00000105193', 'ENSG00000149273')	0.8329474749666576	0	RPS16	RPS3	ribosomal protein S16	ribosomal protein S3
+('ENSG00000150275', 'ENSG00000185737')	0.8328066086299822	0	PCDH15	NRG3	protocadherin related 15	neuregulin 3
+('ENSG00000142937', 'ENSG00000198755')	0.8326762317972286	0	RPS8	RPL10A	ribosomal protein S8	ribosomal protein L10a
+('ENSG00000066032', 'ENSG00000152208')	0.8325701642754448	1	CTNNA2	GRID2	catenin alpha 2	glutamate ionotropic receptor delta type subunit 2
+('ENSG00000083845', 'ENSG00000142937')	0.8325381787401994	0	RPS5	RPS8	ribosomal protein S5	ribosomal protein S8
+('ENSG00000183117', 'ENSG00000186094')	0.8323681252542834	0	CSMD1	AGBL4	CUB and Sushi multiple domains 1	AGBL carboxypeptidase 4
+('ENSG00000147403', 'ENSG00000177600')	0.8323600303258513	0	RPL10	RPLP2	ribosomal protein L10	ribosomal protein lateral stalk subunit P2
+('ENSG00000147403', 'ENSG00000171863')	0.8322415969362194	0	RPL10	RPS7	ribosomal protein L10	ribosomal protein S7
+('ENSG00000177954', 'ENSG00000186468')	0.8322199031775636	0	RPS27	RPS23	ribosomal protein S27	ribosomal protein S23
+('ENSG00000171858', 'ENSG00000233927')	0.8321158827310579	0	RPS21	RPS28	ribosomal protein S21	ribosomal protein S28
+('ENSG00000167526', 'ENSG00000233927')	0.8321073373121132	0	RPL13	RPS28	ribosomal protein L13	ribosomal protein S28
+('ENSG00000142541', 'ENSG00000147604')	0.8320355776876426	0	RPL13A	RPL7	ribosomal protein L13a	ribosomal protein L7
+('ENSG00000114391', 'ENSG00000186468')	0.8320054366600934	0	RPL24	RPS23	ribosomal protein L24	ribosomal protein S23
+('ENSG00000122406', 'ENSG00000142937')	0.8319542087520174	0	RPL5	RPS8	ribosomal protein L5	ribosomal protein S8
+('ENSG00000198712', 'ENSG00000198888')	0.8318308957238185	0	MT-CO2	MT-ND1	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000110700', 'ENSG00000138326')	0.8317944105739329	0	RPS13	RPS24	ribosomal protein S13	ribosomal protein S24
+('ENSG00000148303', 'ENSG00000168028')	0.83175077210633	0	RPL7A	RPSA	ribosomal protein L7a	ribosomal protein SA
+('ENSG00000083845', 'ENSG00000110700')	0.831579428192188	0	RPS5	RPS13	ribosomal protein S5	ribosomal protein S13
+('ENSG00000196531', 'ENSG00000204628')	0.8315131110604912	0	NACA	RACK1	nascent polypeptide associated complex subunit alpha	receptor for activated C kinase 1
+('ENSG00000100316', 'ENSG00000198755')	0.8313267068053982	0	RPL3	RPL10A	ribosomal protein L3	ribosomal protein L10a
+('ENSG00000114391', 'ENSG00000233927')	0.8311382634415824	0	RPL24	RPS28	ribosomal protein L24	ribosomal protein S28
+('ENSG00000110700', 'ENSG00000198918')	0.8310127094505977	0	RPS13	RPL39	ribosomal protein S13	ribosomal protein L39
+('ENSG00000115268', 'ENSG00000148303')	0.8309939810297066	0	RPS15	RPL7A	ribosomal protein S15	ribosomal protein L7a
+('ENSG00000169306', 'ENSG00000183230')	0.8309933366274515	0	IL1RAPL1	CTNNA3	interleukin 1 receptor accessory protein like 1	catenin alpha 3
+('ENSG00000105193', 'ENSG00000233927')	0.830981539426086	0	RPS16	RPS28	ribosomal protein S16	ribosomal protein S28
+('ENSG00000083845', 'ENSG00000186468')	0.8309465864886657	0	RPS5	RPS23	ribosomal protein S5	ribosomal protein S23
+('ENSG00000110700', 'ENSG00000171858')	0.8308279983383786	0	RPS13	RPS21	ribosomal protein S13	ribosomal protein S21
+('ENSG00000147403', 'ENSG00000149806')	0.8306035109353614	0	RPL10	FAU	ribosomal protein L10	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000110700', 'ENSG00000114391')	0.8300676741549757	0	RPS13	RPL24	ribosomal protein S13	ribosomal protein L24
+('ENSG00000148303', 'ENSG00000149806')	0.8299141558355522	0	RPL7A	FAU	ribosomal protein L7a	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000149273', 'ENSG00000149806')	0.8298960938322929	0	RPS3	FAU	ribosomal protein S3	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000110700', 'ENSG00000204628')	0.8298173646272511	0	RPS13	RACK1	ribosomal protein S13	receptor for activated C kinase 1
+('ENSG00000149972', 'ENSG00000185053')	0.8297546866064638	0	CNTN5	SGCZ	contactin 5	sarcoglycan zeta
+('ENSG00000105372', 'ENSG00000233927')	0.8297204776206741	1	RPS19	RPS28	ribosomal protein S19	ribosomal protein S28
+('ENSG00000133112', 'ENSG00000164587')	0.8296988377089949	0	TPT1	RPS14	tumor protein, translationally-controlled 1	ribosomal protein S14
+('ENSG00000083845', 'ENSG00000177600')	0.8295507498463899	0	RPS5	RPLP2	ribosomal protein S5	ribosomal protein lateral stalk subunit P2
+('ENSG00000100316', 'ENSG00000105193')	0.8291760532525558	0	RPL3	RPS16	ribosomal protein L3	ribosomal protein S16
+('ENSG00000148303', 'ENSG00000196531')	0.8291629519959339	0	RPL7A	NACA	ribosomal protein L7a	nascent polypeptide associated complex subunit alpha
+('ENSG00000100316', 'ENSG00000171863')	0.8290879048646151	0	RPL3	RPS7	ribosomal protein L3	ribosomal protein S7
+('ENSG00000177600', 'ENSG00000198918')	0.8290704362972239	0	RPLP2	RPL39	ribosomal protein lateral stalk subunit P2	ribosomal protein L39
+('ENSG00000115268', 'ENSG00000149806')	0.8290028739066552	0	RPS15	FAU	ribosomal protein S15	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000149972', 'ENSG00000185737')	0.8288424501476318	0	CNTN5	NRG3	contactin 5	neuregulin 3
+('ENSG00000145242', 'ENSG00000152208')	0.8285674997925573	0	EPHA5	GRID2	EPH receptor A5	glutamate ionotropic receptor delta type subunit 2
+('ENSG00000148303', 'ENSG00000233927')	0.8281031008841352	0	RPL7A	RPS28	ribosomal protein L7a	ribosomal protein S28
+('ENSG00000138326', 'ENSG00000198918')	0.828085643178928	0	RPS24	RPL39	ribosomal protein S24	ribosomal protein L39
+('ENSG00000149806', 'ENSG00000164587')	0.8280608289112794	0	FAU	RPS14	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein S14
+('ENSG00000152208', 'ENSG00000169306')	0.8279185351371544	0	GRID2	IL1RAPL1	glutamate ionotropic receptor delta type subunit 2	interleukin 1 receptor accessory protein like 1
+('ENSG00000114391', 'ENSG00000142937')	0.8278590352956394	0	RPL24	RPS8	ribosomal protein L24	ribosomal protein S8
+('ENSG00000105193', 'ENSG00000131469')	0.8275580268979159	0	RPS16	RPL27	ribosomal protein S16	ribosomal protein L27
+('ENSG00000167286', 'ENSG00000198851')	0.8273163876197279	1	CD3D	CD3E	CD3 delta subunit of T-cell receptor complex	CD3 epsilon subunit of T-cell receptor complex
+('ENSG00000114391', 'ENSG00000168028')	0.8272891675571705	0	RPL24	RPSA	ribosomal protein L24	ribosomal protein SA
+('ENSG00000110700', 'ENSG00000147403')	0.8272879574914006	0	RPS13	RPL10	ribosomal protein S13	ribosomal protein L10
+('ENSG00000083845', 'ENSG00000105193')	0.8272595249513509	0	RPS5	RPS16	ribosomal protein S5	ribosomal protein S16
+('ENSG00000110700', 'ENSG00000149806')	0.8270437048024284	0	RPS13	FAU	ribosomal protein S13	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000148303', 'ENSG00000198755')	0.8270405289946714	1	RPL7A	RPL10A	ribosomal protein L7a	ribosomal protein L10a
+('ENSG00000142676', 'ENSG00000149806')	0.8269473073698711	0	RPL11	FAU	ribosomal protein L11	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000110700', 'ENSG00000198755')	0.8269350659051024	0	RPS13	RPL10A	ribosomal protein S13	ribosomal protein L10a
+('ENSG00000114391', 'ENSG00000148303')	0.8267382950739238	0	RPL24	RPL7A	ribosomal protein L24	ribosomal protein L7a
+('ENSG00000171863', 'ENSG00000204628')	0.8266758245592615	0	RPS7	RACK1	ribosomal protein S7	receptor for activated C kinase 1
+('ENSG00000105193', 'ENSG00000136942')	0.826618311959139	0	RPS16	RPL35	ribosomal protein S16	ribosomal protein L35
+('ENSG00000122406', 'ENSG00000186468')	0.8264955731670295	0	RPL5	RPS23	ribosomal protein L5	ribosomal protein S23
+('ENSG00000138326', 'ENSG00000171858')	0.8264507842072986	0	RPS24	RPS21	ribosomal protein S24	ribosomal protein S21
+('ENSG00000100316', 'ENSG00000147403')	0.8263246991909013	0	RPL3	RPL10	ribosomal protein L3	ribosomal protein L10
+('ENSG00000100316', 'ENSG00000105372')	0.826290859702039	0	RPL3	RPS19	ribosomal protein L3	ribosomal protein S19
+('ENSG00000100316', 'ENSG00000177954')	0.826201049709914	0	RPL3	RPS27	ribosomal protein L3	ribosomal protein S27
+('ENSG00000116251', 'ENSG00000196531')	0.826120272941884	0	RPL22	NACA	ribosomal protein L22	nascent polypeptide associated complex subunit alpha
+('ENSG00000114391', 'ENSG00000149806')	0.8259677877255082	0	RPL24	FAU	ribosomal protein L24	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000115268', 'ENSG00000136942')	0.8259309990140196	0	RPS15	RPL35	ribosomal protein S15	ribosomal protein L35
+('ENSG00000136942', 'ENSG00000142937')	0.8258045189494697	0	RPL35	RPS8	ribosomal protein L35	ribosomal protein S8
+('ENSG00000186468', 'ENSG00000204628')	0.8256451460817165	0	RPS23	RACK1	ribosomal protein S23	receptor for activated C kinase 1
+('ENSG00000110700', 'ENSG00000168028')	0.8256410951392119	0	RPS13	RPSA	ribosomal protein S13	ribosomal protein SA
+('ENSG00000083845', 'ENSG00000233927')	0.8255504420168295	1	RPS5	RPS28	ribosomal protein S5	ribosomal protein S28
+('ENSG00000138326', 'ENSG00000177600')	0.8254622958596796	0	RPS24	RPLP2	ribosomal protein S24	ribosomal protein lateral stalk subunit P2
+('ENSG00000105193', 'ENSG00000122406')	0.8254474336442924	0	RPS16	RPL5	ribosomal protein S16	ribosomal protein L5
+('ENSG00000169760', 'ENSG00000183230')	0.8253871805680238	0	NLGN1	CTNNA3	neuroligin 1	catenin alpha 3
+('ENSG00000173369', 'ENSG00000173372')	0.8253354732626653	1	C1QB	C1QA	complement C1q B chain	complement C1q A chain
+('ENSG00000136942', 'ENSG00000148303')	0.8250284245255847	1	RPL35	RPL7A	ribosomal protein L35	ribosomal protein L7a
+('ENSG00000149972', 'ENSG00000150275')	0.8250259235344898	0	CNTN5	PCDH15	contactin 5	protocadherin related 15
+('ENSG00000066032', 'ENSG00000149972')	0.8249900716332842	0	CTNNA2	CNTN5	catenin alpha 2	contactin 5
+('ENSG00000114391', 'ENSG00000177600')	0.8247344018488681	0	RPL24	RPLP2	ribosomal protein L24	ribosomal protein lateral stalk subunit P2
+('ENSG00000138326', 'ENSG00000177954')	0.8243940258504902	0	RPS24	RPS27	ribosomal protein S24	ribosomal protein S27
+('ENSG00000083845', 'ENSG00000136942')	0.8243506084319762	0	RPS5	RPL35	ribosomal protein S5	ribosomal protein L35
+('ENSG00000083845', 'ENSG00000140988')	0.8242820005027313	0	RPS5	RPS2	ribosomal protein S5	ribosomal protein S2
+('ENSG00000168028', 'ENSG00000196531')	0.8241874135541056	0	RPSA	NACA	ribosomal protein SA	nascent polypeptide associated complex subunit alpha
+('ENSG00000105372', 'ENSG00000198918')	0.8241261911276712	0	RPS19	RPL39	ribosomal protein S19	ribosomal protein L39
+('ENSG00000149806', 'ENSG00000186468')	0.8240515371207734	0	FAU	RPS23	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein S23
+('ENSG00000149972', 'ENSG00000183117')	0.8240048016318368	0	CNTN5	CSMD1	contactin 5	CUB and Sushi multiple domains 1
+('ENSG00000100316', 'ENSG00000167526')	0.8238616149958919	0	RPL3	RPL13	ribosomal protein L3	ribosomal protein L13
+('ENSG00000114391', 'ENSG00000142676')	0.8237652284309215	0	RPL24	RPL11	ribosomal protein L24	ribosomal protein L11
+('ENSG00000136942', 'ENSG00000186468')	0.823718265345812	0	RPL35	RPS23	ribosomal protein L35	ribosomal protein S23
+('ENSG00000114391', 'ENSG00000196531')	0.8236887644931311	0	RPL24	NACA	ribosomal protein L24	nascent polypeptide associated complex subunit alpha
+('ENSG00000122406', 'ENSG00000149273')	0.8236094434156982	0	RPL5	RPS3	ribosomal protein L5	ribosomal protein S3
+('ENSG00000110700', 'ENSG00000131469')	0.8235367880573413	0	RPS13	RPL27	ribosomal protein S13	ribosomal protein L27
+('ENSG00000149806', 'ENSG00000196531')	0.8233379450737561	0	FAU	NACA	FAU ubiquitin like and ribosomal protein S30 fusion	nascent polypeptide associated complex subunit alpha
+('ENSG00000160654', 'ENSG00000167286')	0.8232867038212072	1	CD3G	CD3D	CD3 gamma subunit of T-cell receptor complex	CD3 delta subunit of T-cell receptor complex
+('ENSG00000066032', 'ENSG00000150275')	0.8229858536979411	0	CTNNA2	PCDH15	catenin alpha 2	protocadherin related 15
+('ENSG00000184408', 'ENSG00000185737')	0.8228820863602297	0	KCND2	NRG3	potassium voltage-gated channel subfamily D member 2	neuregulin 3
+('ENSG00000148303', 'ENSG00000198918')	0.8228055666149937	0	RPL7A	RPL39	ribosomal protein L7a	ribosomal protein L39
+('ENSG00000147403', 'ENSG00000156508')	0.822770743957582	0	RPL10	EEF1A1	ribosomal protein L10	eukaryotic translation elongation factor 1 alpha 1
+('ENSG00000138326', 'ENSG00000198755')	0.8227560942536655	0	RPS24	RPL10A	ribosomal protein S24	ribosomal protein L10a
+('ENSG00000168028', 'ENSG00000186468')	0.8226857382148873	0	RPSA	RPS23	ribosomal protein SA	ribosomal protein S23
+('ENSG00000148948', 'ENSG00000169760')	0.8225194705837485	1	LRRC4C	NLGN1	leucine rich repeat containing 4C	neuroligin 1
+('ENSG00000142937', 'ENSG00000168028')	0.8225039465967203	0	RPS8	RPSA	ribosomal protein S8	ribosomal protein SA
+('ENSG00000116251', 'ENSG00000171863')	0.8223439678646648	0	RPL22	RPS7	ribosomal protein L22	ribosomal protein S7
+('ENSG00000145526', 'ENSG00000149972')	0.8221659028311901	0	CDH18	CNTN5	cadherin 18	contactin 5
+('ENSG00000156508', 'ENSG00000164587')	0.8221180077504934	0	EEF1A1	RPS14	eukaryotic translation elongation factor 1 alpha 1	ribosomal protein S14
+('ENSG00000148303', 'ENSG00000186468')	0.8220999435737566	0	RPL7A	RPS23	ribosomal protein L7a	ribosomal protein S23
+('ENSG00000169933', 'ENSG00000185053')	0.8220294905964565	0	FRMPD4	SGCZ	FERM and PDZ domain containing 4	sarcoglycan zeta
+('ENSG00000152208', 'ENSG00000183230')	0.8218660618051987	0	GRID2	CTNNA3	glutamate ionotropic receptor delta type subunit 2	catenin alpha 3
+('ENSG00000110700', 'ENSG00000167526')	0.8218386459681687	0	RPS13	RPL13	ribosomal protein S13	ribosomal protein L13
+('ENSG00000156508', 'ENSG00000177954')	0.8217839815888905	0	EEF1A1	RPS27	eukaryotic translation elongation factor 1 alpha 1	ribosomal protein S27
+('ENSG00000122406', 'ENSG00000196531')	0.8216951527173031	0	RPL5	NACA	ribosomal protein L5	nascent polypeptide associated complex subunit alpha
+('ENSG00000150275', 'ENSG00000169933')	0.8215159589572004	0	PCDH15	FRMPD4	protocadherin related 15	FERM and PDZ domain containing 4
+('ENSG00000140988', 'ENSG00000167526')	0.8214833890883881	0	RPS2	RPL13	ribosomal protein S2	ribosomal protein L13
+('ENSG00000105193', 'ENSG00000168028')	0.8214536625073754	0	RPS16	RPSA	ribosomal protein S16	ribosomal protein SA
+('ENSG00000102879', 'ENSG00000128340')	0.8214413673894638	0	CORO1A	RAC2	coronin 1A	Rac family small GTPase 2
+('ENSG00000105193', 'ENSG00000142937')	0.8213419216523027	1	RPS16	RPS8	ribosomal protein S16	ribosomal protein S8
+('ENSG00000204628', 'ENSG00000233927')	0.8212663056741758	0	RACK1	RPS28	receptor for activated C kinase 1	ribosomal protein S28
+('ENSG00000100316', 'ENSG00000204628')	0.8211023345076739	0	RPL3	RACK1	ribosomal protein L3	receptor for activated C kinase 1
+('ENSG00000140988', 'ENSG00000148303')	0.8210969631782268	0	RPS2	RPL7A	ribosomal protein S2	ribosomal protein L7a
+('ENSG00000114391', 'ENSG00000164587')	0.8209971693614073	0	RPL24	RPS14	ribosomal protein L24	ribosomal protein S14
+('ENSG00000140988', 'ENSG00000149273')	0.8209718543149531	0	RPS2	RPS3	ribosomal protein S2	ribosomal protein S3
+('ENSG00000007001', 'ENSG00000185737')	0.820954561799503	0	UPP2	NRG3	uridine phosphorylase 2	neuregulin 3
+('ENSG00000145526', 'ENSG00000152208')	0.8209116705428783	0	CDH18	GRID2	cadherin 18	glutamate ionotropic receptor delta type subunit 2
+('ENSG00000105372', 'ENSG00000142937')	0.820857059363939	1	RPS19	RPS8	ribosomal protein S19	ribosomal protein S8
+('ENSG00000142937', 'ENSG00000204628')	0.8207507679701725	0	RPS8	RACK1	ribosomal protein S8	receptor for activated C kinase 1
+('ENSG00000185053', 'ENSG00000185737')	0.8207361159124481	0	SGCZ	NRG3	sarcoglycan zeta	neuregulin 3
+('ENSG00000140988', 'ENSG00000177600')	0.8206605080937179	0	RPS2	RPLP2	ribosomal protein S2	ribosomal protein lateral stalk subunit P2
+('ENSG00000186468', 'ENSG00000196531')	0.8206530006358164	0	RPS23	NACA	ribosomal protein S23	nascent polypeptide associated complex subunit alpha
+('ENSG00000002933', 'ENSG00000106565')	0.8206505936999687	1	TMEM176A	TMEM176B	transmembrane protein 176A	transmembrane protein 176B
+('ENSG00000149273', 'ENSG00000198755')	0.8204332777555492	0	RPS3	RPL10A	ribosomal protein S3	ribosomal protein L10a
+('ENSG00000164587', 'ENSG00000198755')	0.8204227260722572	0	RPS14	RPL10A	ribosomal protein S14	ribosomal protein L10a
+('ENSG00000100316', 'ENSG00000142541')	0.8203837244441512	0	RPL3	RPL13A	ribosomal protein L3	ribosomal protein L13a
+('ENSG00000083845', 'ENSG00000149273')	0.8203749358805318	0	RPS5	RPS3	ribosomal protein S5	ribosomal protein S3
+('ENSG00000105193', 'ENSG00000142541')	0.8202748440504245	0	RPS16	RPL13A	ribosomal protein S16	ribosomal protein L13a
+('ENSG00000105372', 'ENSG00000138326')	0.8202704722947226	0	RPS19	RPS24	ribosomal protein S19	ribosomal protein S24
+('ENSG00000142937', 'ENSG00000171858')	0.8202475482005969	0	RPS8	RPS21	ribosomal protein S8	ribosomal protein S21
+('ENSG00000136942', 'ENSG00000171863')	0.8202031048539924	0	RPL35	RPS7	ribosomal protein L35	ribosomal protein S7
+('ENSG00000149972', 'ENSG00000186094')	0.8201551192625958	0	CNTN5	AGBL4	contactin 5	AGBL carboxypeptidase 4
+('ENSG00000142676', 'ENSG00000148303')	0.8200072455691155	0	RPL11	RPL7A	ribosomal protein L11	ribosomal protein L7a
+('ENSG00000147403', 'ENSG00000148303')	0.8198647546186497	0	RPL10	RPL7A	ribosomal protein L10	ribosomal protein L7a
+('ENSG00000204257', 'ENSG00000223865')	0.8197527147323946	1	HLA-DMA	HLA-DPB1	major histocompatibility complex, class II, DM alpha	major histocompatibility complex, class II, DP beta 1
+('ENSG00000007001', 'ENSG00000150275')	0.8196110509725653	0	UPP2	PCDH15	uridine phosphorylase 2	protocadherin related 15
+('ENSG00000140988', 'ENSG00000164587')	0.8192157927496269	0	RPS2	RPS14	ribosomal protein S2	ribosomal protein S14
+('ENSG00000138326', 'ENSG00000149806')	0.8191754213251093	0	RPS24	FAU	ribosomal protein S24	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000149806', 'ENSG00000198918')	0.819082366071684	1	FAU	RPL39	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein L39
+('ENSG00000105193', 'ENSG00000177954')	0.8189849821263804	0	RPS16	RPS27	ribosomal protein S16	ribosomal protein S27
+('ENSG00000140988', 'ENSG00000233927')	0.8189295755714441	0	RPS2	RPS28	ribosomal protein S2	ribosomal protein S28
+('ENSG00000140988', 'ENSG00000171863')	0.8189267997814215	0	RPS2	RPS7	ribosomal protein S2	ribosomal protein S7
+('ENSG00000131469', 'ENSG00000172809')	0.8188727076248664	0	RPL27	RPL38	ribosomal protein L27	ribosomal protein L38
+('ENSG00000142541', 'ENSG00000164587')	0.8188212942253273	0	RPL13A	RPS14	ribosomal protein L13a	ribosomal protein S14
+('ENSG00000066032', 'ENSG00000156687')	0.8187411986762839	0	CTNNA2	UNC5D	catenin alpha 2	unc-5 netrin receptor D
+('ENSG00000150672', 'ENSG00000187391')	0.8186515392700855	0	DLG2	MAGI2	discs large MAGUK scaffold protein 2	membrane associated guanylate kinase, WW and PDZ domain containing 2
+('ENSG00000150275', 'ENSG00000187323')	0.8186354107402094	0	PCDH15	DCC	protocadherin related 15	DCC netrin 1 receptor
+('ENSG00000183117', 'ENSG00000183230')	0.8186155304858095	0	CSMD1	CTNNA3	CUB and Sushi multiple domains 1	catenin alpha 3
+('ENSG00000150275', 'ENSG00000185053')	0.8185412709623613	0	PCDH15	SGCZ	protocadherin related 15	sarcoglycan zeta
+('ENSG00000114391', 'ENSG00000149273')	0.818538586754257	0	RPL24	RPS3	ribosomal protein L24	ribosomal protein S3
+('ENSG00000115268', 'ENSG00000198918')	0.8185275746637519	0	RPS15	RPL39	ribosomal protein S15	ribosomal protein L39
+('ENSG00000149972', 'ENSG00000152208')	0.8185209691183843	0	CNTN5	GRID2	contactin 5	glutamate ionotropic receptor delta type subunit 2
+('ENSG00000110700', 'ENSG00000196531')	0.8184995514785999	0	RPS13	NACA	ribosomal protein S13	nascent polypeptide associated complex subunit alpha
+('ENSG00000133112', 'ENSG00000233927')	0.8184934544526559	0	TPT1	RPS28	tumor protein, translationally-controlled 1	ribosomal protein S28
+('ENSG00000169933', 'ENSG00000185737')	0.8184379558235658	0	FRMPD4	NRG3	FERM and PDZ domain containing 4	neuregulin 3
+('ENSG00000122406', 'ENSG00000171858')	0.8184174935411438	0	RPL5	RPS21	ribosomal protein L5	ribosomal protein S21
+('ENSG00000149273', 'ENSG00000171858')	0.8179420618388046	0	RPS3	RPS21	ribosomal protein S3	ribosomal protein S21
+('ENSG00000122406', 'ENSG00000148303')	0.8178746950053762	0	RPL5	RPL7A	ribosomal protein L5	ribosomal protein L7a
+('ENSG00000143546', 'ENSG00000163220')	0.8178482440273438	1	S100A8	S100A9	S100 calcium binding protein A8	S100 calcium binding protein A9
+('ENSG00000136942', 'ENSG00000177600')	0.8178335201890877	0	RPL35	RPLP2	ribosomal protein L35	ribosomal protein lateral stalk subunit P2
+('ENSG00000154162', 'ENSG00000186094')	0.8177831825569644	0	CDH12	AGBL4	cadherin 12	AGBL carboxypeptidase 4
+('ENSG00000150275', 'ENSG00000171587')	0.8177338399158934	0	PCDH15	DSCAM	protocadherin related 15	DS cell adhesion molecule
+('ENSG00000149972', 'ENSG00000175175')	0.8176602515599525	0	CNTN5	PPM1E	contactin 5	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000156508', 'ENSG00000233927')	0.8176250877219394	0	EEF1A1	RPS28	eukaryotic translation elongation factor 1 alpha 1	ribosomal protein S28
+('ENSG00000169306', 'ENSG00000169760')	0.8176023409856884	1	IL1RAPL1	NLGN1	interleukin 1 receptor accessory protein like 1	neuroligin 1
+('ENSG00000183230', 'ENSG00000198626')	0.8175705933246212	1	CTNNA3	RYR2	catenin alpha 3	ryanodine receptor 2
+('ENSG00000105193', 'ENSG00000198918')	0.8174490979867453	0	RPS16	RPL39	ribosomal protein S16	ribosomal protein L39
+('ENSG00000167526', 'ENSG00000171863')	0.8173772866374566	0	RPL13	RPS7	ribosomal protein L13	ribosomal protein S7
+('ENSG00000176358', 'ENSG00000188771')	0.8170901413591615	0	TAC4	PLET1	tachykinin precursor 4	placenta expressed transcript 1
+('ENSG00000138326', 'ENSG00000204628')	0.8169824711992006	0	RPS24	RACK1	ribosomal protein S24	receptor for activated C kinase 1
+('ENSG00000145741', 'ENSG00000181163')	0.816827665509916	0	BTF3	NPM1	basic transcription factor 3	nucleophosmin 1
+('ENSG00000142937', 'ENSG00000177954')	0.8167886237288775	0	RPS8	RPS27	ribosomal protein S8	ribosomal protein S27
+('ENSG00000183230', 'ENSG00000185666')	0.8167535331452186	0	CTNNA3	SYN3	catenin alpha 3	synapsin III
+('ENSG00000105193', 'ENSG00000204628')	0.8166991204038702	0	RPS16	RACK1	ribosomal protein S16	receptor for activated C kinase 1
+('ENSG00000140988', 'ENSG00000142937')	0.8166415588139654	0	RPS2	RPS8	ribosomal protein S2	ribosomal protein S8
+('ENSG00000105372', 'ENSG00000171863')	0.8165324085640021	0	RPS19	RPS7	ribosomal protein S19	ribosomal protein S7
+('ENSG00000142937', 'ENSG00000196531')	0.8165017207492312	0	RPS8	NACA	ribosomal protein S8	nascent polypeptide associated complex subunit alpha
+('ENSG00000142676', 'ENSG00000156508')	0.8164883498126787	0	RPL11	EEF1A1	ribosomal protein L11	eukaryotic translation elongation factor 1 alpha 1
+('ENSG00000114391', 'ENSG00000171858')	0.8162994836534933	0	RPL24	RPS21	ribosomal protein L24	ribosomal protein S21
+('ENSG00000138326', 'ENSG00000147403')	0.8162341265106539	0	RPS24	RPL10	ribosomal protein S24	ribosomal protein L10
+('ENSG00000142937', 'ENSG00000156508')	0.816094533013571	0	RPS8	EEF1A1	ribosomal protein S8	eukaryotic translation elongation factor 1 alpha 1
+('ENSG00000168028', 'ENSG00000171858')	0.8159413146803064	0	RPSA	RPS21	ribosomal protein SA	ribosomal protein S21
+('ENSG00000105372', 'ENSG00000149806')	0.8158915824329332	0	RPS19	FAU	ribosomal protein S19	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000131469', 'ENSG00000177600')	0.8158750371915202	0	RPL27	RPLP2	ribosomal protein L27	ribosomal protein lateral stalk subunit P2
+('ENSG00000149972', 'ENSG00000154162')	0.8158731862768915	0	CNTN5	CDH12	contactin 5	cadherin 12
+('ENSG00000114391', 'ENSG00000115268')	0.815853013019965	0	RPL24	RPS15	ribosomal protein L24	ribosomal protein S15
+('ENSG00000149972', 'ENSG00000156687')	0.8158337539086448	0	CNTN5	UNC5D	contactin 5	unc-5 netrin receptor D
+('ENSG00000139220', 'ENSG00000152208')	0.8156897932817397	0	PPFIA2	GRID2	PTPRF interacting protein alpha 2	glutamate ionotropic receptor delta type subunit 2
+('ENSG00000114391', 'ENSG00000131469')	0.8155201866802213	0	RPL24	RPL27	ribosomal protein L24	ribosomal protein L27
+('ENSG00000150275', 'ENSG00000156687')	0.8154955139960629	0	PCDH15	UNC5D	protocadherin related 15	unc-5 netrin receptor D
+('ENSG00000122406', 'ENSG00000136942')	0.815431890819688	0	RPL5	RPL35	ribosomal protein L5	ribosomal protein L35
+('ENSG00000148303', 'ENSG00000149273')	0.8154176103972008	0	RPL7A	RPS3	ribosomal protein L7a	ribosomal protein S3
+('ENSG00000110700', 'ENSG00000177954')	0.8153349654588579	0	RPS13	RPS27	ribosomal protein S13	ribosomal protein S27
+('ENSG00000149972', 'ENSG00000183230')	0.8152441013253627	0	CNTN5	CTNNA3	contactin 5	catenin alpha 3
+('ENSG00000204287', 'ENSG00000223865')	0.8152027533032672	1	HLA-DRA	HLA-DPB1	major histocompatibility complex, class II, DR alpha	major histocompatibility complex, class II, DP beta 1
+('ENSG00000108684', 'ENSG00000156687')	0.815018487639377	0	ASIC2	UNC5D	acid sensing ion channel subunit 2	unc-5 netrin receptor D
+('ENSG00000177600', 'ENSG00000198755')	0.8150062409529235	0	RPLP2	RPL10A	ribosomal protein lateral stalk subunit P2	ribosomal protein L10a
+('ENSG00000183230', 'ENSG00000185737')	0.8149409855498988	0	CTNNA3	NRG3	catenin alpha 3	neuregulin 3
+('ENSG00000105193', 'ENSG00000138326')	0.814904224900636	0	RPS16	RPS24	ribosomal protein S16	ribosomal protein S24
+('ENSG00000185737', 'ENSG00000186094')	0.8148653063026114	0	NRG3	AGBL4	neuregulin 3	AGBL carboxypeptidase 4
+('ENSG00000145526', 'ENSG00000150275')	0.814823720391679	0	CDH18	PCDH15	cadherin 18	protocadherin related 15
+('ENSG00000169760', 'ENSG00000184408')	0.8147450159447565	0	NLGN1	KCND2	neuroligin 1	potassium voltage-gated channel subfamily D member 2
+('ENSG00000156687', 'ENSG00000185352')	0.8146648919800709	0	UNC5D	HS6ST3	unc-5 netrin receptor D	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000100316', 'ENSG00000149806')	0.8145864356198385	0	RPL3	FAU	ribosomal protein L3	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000105193', 'ENSG00000142676')	0.814510607906039	0	RPS16	RPL11	ribosomal protein S16	ribosomal protein L11
+('ENSG00000066032', 'ENSG00000185737')	0.8144744882732471	0	CTNNA2	NRG3	catenin alpha 2	neuregulin 3
+('ENSG00000139220', 'ENSG00000169760')	0.814468912775067	1	PPFIA2	NLGN1	PTPRF interacting protein alpha 2	neuroligin 1
+('ENSG00000183117', 'ENSG00000185737')	0.8144324610950375	0	CSMD1	NRG3	CUB and Sushi multiple domains 1	neuregulin 3
+('ENSG00000114391', 'ENSG00000198918')	0.8142732459404894	0	RPL24	RPL39	ribosomal protein L24	ribosomal protein L39
+('ENSG00000136942', 'ENSG00000164587')	0.8142600252393312	0	RPL35	RPS14	ribosomal protein L35	ribosomal protein S14
+('ENSG00000083845', 'ENSG00000115268')	0.8142074289500244	1	RPS5	RPS15	ribosomal protein S5	ribosomal protein S15
+('ENSG00000159189', 'ENSG00000173369')	0.8141975587507766	1	C1QC	C1QB	complement C1q C chain	complement C1q B chain
+('ENSG00000138326', 'ENSG00000196531')	0.8139611362503921	0	RPS24	NACA	ribosomal protein S24	nascent polypeptide associated complex subunit alpha
+('ENSG00000140988', 'ENSG00000168028')	0.8139479532307036	0	RPS2	RPSA	ribosomal protein S2	ribosomal protein SA
+('ENSG00000116251', 'ENSG00000233927')	0.8138226363704846	0	RPL22	RPS28	ribosomal protein L22	ribosomal protein S28
+('ENSG00000122406', 'ENSG00000164587')	0.8137726330077668	0	RPL5	RPS14	ribosomal protein L5	ribosomal protein S14
+('ENSG00000105193', 'ENSG00000140988')	0.813758730654208	0	RPS16	RPS2	ribosomal protein S16	ribosomal protein S2
+('ENSG00000138326', 'ENSG00000148303')	0.8137415280010477	0	RPS24	RPL7A	ribosomal protein S24	ribosomal protein L7a
+('ENSG00000021645', 'ENSG00000183230')	0.8137354814929677	0	NRXN3	CTNNA3	neurexin 3	catenin alpha 3
+('ENSG00000149806', 'ENSG00000177954')	0.8137284837050989	0	FAU	RPS27	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein S27
+('ENSG00000171863', 'ENSG00000177954')	0.8137156810917977	0	RPS7	RPS27	ribosomal protein S7	ribosomal protein S27
+('ENSG00000148303', 'ENSG00000164587')	0.8136449775716068	0	RPL7A	RPS14	ribosomal protein L7a	ribosomal protein S14
+('ENSG00000198755', 'ENSG00000198918')	0.8135600219845529	0	RPL10A	RPL39	ribosomal protein L10a	ribosomal protein L39
+('ENSG00000183117', 'ENSG00000185666')	0.8135370979957974	0	CSMD1	SYN3	CUB and Sushi multiple domains 1	synapsin III
+('ENSG00000105193', 'ENSG00000148303')	0.8133918995720281	0	RPS16	RPL7A	ribosomal protein S16	ribosomal protein L7a
+('ENSG00000148303', 'ENSG00000171858')	0.8133808025537128	0	RPL7A	RPS21	ribosomal protein L7a	ribosomal protein S21
+('ENSG00000126733', 'ENSG00000156687')	0.8133169596209145	0	DACH2	UNC5D	dachshund family transcription factor 2	unc-5 netrin receptor D
+('ENSG00000122406', 'ENSG00000138326')	0.8132920657951371	0	RPL5	RPS24	ribosomal protein L5	ribosomal protein S24
+('ENSG00000136942', 'ENSG00000168028')	0.8132837900057008	0	RPL35	RPSA	ribosomal protein L35	ribosomal protein SA
+('ENSG00000164588', 'ENSG00000184611')	0.8132233294283563	0	HCN1	KCNH7	hyperpolarization activated cyclic nucleotide gated potassium channel 1	potassium voltage-gated channel subfamily H member 7
+('ENSG00000139220', 'ENSG00000156687')	0.8131856893582106	0	PPFIA2	UNC5D	PTPRF interacting protein alpha 2	unc-5 netrin receptor D
+('ENSG00000116251', 'ENSG00000138326')	0.8130001354083825	0	RPL22	RPS24	ribosomal protein L22	ribosomal protein S24
+('ENSG00000171858', 'ENSG00000204628')	0.8128918127974021	0	RPS21	RACK1	ribosomal protein S21	receptor for activated C kinase 1
+('ENSG00000150275', 'ENSG00000152208')	0.8128433962077052	0	PCDH15	GRID2	protocadherin related 15	glutamate ionotropic receptor delta type subunit 2
+('ENSG00000072315', 'ENSG00000184984')	0.8127087820145866	0	TRPC5	CHRM5	transient receptor potential cation channel subfamily C member 5	cholinergic receptor muscarinic 5
+('ENSG00000145741', 'ENSG00000196531')	0.8126660406649827	1	BTF3	NACA	basic transcription factor 3	nascent polypeptide associated complex subunit alpha
+('ENSG00000149273', 'ENSG00000204628')	0.8126241155538748	0	RPS3	RACK1	ribosomal protein S3	receptor for activated C kinase 1
+('ENSG00000142541', 'ENSG00000177600')	0.8126041232195348	0	RPL13A	RPLP2	ribosomal protein L13a	ribosomal protein lateral stalk subunit P2
+('ENSG00000007001', 'ENSG00000185053')	0.8125381806578453	0	UPP2	SGCZ	uridine phosphorylase 2	sarcoglycan zeta
+('ENSG00000169760', 'ENSG00000185008')	0.8123965553690665	0	NLGN1	ROBO2	neuroligin 1	roundabout guidance receptor 2
+('ENSG00000083845', 'ENSG00000196531')	0.8123809747476554	0	RPS5	NACA	ribosomal protein S5	nascent polypeptide associated complex subunit alpha
+('ENSG00000156687', 'ENSG00000185737')	0.8123244024635005	0	UNC5D	NRG3	unc-5 netrin receptor D	neuregulin 3
+('ENSG00000066032', 'ENSG00000175175')	0.8123113099627861	0	CTNNA2	PPM1E	catenin alpha 2	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000115268', 'ENSG00000122406')	0.8122221579003396	0	RPS15	RPL5	ribosomal protein S15	ribosomal protein L5
+('ENSG00000122406', 'ENSG00000233927')	0.8121574457186971	0	RPL5	RPS28	ribosomal protein L5	ribosomal protein S28
+('ENSG00000133112', 'ENSG00000138326')	0.8121503966379007	0	TPT1	RPS24	tumor protein, translationally-controlled 1	ribosomal protein S24
+('ENSG00000185352', 'ENSG00000185737')	0.8121381502199	0	HS6ST3	NRG3	heparan sulfate 6-O-sulfotransferase 3	neuregulin 3
+('ENSG00000185666', 'ENSG00000186094')	0.8121291123523547	0	SYN3	AGBL4	synapsin III	AGBL carboxypeptidase 4
+('ENSG00000021645', 'ENSG00000169760')	0.8121027127040877	1	NRXN3	NLGN1	neurexin 3	neuroligin 1
+('ENSG00000116824', 'ENSG00000198851')	0.8120987743425835	0	CD2	CD3E	CD2 molecule	CD3 epsilon subunit of T-cell receptor complex
+('ENSG00000115268', 'ENSG00000204628')	0.8120531993009656	0	RPS15	RACK1	ribosomal protein S15	receptor for activated C kinase 1
+('ENSG00000150361', 'ENSG00000152214')	0.8120127174560751	0	KLHL1	RIT2	kelch like family member 1	Ras like without CAAX 2
+('ENSG00000171094', 'ENSG00000186094')	0.8119820611795564	0	ALK	AGBL4	ALK receptor tyrosine kinase	AGBL carboxypeptidase 4
+('ENSG00000152208', 'ENSG00000185053')	0.811966656916606	0	GRID2	SGCZ	glutamate ionotropic receptor delta type subunit 2	sarcoglycan zeta
+('ENSG00000066032', 'ENSG00000187672')	0.8119327244370736	0	CTNNA2	ERC2	catenin alpha 2	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000175175', 'ENSG00000187672')	0.8118598300892027	0	PPM1E	ERC2	protein phosphatase, Mg2+/Mn2+ dependent 1E	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000140988', 'ENSG00000186468')	0.811816931742667	0	RPS2	RPS23	ribosomal protein S2	ribosomal protein S23
+('ENSG00000139220', 'ENSG00000149972')	0.8117292916088832	1	PPFIA2	CNTN5	PTPRF interacting protein alpha 2	contactin 5
+('ENSG00000149273', 'ENSG00000156508')	0.8116879947589909	0	RPS3	EEF1A1	ribosomal protein S3	eukaryotic translation elongation factor 1 alpha 1
+('ENSG00000154162', 'ENSG00000183230')	0.8115743596647439	0	CDH12	CTNNA3	cadherin 12	catenin alpha 3
+('ENSG00000105193', 'ENSG00000149806')	0.811491515966227	0	RPS16	FAU	ribosomal protein S16	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000105193', 'ENSG00000172809')	0.8114813902943511	0	RPS16	RPL38	ribosomal protein S16	ribosomal protein L38
+('ENSG00000145526', 'ENSG00000151025')	0.8114654331614279	0	CDH18	GPR158	cadherin 18	G protein-coupled receptor 158
+('ENSG00000136942', 'ENSG00000149273')	0.8114055598638713	0	RPL35	RPS3	ribosomal protein L35	ribosomal protein S3
+('ENSG00000149273', 'ENSG00000168028')	0.8113637776530676	0	RPS3	RPSA	ribosomal protein S3	ribosomal protein SA
+('ENSG00000154162', 'ENSG00000183117')	0.8113466287156533	0	CDH12	CSMD1	cadherin 12	CUB and Sushi multiple domains 1
+('ENSG00000100316', 'ENSG00000136942')	0.8113067817370447	0	RPL3	RPL35	ribosomal protein L3	ribosomal protein L35
+('ENSG00000154162', 'ENSG00000185737')	0.8112911407700836	0	CDH12	NRG3	cadherin 12	neuregulin 3
+('ENSG00000122406', 'ENSG00000149806')	0.8112284535904872	0	RPL5	FAU	ribosomal protein L5	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000177954', 'ENSG00000198918')	0.8111956984344201	0	RPS27	RPL39	ribosomal protein S27	ribosomal protein L39
+('ENSG00000173406', 'ENSG00000183230')	0.8111745786529186	0	DAB1	CTNNA3	DAB adaptor protein 1	catenin alpha 3
+('ENSG00000186094', 'ENSG00000187672')	0.8110833977827139	0	AGBL4	ERC2	AGBL carboxypeptidase 4	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000066032', 'ENSG00000108684')	0.8109913436237558	0	CTNNA2	ASIC2	catenin alpha 2	acid sensing ion channel subunit 2
+('ENSG00000149972', 'ENSG00000196090')	0.8109180443119197	0	CNTN5	PTPRT	contactin 5	protein tyrosine phosphatase receptor type T
+('ENSG00000171858', 'ENSG00000198918')	0.8108852806649746	0	RPS21	RPL39	ribosomal protein S21	ribosomal protein L39
+('ENSG00000183230', 'ENSG00000184985')	0.8108066749073632	0	CTNNA3	SORCS2	catenin alpha 3	sortilin related VPS10 domain containing receptor 2
+('ENSG00000066032', 'ENSG00000185352')	0.810782544327917	0	CTNNA2	HS6ST3	catenin alpha 2	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000204257', 'ENSG00000231389')	0.8107224688306295	1	HLA-DMA	HLA-DPA1	major histocompatibility complex, class II, DM alpha	major histocompatibility complex, class II, DP alpha 1
+('ENSG00000114391', 'ENSG00000177954')	0.8106873458759363	0	RPL24	RPS27	ribosomal protein L24	ribosomal protein S27
+('ENSG00000171858', 'ENSG00000196531')	0.810671651701146	0	RPS21	NACA	ribosomal protein S21	nascent polypeptide associated complex subunit alpha
+('ENSG00000139220', 'ENSG00000184408')	0.8106395131665908	0	PPFIA2	KCND2	PTPRF interacting protein alpha 2	potassium voltage-gated channel subfamily D member 2
+('ENSG00000185666', 'ENSG00000185737')	0.8104232650246688	0	SYN3	NRG3	synapsin III	neuregulin 3
+('ENSG00000149972', 'ENSG00000187672')	0.8103583100296547	0	CNTN5	ERC2	contactin 5	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000149972', 'ENSG00000185352')	0.8103540103214941	0	CNTN5	HS6ST3	contactin 5	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000183117', 'ENSG00000196090')	0.8102029116733663	0	CSMD1	PTPRT	CUB and Sushi multiple domains 1	protein tyrosine phosphatase receptor type T
+('ENSG00000145526', 'ENSG00000154162')	0.8099620360637976	1	CDH18	CDH12	cadherin 18	cadherin 12
+('ENSG00000105372', 'ENSG00000148303')	0.8098982453700073	0	RPS19	RPL7A	ribosomal protein S19	ribosomal protein L7a
+('ENSG00000133112', 'ENSG00000156508')	0.8097525480090411	0	TPT1	EEF1A1	tumor protein, translationally-controlled 1	eukaryotic translation elongation factor 1 alpha 1
+('ENSG00000105372', 'ENSG00000198755')	0.8097059819198251	0	RPS19	RPL10A	ribosomal protein S19	ribosomal protein L10a
+('ENSG00000175175', 'ENSG00000186094')	0.8096276044621944	0	PPM1E	AGBL4	protein phosphatase, Mg2+/Mn2+ dependent 1E	AGBL carboxypeptidase 4
+('ENSG00000083845', 'ENSG00000164587')	0.809621866330746	1	RPS5	RPS14	ribosomal protein S5	ribosomal protein S14
+('ENSG00000185737', 'ENSG00000187323')	0.8094611368616866	0	NRG3	DCC	neuregulin 3	DCC netrin 1 receptor
+('ENSG00000148303', 'ENSG00000167526')	0.8094297801721508	0	RPL7A	RPL13	ribosomal protein L7a	ribosomal protein L13
+('ENSG00000151025', 'ENSG00000169933')	0.8093886236063244	0	GPR158	FRMPD4	G protein-coupled receptor 158	FERM and PDZ domain containing 4
+('ENSG00000116251', 'ENSG00000168028')	0.809310257423191	0	RPL22	RPSA	ribosomal protein L22	ribosomal protein SA
+('ENSG00000115268', 'ENSG00000142541')	0.8092532063292428	0	RPS15	RPL13A	ribosomal protein S15	ribosomal protein L13a
+('ENSG00000196531', 'ENSG00000198755')	0.8091324425238852	0	NACA	RPL10A	nascent polypeptide associated complex subunit alpha	ribosomal protein L10a
+('ENSG00000149806', 'ENSG00000167526')	0.809063558760093	0	FAU	RPL13	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein L13
+('ENSG00000139220', 'ENSG00000183230')	0.8087836860217972	0	PPFIA2	CTNNA3	PTPRF interacting protein alpha 2	catenin alpha 3
+('ENSG00000114391', 'ENSG00000136942')	0.8087252682088657	0	RPL24	RPL35	ribosomal protein L24	ribosomal protein L35
+('ENSG00000156687', 'ENSG00000164418')	0.8087141486969595	0	UNC5D	GRIK2	unc-5 netrin receptor D	glutamate ionotropic receptor kainate type subunit 2
+('ENSG00000152208', 'ENSG00000169760')	0.8087038669203653	1	GRID2	NLGN1	glutamate ionotropic receptor delta type subunit 2	neuroligin 1
+('ENSG00000147403', 'ENSG00000198918')	0.8086300868564749	0	RPL10	RPL39	ribosomal protein L10	ribosomal protein L39
+('ENSG00000149806', 'ENSG00000171858')	0.8086134228348139	0	FAU	RPS21	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein S21
+('ENSG00000100316', 'ENSG00000140988')	0.8085639426726181	0	RPL3	RPS2	ribosomal protein L3	ribosomal protein S2
+('ENSG00000007001', 'ENSG00000186094')	0.8085323616573041	0	UPP2	AGBL4	uridine phosphorylase 2	AGBL carboxypeptidase 4
+('ENSG00000145526', 'ENSG00000169933')	0.8084709140315691	0	CDH18	FRMPD4	cadherin 18	FERM and PDZ domain containing 4
+('ENSG00000007001', 'ENSG00000183117')	0.8084514283200849	0	UPP2	CSMD1	uridine phosphorylase 2	CUB and Sushi multiple domains 1
+('ENSG00000136942', 'ENSG00000233927')	0.8084503239036295	0	RPL35	RPS28	ribosomal protein L35	ribosomal protein S28
+('ENSG00000179603', 'ENSG00000185053')	0.8083522054401554	0	GRM8	SGCZ	glutamate metabotropic receptor 8	sarcoglycan zeta
+('ENSG00000150275', 'ENSG00000186094')	0.8082637003241555	0	PCDH15	AGBL4	protocadherin related 15	AGBL carboxypeptidase 4
+('ENSG00000136297', 'ENSG00000152214')	0.8082185611178643	0	MMD2	RIT2	monocyte to macrophage differentiation associated 2	Ras like without CAAX 2
+('ENSG00000171858', 'ENSG00000186468')	0.8081873822705364	0	RPS21	RPS23	ribosomal protein S21	ribosomal protein S23
+('ENSG00000139220', 'ENSG00000185737')	0.808165505518809	0	PPFIA2	NRG3	PTPRF interacting protein alpha 2	neuregulin 3
+('ENSG00000171858', 'ENSG00000177600')	0.8081168600575863	0	RPS21	RPLP2	ribosomal protein S21	ribosomal protein lateral stalk subunit P2
+('ENSG00000185737', 'ENSG00000187672')	0.8080233197700675	0	NRG3	ERC2	neuregulin 3	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000143184', 'ENSG00000143185')	0.8080205658247783	1	XCL1	XCL2	X-C motif chemokine ligand 1	X-C motif chemokine ligand 2
+('ENSG00000156687', 'ENSG00000183230')	0.8079306874521406	0	UNC5D	CTNNA3	unc-5 netrin receptor D	catenin alpha 3
+('ENSG00000114391', 'ENSG00000116251')	0.8079168100360317	0	RPL24	RPL22	ribosomal protein L24	ribosomal protein L22
+('ENSG00000116824', 'ENSG00000167286')	0.807899390483659	0	CD2	CD3D	CD2 molecule	CD3 delta subunit of T-cell receptor complex
+('ENSG00000152208', 'ENSG00000187323')	0.8078868771391143	0	GRID2	DCC	glutamate ionotropic receptor delta type subunit 2	DCC netrin 1 receptor
+('ENSG00000115268', 'ENSG00000140988')	0.8078832034218335	0	RPS15	RPS2	ribosomal protein S15	ribosomal protein S2
+('ENSG00000182866', 'ENSG00000198851')	0.8078370169252417	0	LCK	CD3E	LCK proto-oncogene, Src family tyrosine kinase	CD3 epsilon subunit of T-cell receptor complex
+('ENSG00000196531', 'ENSG00000233927')	0.807797744676608	0	NACA	RPS28	nascent polypeptide associated complex subunit alpha	ribosomal protein S28
+('ENSG00000163885', 'ENSG00000165164')	0.8076887145243871	0	CFAP100	CFAP47	cilia and flagella associated protein 100	cilia and flagella associated protein 47
+('ENSG00000204592', 'ENSG00000206503')	0.8075371067031357	1	HLA-E	HLA-A	major histocompatibility complex, class I, E	major histocompatibility complex, class I, A
+('ENSG00000198755', 'ENSG00000233927')	0.8075313422645627	0	RPL10A	RPS28	ribosomal protein L10a	ribosomal protein S28
+('ENSG00000108684', 'ENSG00000179603')	0.8075182421315187	0	ASIC2	GRM8	acid sensing ion channel subunit 2	glutamate metabotropic receptor 8
+('ENSG00000108684', 'ENSG00000150275')	0.8075137073360646	0	ASIC2	PCDH15	acid sensing ion channel subunit 2	protocadherin related 15
+('ENSG00000169760', 'ENSG00000187391')	0.8074860603737081	0	NLGN1	MAGI2	neuroligin 1	membrane associated guanylate kinase, WW and PDZ domain containing 2
+('ENSG00000145526', 'ENSG00000185737')	0.8073917333765998	0	CDH18	NRG3	cadherin 18	neuregulin 3
+('ENSG00000152208', 'ENSG00000185737')	0.8073591946815605	0	GRID2	NRG3	glutamate ionotropic receptor delta type subunit 2	neuregulin 3
+('ENSG00000072315', 'ENSG00000149488')	0.8072897703416644	0	TRPC5	TMC2	transient receptor potential cation channel subfamily C member 5	transmembrane channel like 2
+('ENSG00000149972', 'ENSG00000184408')	0.8072493312623291	0	CNTN5	KCND2	contactin 5	potassium voltage-gated channel subfamily D member 2
+('ENSG00000105372', 'ENSG00000204628')	0.8072482392931339	0	RPS19	RACK1	ribosomal protein S19	receptor for activated C kinase 1
+('ENSG00000105193', 'ENSG00000171858')	0.8071786300239984	0	RPS16	RPS21	ribosomal protein S16	ribosomal protein S21
+('ENSG00000150275', 'ENSG00000183117')	0.8070972424638387	1	PCDH15	CSMD1	protocadherin related 15	CUB and Sushi multiple domains 1
+('ENSG00000116117', 'ENSG00000187391')	0.8070734266955817	0	PARD3B	MAGI2	par-3 family cell polarity regulator beta	membrane associated guanylate kinase, WW and PDZ domain containing 2
+('ENSG00000148303', 'ENSG00000177600')	0.8068986550712134	0	RPL7A	RPLP2	ribosomal protein L7a	ribosomal protein lateral stalk subunit P2
+('ENSG00000115268', 'ENSG00000171858')	0.8068357744778542	0	RPS15	RPS21	ribosomal protein S15	ribosomal protein S21
+('ENSG00000169760', 'ENSG00000178568')	0.8067606737518069	0	NLGN1	ERBB4	neuroligin 1	erb-b2 receptor tyrosine kinase 4
+('ENSG00000151025', 'ENSG00000155886')	0.8067477776566803	0	GPR158	SLC24A2	G protein-coupled receptor 158	solute carrier family 24 member 2
+('ENSG00000152208', 'ENSG00000198739')	0.8067427027935112	0	GRID2	LRRTM3	glutamate ionotropic receptor delta type subunit 2	leucine rich repeat transmembrane neuronal 3
+('ENSG00000182601', 'ENSG00000185053')	0.8067168952178403	0	HS3ST4	SGCZ	heparan sulfate-glucosamine 3-sulfotransferase 4	sarcoglycan zeta
+('ENSG00000083845', 'ENSG00000131469')	0.8066812778093249	0	RPS5	RPL27	ribosomal protein S5	ribosomal protein L27
+('ENSG00000149972', 'ENSG00000169933')	0.8065510992338203	0	CNTN5	FRMPD4	contactin 5	FERM and PDZ domain containing 4
+('ENSG00000168028', 'ENSG00000233927')	0.8065276435800683	1	RPSA	RPS28	ribosomal protein SA	ribosomal protein S28
+('ENSG00000151025', 'ENSG00000164588')	0.8064479620804124	0	GPR158	HCN1	G protein-coupled receptor 158	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000066032', 'ENSG00000169862')	0.8063102401305347	0	CTNNA2	CTNND2	catenin alpha 2	catenin delta 2
+('ENSG00000145526', 'ENSG00000156687')	0.8062631706753525	0	CDH18	UNC5D	cadherin 18	unc-5 netrin receptor D
+('ENSG00000105372', 'ENSG00000122406')	0.8062279987824588	0	RPS19	RPL5	ribosomal protein S19	ribosomal protein L5
+('ENSG00000066032', 'ENSG00000169306')	0.8061872691938299	0	CTNNA2	IL1RAPL1	catenin alpha 2	interleukin 1 receptor accessory protein like 1
+('ENSG00000155511', 'ENSG00000164588')	0.806158461989174	0	GRIA1	HCN1	glutamate ionotropic receptor AMPA type subunit 1	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000133112', 'ENSG00000198918')	0.8061464140587594	0	TPT1	RPL39	tumor protein, translationally-controlled 1	ribosomal protein L39
+('ENSG00000108684', 'ENSG00000183230')	0.8060747795766812	0	ASIC2	CTNNA3	acid sensing ion channel subunit 2	catenin alpha 3
+('ENSG00000140988', 'ENSG00000198918')	0.8060608854432876	0	RPS2	RPL39	ribosomal protein S2	ribosomal protein L39
+('ENSG00000169306', 'ENSG00000185737')	0.8058172365598082	0	IL1RAPL1	NRG3	interleukin 1 receptor accessory protein like 1	neuregulin 3
+('ENSG00000133112', 'ENSG00000142676')	0.8056627791991997	0	TPT1	RPL11	tumor protein, translationally-controlled 1	ribosomal protein L11
+('ENSG00000183230', 'ENSG00000185352')	0.8056541417911256	0	CTNNA3	HS6ST3	catenin alpha 3	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000164587', 'ENSG00000204628')	0.8056521251095867	0	RPS14	RACK1	ribosomal protein S14	receptor for activated C kinase 1
+('ENSG00000152208', 'ENSG00000185352')	0.8056352305799875	0	GRID2	HS6ST3	glutamate ionotropic receptor delta type subunit 2	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000116251', 'ENSG00000198918')	0.8055507317920048	0	RPL22	RPL39	ribosomal protein L22	ribosomal protein L39
+('ENSG00000154162', 'ENSG00000185053')	0.8055486823089715	0	CDH12	SGCZ	cadherin 12	sarcoglycan zeta
+('ENSG00000135486', 'ENSG00000181163')	0.8055233434078445	0	HNRNPA1	NPM1	heterogeneous nuclear ribonucleoprotein A1	nucleophosmin 1
+('ENSG00000149806', 'ENSG00000168028')	0.805503256334378	0	FAU	RPSA	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein SA
+('ENSG00000116251', 'ENSG00000148303')	0.8054785111947977	0	RPL22	RPL7A	ribosomal protein L22	ribosomal protein L7a
+('ENSG00000156508', 'ENSG00000186468')	0.8054407748665661	0	EEF1A1	RPS23	eukaryotic translation elongation factor 1 alpha 1	ribosomal protein S23
+('ENSG00000066032', 'ENSG00000186094')	0.8054264910701117	0	CTNNA2	AGBL4	catenin alpha 2	AGBL carboxypeptidase 4
+('ENSG00000152208', 'ENSG00000164418')	0.8054032214043505	0	GRID2	GRIK2	glutamate ionotropic receptor delta type subunit 2	glutamate ionotropic receptor kainate type subunit 2
+('ENSG00000151025', 'ENSG00000156687')	0.8053315306994075	0	GPR158	UNC5D	G protein-coupled receptor 158	unc-5 netrin receptor D
+('ENSG00000160654', 'ENSG00000198851')	0.8052401166517803	1	CD3G	CD3E	CD3 gamma subunit of T-cell receptor complex	CD3 epsilon subunit of T-cell receptor complex
+('ENSG00000066032', 'ENSG00000185053')	0.8051327029950773	0	CTNNA2	SGCZ	catenin alpha 2	sarcoglycan zeta
+('ENSG00000066032', 'ENSG00000145526')	0.8050473464762131	0	CTNNA2	CDH18	catenin alpha 2	cadherin 18
+('ENSG00000150275', 'ENSG00000164588')	0.8050064890830798	0	PCDH15	HCN1	protocadherin related 15	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000145526', 'ENSG00000179603')	0.8049653464230457	0	CDH18	GRM8	cadherin 18	glutamate metabotropic receptor 8
+('ENSG00000138326', 'ENSG00000156508')	0.8049536630112488	0	RPS24	EEF1A1	ribosomal protein S24	eukaryotic translation elongation factor 1 alpha 1
+('ENSG00000164588', 'ENSG00000185053')	0.8049376369647475	0	HCN1	SGCZ	hyperpolarization activated cyclic nucleotide gated potassium channel 1	sarcoglycan zeta
+('ENSG00000133112', 'ENSG00000142937')	0.8048834076640763	0	TPT1	RPS8	tumor protein, translationally-controlled 1	ribosomal protein S8
+('ENSG00000183230', 'ENSG00000185053')	0.804749975913666	0	CTNNA3	SGCZ	catenin alpha 3	sarcoglycan zeta
+('ENSG00000151025', 'ENSG00000185053')	0.8047497785556962	0	GPR158	SGCZ	G protein-coupled receptor 158	sarcoglycan zeta
+('ENSG00000131469', 'ENSG00000136942')	0.8045937769739319	0	RPL27	RPL35	ribosomal protein L27	ribosomal protein L35
+('ENSG00000198918', 'ENSG00000204628')	0.8045739970049265	0	RPL39	RACK1	ribosomal protein L39	receptor for activated C kinase 1
+('ENSG00000066032', 'ENSG00000164418')	0.8045314327346256	0	CTNNA2	GRIK2	catenin alpha 2	glutamate ionotropic receptor kainate type subunit 2
+('ENSG00000145242', 'ENSG00000150275')	0.8045053683517681	0	EPHA5	PCDH15	EPH receptor A5	protocadherin related 15
+('ENSG00000150275', 'ENSG00000154162')	0.8045032524933436	0	PCDH15	CDH12	protocadherin related 15	cadherin 12
+('ENSG00000108684', 'ENSG00000183117')	0.8044836744817617	0	ASIC2	CSMD1	acid sensing ion channel subunit 2	CUB and Sushi multiple domains 1
+('ENSG00000131469', 'ENSG00000149273')	0.8043380697625182	0	RPL27	RPS3	ribosomal protein L27	ribosomal protein S3
+('ENSG00000066032', 'ENSG00000183230')	0.8042890903178352	0	CTNNA2	CTNNA3	catenin alpha 2	catenin alpha 3
+('ENSG00000154162', 'ENSG00000196090')	0.804245994573207	0	CDH12	PTPRT	cadherin 12	protein tyrosine phosphatase receptor type T
+('ENSG00000185352', 'ENSG00000187672')	0.8042378139199425	0	HS6ST3	ERC2	heparan sulfate 6-O-sulfotransferase 3	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000142676', 'ENSG00000198755')	0.8042149275260171	0	RPL11	RPL10A	ribosomal protein L11	ribosomal protein L10a
+('ENSG00000198804', 'ENSG00000198888')	0.8041277870270023	0	MT-CO1	MT-ND1	mitochondrially encoded cytochrome c oxidase I	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1
+('ENSG00000154162', 'ENSG00000156687')	0.8041162946132739	0	CDH12	UNC5D	cadherin 12	unc-5 netrin receptor D
+('ENSG00000105193', 'ENSG00000167526')	0.8040582814152798	0	RPS16	RPL13	ribosomal protein S16	ribosomal protein L13
+('ENSG00000148948', 'ENSG00000169306')	0.8040520853684393	0	LRRC4C	IL1RAPL1	leucine rich repeat containing 4C	interleukin 1 receptor accessory protein like 1
+('ENSG00000083845', 'ENSG00000171858')	0.8040275254352636	0	RPS5	RPS21	ribosomal protein S5	ribosomal protein S21
+('ENSG00000108684', 'ENSG00000185053')	0.8039869966252728	0	ASIC2	SGCZ	acid sensing ion channel subunit 2	sarcoglycan zeta
+('ENSG00000102879', 'ENSG00000130592')	0.8039202646732585	0	CORO1A	LSP1	coronin 1A	lymphocyte specific protein 1
+('ENSG00000150275', 'ENSG00000185352')	0.8039124430188364	0	PCDH15	HS6ST3	protocadherin related 15	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000150275', 'ENSG00000169306')	0.8038396197906152	0	PCDH15	IL1RAPL1	protocadherin related 15	interleukin 1 receptor accessory protein like 1
+('ENSG00000110700', 'ENSG00000136942')	0.803837965018923	0	RPS13	RPL35	ribosomal protein S13	ribosomal protein L35
+('ENSG00000152208', 'ENSG00000187672')	0.8038076871032885	0	GRID2	ERC2	glutamate ionotropic receptor delta type subunit 2	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000164588', 'ENSG00000185737')	0.8037816190941917	0	HCN1	NRG3	hyperpolarization activated cyclic nucleotide gated potassium channel 1	neuregulin 3
+('ENSG00000144619', 'ENSG00000169760')	0.80376681818764	1	CNTN4	NLGN1	contactin 4	neuroligin 1
+('ENSG00000066032', 'ENSG00000183117')	0.803680327043208	0	CTNNA2	CSMD1	catenin alpha 2	CUB and Sushi multiple domains 1
+('ENSG00000184611', 'ENSG00000185053')	0.8036203327264244	0	KCNH7	SGCZ	potassium voltage-gated channel subfamily H member 7	sarcoglycan zeta
+('ENSG00000198786', 'ENSG00000198840')	0.8036082177307917	0	MT-ND5	MT-ND3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 5	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 3
+('ENSG00000150275', 'ENSG00000187672')	0.8035322999715014	0	PCDH15	ERC2	protocadherin related 15	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000185053', 'ENSG00000186094')	0.8034425490805673	0	SGCZ	AGBL4	sarcoglycan zeta	AGBL carboxypeptidase 4
+('ENSG00000185053', 'ENSG00000185352')	0.8032887829334767	0	SGCZ	HS6ST3	sarcoglycan zeta	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000183230', 'ENSG00000186094')	0.8031943521252437	0	CTNNA3	AGBL4	catenin alpha 3	AGBL carboxypeptidase 4
+('ENSG00000164588', 'ENSG00000198739')	0.803192804908872	0	HCN1	LRRTM3	hyperpolarization activated cyclic nucleotide gated potassium channel 1	leucine rich repeat transmembrane neuronal 3
+('ENSG00000100316', 'ENSG00000168028')	0.8030950171555965	0	RPL3	RPSA	ribosomal protein L3	ribosomal protein SA
+('ENSG00000171587', 'ENSG00000185737')	0.8030939388782733	0	DSCAM	NRG3	DS cell adhesion molecule	neuregulin 3
+('ENSG00000188771', 'ENSG00000239605')	0.8030490330588785	0	PLET1	STPG4	placenta expressed transcript 1	sperm-tail PG-rich repeat containing 4
+('ENSG00000140988', 'ENSG00000142676')	0.8030257050277523	0	RPS2	RPL11	ribosomal protein S2	ribosomal protein L11
+('ENSG00000140988', 'ENSG00000198755')	0.8030252041645313	0	RPS2	RPL10A	ribosomal protein S2	ribosomal protein L10a
+('ENSG00000078328', 'ENSG00000183230')	0.8029379673811858	0	RBFOX1	CTNNA3	RNA binding fox-1 homolog 1	catenin alpha 3
+('ENSG00000169760', 'ENSG00000185737')	0.8029148935713637	0	NLGN1	NRG3	neuroligin 1	neuregulin 3
+('ENSG00000131469', 'ENSG00000186468')	0.8028985564299189	0	RPL27	RPS23	ribosomal protein L27	ribosomal protein S23
+('ENSG00000149972', 'ENSG00000169760')	0.8027933897185505	1	CNTN5	NLGN1	contactin 5	neuroligin 1
+('ENSG00000145741', 'ENSG00000204628')	0.8027698208002401	0	BTF3	RACK1	basic transcription factor 3	receptor for activated C kinase 1
+('ENSG00000122406', 'ENSG00000142676')	0.8026939373850474	1	RPL5	RPL11	ribosomal protein L5	ribosomal protein L11
+('ENSG00000136267', 'ENSG00000139220')	0.8026137713785959	0	DGKB	PPFIA2	diacylglycerol kinase beta	PTPRF interacting protein alpha 2
+('ENSG00000147403', 'ENSG00000204628')	0.8025215257590116	0	RPL10	RACK1	ribosomal protein L10	receptor for activated C kinase 1
+('ENSG00000171587', 'ENSG00000185053')	0.8024027517547571	0	DSCAM	SGCZ	DS cell adhesion molecule	sarcoglycan zeta
+('ENSG00000171587', 'ENSG00000186094')	0.8023298948904388	0	DSCAM	AGBL4	DS cell adhesion molecule	AGBL carboxypeptidase 4
+('ENSG00000066032', 'ENSG00000164588')	0.8022997460842914	0	CTNNA2	HCN1	catenin alpha 2	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000155816', 'ENSG00000183230')	0.8022968842044705	0	FMN2	CTNNA3	formin 2	catenin alpha 3
+('ENSG00000007001', 'ENSG00000155886')	0.8022784328546545	0	UPP2	SLC24A2	uridine phosphorylase 2	solute carrier family 24 member 2
+('ENSG00000148948', 'ENSG00000152208')	0.8022716004067646	0	LRRC4C	GRID2	leucine rich repeat containing 4C	glutamate ionotropic receptor delta type subunit 2
+('ENSG00000021645', 'ENSG00000148948')	0.8022581470905087	0	NRXN3	LRRC4C	neurexin 3	leucine rich repeat containing 4C
+('ENSG00000145526', 'ENSG00000186094')	0.8022266102206296	0	CDH18	AGBL4	cadherin 18	AGBL carboxypeptidase 4
+('ENSG00000147604', 'ENSG00000198755')	0.8022020341122141	1	RPL7	RPL10A	ribosomal protein L7	ribosomal protein L10a
+('ENSG00000066032', 'ENSG00000169760')	0.8021669202279409	0	CTNNA2	NLGN1	catenin alpha 2	neuroligin 1
+('ENSG00000182866', 'ENSG00000198821')	0.8020777239842446	1	LCK	CD247	LCK proto-oncogene, Src family tyrosine kinase	CD247 molecule
+('ENSG00000131469', 'ENSG00000142937')	0.802063606081729	0	RPL27	RPS8	ribosomal protein L27	ribosomal protein S8
+('ENSG00000108684', 'ENSG00000154162')	0.8018759094972521	0	ASIC2	CDH12	acid sensing ion channel subunit 2	cadherin 12
+('ENSG00000183117', 'ENSG00000185053')	0.8017206084657148	0	CSMD1	SGCZ	CUB and Sushi multiple domains 1	sarcoglycan zeta
+('ENSG00000108684', 'ENSG00000152208')	0.8017097721713522	0	ASIC2	GRID2	acid sensing ion channel subunit 2	glutamate ionotropic receptor delta type subunit 2
+('ENSG00000126733', 'ENSG00000154162')	0.8016891392191283	0	DACH2	CDH12	dachshund family transcription factor 2	cadherin 12
+('ENSG00000011600', 'ENSG00000158869')	0.8015884293929165	1	TYROBP	FCER1G	transmembrane immune signaling adaptor TYROBP	Fc epsilon receptor Ig
+('ENSG00000164692', 'ENSG00000168542')	0.8015662728227617	0	COL1A2	COL3A1	collagen type I alpha 2 chain	collagen type III alpha 1 chain
+('ENSG00000156687', 'ENSG00000169306')	0.801562172056768	0	UNC5D	IL1RAPL1	unc-5 netrin receptor D	interleukin 1 receptor accessory protein like 1
+('ENSG00000155816', 'ENSG00000175175')	0.8015549582844084	0	FMN2	PPM1E	formin 2	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000149806', 'ENSG00000198755')	0.801536437719033	0	FAU	RPL10A	FAU ubiquitin like and ribosomal protein S30 fusion	ribosomal protein L10a
+('ENSG00000150361', 'ENSG00000184611')	0.8015132261698567	0	KLHL1	KCNH7	kelch like family member 1	potassium voltage-gated channel subfamily H member 7
+('ENSG00000164418', 'ENSG00000183230')	0.8015090650939111	0	GRIK2	CTNNA3	glutamate ionotropic receptor kainate type subunit 2	catenin alpha 3
+('ENSG00000100316', 'ENSG00000148303')	0.8014829013772394	0	RPL3	RPL7A	ribosomal protein L3	ribosomal protein L7a
+('ENSG00000136942', 'ENSG00000142676')	0.8014815759630066	0	RPL35	RPL11	ribosomal protein L35	ribosomal protein L11
+('ENSG00000167526', 'ENSG00000198918')	0.8014157889619334	0	RPL13	RPL39	ribosomal protein L13	ribosomal protein L39
+('ENSG00000150275', 'ENSG00000175175')	0.8014043803078279	0	PCDH15	PPM1E	protocadherin related 15	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000131469', 'ENSG00000171863')	0.8013289682005815	0	RPL27	RPS7	ribosomal protein L27	ribosomal protein S7
+('ENSG00000115268', 'ENSG00000196531')	0.8013190140552345	0	RPS15	NACA	ribosomal protein S15	nascent polypeptide associated complex subunit alpha
+('ENSG00000114391', 'ENSG00000167526')	0.8013115093188615	0	RPL24	RPL13	ribosomal protein L24	ribosomal protein L13
+('ENSG00000105372', 'ENSG00000140988')	0.8013077893386541	0	RPS19	RPS2	ribosomal protein S19	ribosomal protein S2
+('ENSG00000204592', 'ENSG00000234745')	0.8011424179635976	1	HLA-E	HLA-B	major histocompatibility complex, class I, E	major histocompatibility complex, class I, B
+('ENSG00000108821', 'ENSG00000164692')	0.801103393014854	1	COL1A1	COL1A2	collagen type I alpha 1 chain	collagen type I alpha 2 chain
+('ENSG00000066032', 'ENSG00000139220')	0.8010549836519237	0	CTNNA2	PPFIA2	catenin alpha 2	PTPRF interacting protein alpha 2
+('ENSG00000185053', 'ENSG00000187323')	0.80101992801294	0	SGCZ	DCC	sarcoglycan zeta	DCC netrin 1 receptor
+('ENSG00000177103', 'ENSG00000186094')	0.8009870740904415	0	DSCAML1	AGBL4	DS cell adhesion molecule like 1	AGBL carboxypeptidase 4
+('ENSG00000149972', 'ENSG00000187323')	0.800913044891101	0	CNTN5	DCC	contactin 5	DCC netrin 1 receptor
+('ENSG00000105372', 'ENSG00000171858')	0.8007428227949207	0	RPS19	RPS21	ribosomal protein S19	ribosomal protein S21
+('ENSG00000145526', 'ENSG00000183117')	0.8006932051147061	0	CDH18	CSMD1	cadherin 18	CUB and Sushi multiple domains 1
+('ENSG00000139220', 'ENSG00000165379')	0.8006879109905689	0	PPFIA2	LRFN5	PTPRF interacting protein alpha 2	leucine rich repeat and fibronectin type III domain containing 5
+('ENSG00000164588', 'ENSG00000179603')	0.8006180711440989	0	HCN1	GRM8	hyperpolarization activated cyclic nucleotide gated potassium channel 1	glutamate metabotropic receptor 8
+('ENSG00000159189', 'ENSG00000173372')	0.800615989578934	1	C1QC	C1QA	complement C1q C chain	complement C1q A chain
+('ENSG00000164418', 'ENSG00000175175')	0.8006090230117151	0	GRIK2	PPM1E	glutamate ionotropic receptor kainate type subunit 2	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000133112', 'ENSG00000177954')	0.8005907106711233	0	TPT1	RPS27	tumor protein, translationally-controlled 1	ribosomal protein S27
+('ENSG00000184408', 'ENSG00000185053')	0.8005551225224847	0	KCND2	SGCZ	potassium voltage-gated channel subfamily D member 2	sarcoglycan zeta
+('ENSG00000108684', 'ENSG00000185737')	0.8005486116960723	0	ASIC2	NRG3	acid sensing ion channel subunit 2	neuregulin 3
+('ENSG00000083845', 'ENSG00000149806')	0.8005147980019347	0	RPS5	FAU	ribosomal protein S5	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000145526', 'ENSG00000183230')	0.8005138484268811	0	CDH18	CTNNA3	cadherin 18	catenin alpha 3
+('ENSG00000175175', 'ENSG00000185053')	0.8005050816121463	0	PPM1E	SGCZ	protein phosphatase, Mg2+/Mn2+ dependent 1E	sarcoglycan zeta
+('ENSG00000155816', 'ENSG00000156687')	0.8004693884676708	0	FMN2	UNC5D	formin 2	unc-5 netrin receptor D
+('ENSG00000164418', 'ENSG00000187672')	0.8004561898355	0	GRIK2	ERC2	glutamate ionotropic receptor kainate type subunit 2	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000178568', 'ENSG00000186094')	0.8003233689407157	0	ERBB4	AGBL4	erb-b2 receptor tyrosine kinase 4	AGBL carboxypeptidase 4
+('ENSG00000007001', 'ENSG00000149972')	0.8003174783794879	0	UPP2	CNTN5	uridine phosphorylase 2	contactin 5
+('ENSG00000122406', 'ENSG00000131469')	0.8002790378577807	0	RPL5	RPL27	ribosomal protein L5	ribosomal protein L27
+('ENSG00000114391', 'ENSG00000172809')	0.8002384625961445	0	RPL24	RPL38	ribosomal protein L24	ribosomal protein L38
+('ENSG00000007001', 'ENSG00000108684')	0.8002153197096173	0	UPP2	ASIC2	uridine phosphorylase 2	acid sensing ion channel subunit 2
+('ENSG00000142541', 'ENSG00000167526')	0.800211940046326	0	RPL13A	RPL13	ribosomal protein L13a	ribosomal protein L13
+('ENSG00000147485', 'ENSG00000150275')	0.80020499625377	0	PXDNL	PCDH15	peroxidasin like	protocadherin related 15
+('ENSG00000108684', 'ENSG00000155816')	0.8001610451029157	0	ASIC2	FMN2	acid sensing ion channel subunit 2	formin 2
+('ENSG00000147485', 'ENSG00000186094')	0.8001508042178378	0	PXDNL	AGBL4	peroxidasin like	AGBL carboxypeptidase 4
+('ENSG00000154162', 'ENSG00000175175')	0.8001415172567591	0	CDH12	PPM1E	cadherin 12	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000145526', 'ENSG00000171587')	0.8000796786930653	0	CDH18	DSCAM	cadherin 18	DS cell adhesion molecule
+('ENSG00000100316', 'ENSG00000138326')	0.800062281784185	0	RPL3	RPS24	ribosomal protein L3	ribosomal protein S24
+('ENSG00000066032', 'ENSG00000145242')	0.8000559681680227	0	CTNNA2	EPHA5	catenin alpha 2	EPH receptor A5
+('ENSG00000108684', 'ENSG00000185666')	0.8000514206360948	0	ASIC2	SYN3	acid sensing ion channel subunit 2	synapsin III
+('ENSG00000131469', 'ENSG00000168028')	0.8000496071912854	0	RPL27	RPSA	ribosomal protein L27	ribosomal protein SA
+('ENSG00000133112', 'ENSG00000167526')	0.8000106457867264	0	TPT1	RPL13	tumor protein, translationally-controlled 1	ribosomal protein L13
+('ENSG00000164418', 'ENSG00000186094')	0.7999868564039951	0	GRIK2	AGBL4	glutamate ionotropic receptor kainate type subunit 2	AGBL carboxypeptidase 4
+('ENSG00000156687', 'ENSG00000187672')	0.7999472795809495	0	UNC5D	ERC2	unc-5 netrin receptor D	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000139220', 'ENSG00000187672')	0.7999362480291723	0	PPFIA2	ERC2	PTPRF interacting protein alpha 2	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000145741', 'ENSG00000168028')	0.7998962311990564	0	BTF3	RPSA	basic transcription factor 3	ribosomal protein SA
+('ENSG00000066032', 'ENSG00000187323')	0.7998273883182925	0	CTNNA2	DCC	catenin alpha 2	DCC netrin 1 receptor
+('ENSG00000066032', 'ENSG00000155816')	0.7997559971637079	0	CTNNA2	FMN2	catenin alpha 2	formin 2
+('ENSG00000151025', 'ENSG00000168959')	0.7996804722015831	0	GPR158	GRM5	G protein-coupled receptor 158	glutamate metabotropic receptor 5
+('ENSG00000144036', 'ENSG00000171723')	0.7996685694337294	0	EXOC6B	GPHN	exocyst complex component 6B	gephyrin
+('ENSG00000169306', 'ENSG00000185666')	0.7996472825183152	0	IL1RAPL1	SYN3	interleukin 1 receptor accessory protein like 1	synapsin III
+('ENSG00000105193', 'ENSG00000147403')	0.7995854378876333	0	RPS16	RPL10	ribosomal protein S16	ribosomal protein L10
+('ENSG00000184408', 'ENSG00000187672')	0.7995326794310158	0	KCND2	ERC2	potassium voltage-gated channel subfamily D member 2	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000175175', 'ENSG00000185737')	0.7995239302147296	0	PPM1E	NRG3	protein phosphatase, Mg2+/Mn2+ dependent 1E	neuregulin 3
+('ENSG00000116251', 'ENSG00000142937')	0.7995222350522833	0	RPL22	RPS8	ribosomal protein L22	ribosomal protein S8
+('ENSG00000145526', 'ENSG00000187323')	0.7995177155964952	0	CDH18	DCC	cadherin 18	DCC netrin 1 receptor
+('ENSG00000152208', 'ENSG00000165379')	0.7994981376063969	0	GRID2	LRFN5	glutamate ionotropic receptor delta type subunit 2	leucine rich repeat and fibronectin type III domain containing 5
+('ENSG00000145526', 'ENSG00000164588')	0.7993553750473662	0	CDH18	HCN1	cadherin 18	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000175175', 'ENSG00000183230')	0.7993170065969575	0	PPM1E	CTNNA3	protein phosphatase, Mg2+/Mn2+ dependent 1E	catenin alpha 3
+('ENSG00000171858', 'ENSG00000177954')	0.7992983278681308	0	RPS21	RPS27	ribosomal protein S21	ribosomal protein S27
+('ENSG00000186094', 'ENSG00000196090')	0.7992668216322514	0	AGBL4	PTPRT	AGBL carboxypeptidase 4	protein tyrosine phosphatase receptor type T
+('ENSG00000140988', 'ENSG00000177954')	0.7992212434261998	0	RPS2	RPS27	ribosomal protein S2	ribosomal protein S27
+('ENSG00000154162', 'ENSG00000179603')	0.7992210189779098	0	CDH12	GRM8	cadherin 12	glutamate metabotropic receptor 8
+('ENSG00000156687', 'ENSG00000169760')	0.7991899692922	0	UNC5D	NLGN1	unc-5 netrin receptor D	neuroligin 1
+('ENSG00000171858', 'ENSG00000198755')	0.7990846525427695	0	RPS21	RPL10A	ribosomal protein S21	ribosomal protein L10a
+('ENSG00000138326', 'ENSG00000168028')	0.7990833625811191	0	RPS24	RPSA	ribosomal protein S24	ribosomal protein SA
+('ENSG00000105372', 'ENSG00000136942')	0.7990812994510246	0	RPS19	RPL35	ribosomal protein S19	ribosomal protein L35
+('ENSG00000149806', 'ENSG00000204628')	0.799070836005093	0	FAU	RACK1	FAU ubiquitin like and ribosomal protein S30 fusion	receptor for activated C kinase 1
+('ENSG00000066032', 'ENSG00000179603')	0.7990487137944317	0	CTNNA2	GRM8	catenin alpha 2	glutamate metabotropic receptor 8
+('ENSG00000105193', 'ENSG00000196531')	0.798931959995249	0	RPS16	NACA	ribosomal protein S16	nascent polypeptide associated complex subunit alpha
+('ENSG00000116251', 'ENSG00000122406')	0.7986541955389894	0	RPL22	RPL5	ribosomal protein L22	ribosomal protein L5
+('ENSG00000185053', 'ENSG00000185666')	0.7986525874427516	0	SGCZ	SYN3	sarcoglycan zeta	synapsin III
+('ENSG00000145526', 'ENSG00000147485')	0.7985694032465813	0	CDH18	PXDNL	cadherin 18	peroxidasin like
+('ENSG00000169760', 'ENSG00000218336')	0.7985252530991148	0	NLGN1	TENM3	neuroligin 1	teneurin transmembrane protein 3
+('ENSG00000007001', 'ENSG00000170743')	0.7985154436331504	0	UPP2	SYT9	uridine phosphorylase 2	synaptotagmin 9
+('ENSG00000126733', 'ENSG00000145526')	0.7984796095336957	0	DACH2	CDH18	dachshund family transcription factor 2	cadherin 18
+('ENSG00000006116', 'ENSG00000136297')	0.7984594601670054	0	CACNG3	MMD2	calcium voltage-gated channel auxiliary subunit gamma 3	monocyte to macrophage differentiation associated 2
+('ENSG00000164587', 'ENSG00000171858')	0.7984282318633421	0	RPS14	RPS21	ribosomal protein S14	ribosomal protein S21
+('ENSG00000133112', 'ENSG00000186468')	0.798416430764252	0	TPT1	RPS23	tumor protein, translationally-controlled 1	ribosomal protein S23
+('ENSG00000150361', 'ENSG00000169933')	0.7983994364065627	0	KLHL1	FRMPD4	kelch like family member 1	FERM and PDZ domain containing 4
+('ENSG00000156687', 'ENSG00000187323')	0.7983762190795783	0	UNC5D	DCC	unc-5 netrin receptor D	DCC netrin 1 receptor
+('ENSG00000185053', 'ENSG00000187672')	0.7983598998463487	0	SGCZ	ERC2	sarcoglycan zeta	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000184408', 'ENSG00000188803')	0.7982883892937802	0	KCND2	SHISA6	potassium voltage-gated channel subfamily D member 2	shisa family member 6
+('ENSG00000139220', 'ENSG00000169306')	0.798249397765719	0	PPFIA2	IL1RAPL1	PTPRF interacting protein alpha 2	interleukin 1 receptor accessory protein like 1
+('ENSG00000145526', 'ENSG00000185352')	0.7982288942667946	0	CDH18	HS6ST3	cadherin 18	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000152208', 'ENSG00000164588')	0.7981995212108137	0	GRID2	HCN1	glutamate ionotropic receptor delta type subunit 2	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000151025', 'ENSG00000182601')	0.7981973817762272	0	GPR158	HS3ST4	G protein-coupled receptor 158	heparan sulfate-glucosamine 3-sulfotransferase 4
+('ENSG00000142541', 'ENSG00000177954')	0.7981860364626814	0	RPL13A	RPS27	ribosomal protein L13a	ribosomal protein S27
+('ENSG00000108684', 'ENSG00000164588')	0.7981762387564341	0	ASIC2	HCN1	acid sensing ion channel subunit 2	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000131469', 'ENSG00000204628')	0.7981625067982323	0	RPL27	RACK1	ribosomal protein L27	receptor for activated C kinase 1
+('ENSG00000165379', 'ENSG00000169760')	0.7981552897939993	1	LRFN5	NLGN1	leucine rich repeat and fibronectin type III domain containing 5	neuroligin 1
+('ENSG00000083845', 'ENSG00000198918')	0.7981323790386928	0	RPS5	RPL39	ribosomal protein S5	ribosomal protein L39
+('ENSG00000185352', 'ENSG00000187323')	0.7980712073115434	0	HS6ST3	DCC	heparan sulfate 6-O-sulfotransferase 3	DCC netrin 1 receptor
+('ENSG00000155816', 'ENSG00000185352')	0.7980612649769006	0	FMN2	HS6ST3	formin 2	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000100316', 'ENSG00000131469')	0.7979540608427325	0	RPL3	RPL27	ribosomal protein L3	ribosomal protein L27
+('ENSG00000133112', 'ENSG00000173812')	0.797920453811519	0	TPT1	EIF1	tumor protein, translationally-controlled 1	eukaryotic translation initiation factor 1
+('ENSG00000083845', 'ENSG00000105372')	0.7978393772970281	1	RPS5	RPS19	ribosomal protein S5	ribosomal protein S19
+('ENSG00000116251', 'ENSG00000171858')	0.7978057293155884	0	RPL22	RPS21	ribosomal protein L22	ribosomal protein S21
+('ENSG00000150275', 'ENSG00000179603')	0.7977635189475056	0	PCDH15	GRM8	protocadherin related 15	glutamate metabotropic receptor 8
+('ENSG00000115085', 'ENSG00000182866')	0.7977379533157208	0	ZAP70	LCK	zeta chain of T cell receptor associated protein kinase 70	LCK proto-oncogene, Src family tyrosine kinase
+('ENSG00000136942', 'ENSG00000149806')	0.797515723450706	0	RPL35	FAU	ribosomal protein L35	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000131469', 'ENSG00000147604')	0.7975014270668511	0	RPL27	RPL7	ribosomal protein L27	ribosomal protein L7
+('ENSG00000133112', 'ENSG00000177600')	0.7974786131698086	0	TPT1	RPLP2	tumor protein, translationally-controlled 1	ribosomal protein lateral stalk subunit P2
+('ENSG00000083845', 'ENSG00000142676')	0.7974625109846093	0	RPS5	RPL11	ribosomal protein S5	ribosomal protein L11
+('ENSG00000136942', 'ENSG00000172809')	0.7974560147149989	0	RPL35	RPL38	ribosomal protein L35	ribosomal protein L38
+('ENSG00000021645', 'ENSG00000164418')	0.7974233017426471	0	NRXN3	GRIK2	neurexin 3	glutamate ionotropic receptor kainate type subunit 2
+('ENSG00000178568', 'ENSG00000183230')	0.797384279479031	0	ERBB4	CTNNA3	erb-b2 receptor tyrosine kinase 4	catenin alpha 3
+('ENSG00000007001', 'ENSG00000179603')	0.7973651537610447	0	UPP2	GRM8	uridine phosphorylase 2	glutamate metabotropic receptor 8
+('ENSG00000147246', 'ENSG00000188771')	0.797259494213453	0	HTR2C	PLET1	5-hydroxytryptamine receptor 2C	placenta expressed transcript 1
+('ENSG00000147485', 'ENSG00000154162')	0.7972517453317526	0	PXDNL	CDH12	peroxidasin like	cadherin 12
+('ENSG00000021645', 'ENSG00000184304')	0.7972072183264161	0	NRXN3	PRKD1	neurexin 3	protein kinase D1
+('ENSG00000116251', 'ENSG00000198755')	0.7971868998927922	0	RPL22	RPL10A	ribosomal protein L22	ribosomal protein L10a
+('ENSG00000083845', 'ENSG00000138326')	0.797159939079933	0	RPS5	RPS24	ribosomal protein S5	ribosomal protein S24
+('ENSG00000108684', 'ENSG00000186094')	0.7971586307622646	0	ASIC2	AGBL4	acid sensing ion channel subunit 2	AGBL carboxypeptidase 4
+('ENSG00000169306', 'ENSG00000185053')	0.7971328766733023	0	IL1RAPL1	SGCZ	interleukin 1 receptor accessory protein like 1	sarcoglycan zeta
+('ENSG00000136942', 'ENSG00000198918')	0.7971223485012785	0	RPL35	RPL39	ribosomal protein L35	ribosomal protein L39
+('ENSG00000171189', 'ENSG00000183230')	0.7971036088373304	0	GRIK1	CTNNA3	glutamate ionotropic receptor kainate type subunit 1	catenin alpha 3
+('ENSG00000169760', 'ENSG00000169862')	0.7970989385717272	0	NLGN1	CTNND2	neuroligin 1	catenin delta 2
+('ENSG00000021645', 'ENSG00000155816')	0.7970449811865898	0	NRXN3	FMN2	neurexin 3	formin 2
+('ENSG00000142541', 'ENSG00000198755')	0.7969792122575109	0	RPL13A	RPL10A	ribosomal protein L13a	ribosomal protein L10a
+('ENSG00000110700', 'ENSG00000116251')	0.7969781448436528	0	RPS13	RPL22	ribosomal protein S13	ribosomal protein L22
+('ENSG00000154162', 'ENSG00000185352')	0.7969421682251435	0	CDH12	HS6ST3	cadherin 12	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000140988', 'ENSG00000147403')	0.796895519228809	0	RPS2	RPL10	ribosomal protein S2	ribosomal protein L10
+('ENSG00000175175', 'ENSG00000183117')	0.7968805992658732	0	PPM1E	CSMD1	protein phosphatase, Mg2+/Mn2+ dependent 1E	CUB and Sushi multiple domains 1
+('ENSG00000175175', 'ENSG00000185352')	0.796876745970816	0	PPM1E	HS6ST3	protein phosphatase, Mg2+/Mn2+ dependent 1E	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000007001', 'ENSG00000164588')	0.7968676651285106	0	UPP2	HCN1	uridine phosphorylase 2	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000154654', 'ENSG00000169760')	0.7968392478222928	1	NCAM2	NLGN1	neural cell adhesion molecule 2	neuroligin 1
+('ENSG00000172809', 'ENSG00000198755')	0.7968157919252363	0	RPL38	RPL10A	ribosomal protein L38	ribosomal protein L10a
+('ENSG00000136942', 'ENSG00000140988')	0.7967920888299345	0	RPL35	RPS2	ribosomal protein L35	ribosomal protein S2
+('ENSG00000104067', 'ENSG00000187079')	0.7967764135501835	0	TJP1	TEAD1	tight junction protein 1	TEA domain transcription factor 1
+('ENSG00000021645', 'ENSG00000185737')	0.7967175557668917	0	NRXN3	NRG3	neurexin 3	neuregulin 3
+('ENSG00000007001', 'ENSG00000171587')	0.7967088101839893	0	UPP2	DSCAM	uridine phosphorylase 2	DS cell adhesion molecule
+('ENSG00000154162', 'ENSG00000185666')	0.7966953553062047	0	CDH12	SYN3	cadherin 12	synapsin III
+('ENSG00000134115', 'ENSG00000150275')	0.7966813424643606	0	CNTN6	PCDH15	contactin 6	protocadherin related 15
+('ENSG00000144724', 'ENSG00000163697')	0.7965918514672115	0	PTPRG	APBB2	protein tyrosine phosphatase receptor type G	amyloid beta precursor protein binding family B member 2
+('ENSG00000018236', 'ENSG00000169760')	0.7965612353532034	0	CNTN1	NLGN1	contactin 1	neuroligin 1
+('ENSG00000115268', 'ENSG00000168028')	0.7965546897364645	1	RPS15	RPSA	ribosomal protein S15	ribosomal protein SA
+('ENSG00000149972', 'ENSG00000155816')	0.7965347514383562	0	CNTN5	FMN2	contactin 5	formin 2
+('ENSG00000154162', 'ENSG00000171094')	0.7965017893261714	0	CDH12	ALK	cadherin 12	ALK receptor tyrosine kinase
+('ENSG00000066032', 'ENSG00000154162')	0.7964923785627815	0	CTNNA2	CDH12	catenin alpha 2	cadherin 12
+('ENSG00000149972', 'ENSG00000171587')	0.7964712716948685	0	CNTN5	DSCAM	contactin 5	DS cell adhesion molecule
+('ENSG00000147485', 'ENSG00000185053')	0.796410988558266	0	PXDNL	SGCZ	peroxidasin like	sarcoglycan zeta
+('ENSG00000136267', 'ENSG00000164418')	0.7964038171733149	0	DGKB	GRIK2	diacylglycerol kinase beta	glutamate ionotropic receptor kainate type subunit 2
+('ENSG00000144724', 'ENSG00000187079')	0.7963464009022247	0	PTPRG	TEAD1	protein tyrosine phosphatase receptor type G	TEA domain transcription factor 1
+('ENSG00000150275', 'ENSG00000183230')	0.7963042418962821	0	PCDH15	CTNNA3	protocadherin related 15	catenin alpha 3
+('ENSG00000148948', 'ENSG00000156687')	0.7962878195531289	0	LRRC4C	UNC5D	leucine rich repeat containing 4C	unc-5 netrin receptor D
+('ENSG00000150275', 'ENSG00000185666')	0.7962357452092852	0	PCDH15	SYN3	protocadherin related 15	synapsin III
+('ENSG00000169862', 'ENSG00000183230')	0.7961892586598265	0	CTNND2	CTNNA3	catenin delta 2	catenin alpha 3
+('ENSG00000164418', 'ENSG00000169760')	0.7961707290694554	0	GRIK2	NLGN1	glutamate ionotropic receptor kainate type subunit 2	neuroligin 1
+('ENSG00000115268', 'ENSG00000156508')	0.7961642284790297	0	RPS15	EEF1A1	ribosomal protein S15	eukaryotic translation elongation factor 1 alpha 1
+('ENSG00000108684', 'ENSG00000185352')	0.7961620727465539	0	ASIC2	HS6ST3	acid sensing ion channel subunit 2	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000183230', 'ENSG00000185008')	0.796149831857461	0	CTNNA3	ROBO2	catenin alpha 3	roundabout guidance receptor 2
+('ENSG00000066032', 'ENSG00000184408')	0.7961197895142009	0	CTNNA2	KCND2	catenin alpha 2	potassium voltage-gated channel subfamily D member 2
+('ENSG00000185352', 'ENSG00000186094')	0.7961137731550801	0	HS6ST3	AGBL4	heparan sulfate 6-O-sulfotransferase 3	AGBL carboxypeptidase 4
+('ENSG00000108684', 'ENSG00000171587')	0.7960485179269184	0	ASIC2	DSCAM	acid sensing ion channel subunit 2	DS cell adhesion molecule
+('ENSG00000021645', 'ENSG00000218336')	0.7959804937189181	0	NRXN3	TENM3	neurexin 3	teneurin transmembrane protein 3
+('ENSG00000152208', 'ENSG00000184408')	0.795936767092514	0	GRID2	KCND2	glutamate ionotropic receptor delta type subunit 2	potassium voltage-gated channel subfamily D member 2
+('ENSG00000152208', 'ENSG00000183117')	0.7957940505556376	0	GRID2	CSMD1	glutamate ionotropic receptor delta type subunit 2	CUB and Sushi multiple domains 1
+('ENSG00000108684', 'ENSG00000139220')	0.7957602223403076	0	ASIC2	PPFIA2	acid sensing ion channel subunit 2	PTPRF interacting protein alpha 2
+('ENSG00000105193', 'ENSG00000147604')	0.7957487325667421	0	RPS16	RPL7	ribosomal protein S16	ribosomal protein L7
+('ENSG00000156687', 'ENSG00000186094')	0.7957297545266472	0	UNC5D	AGBL4	unc-5 netrin receptor D	AGBL carboxypeptidase 4
+('ENSG00000066032', 'ENSG00000171094')	0.7957048492562789	0	CTNNA2	ALK	catenin alpha 2	ALK receptor tyrosine kinase
+('ENSG00000183230', 'ENSG00000184408')	0.7956685794756178	0	CTNNA3	KCND2	catenin alpha 3	potassium voltage-gated channel subfamily D member 2
+('ENSG00000150275', 'ENSG00000171094')	0.7955794801373254	0	PCDH15	ALK	protocadherin related 15	ALK receptor tyrosine kinase
+('ENSG00000169760', 'ENSG00000185352')	0.7955594028110209	0	NLGN1	HS6ST3	neuroligin 1	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000152208', 'ENSG00000175175')	0.7955388723170169	0	GRID2	PPM1E	glutamate ionotropic receptor delta type subunit 2	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000136942', 'ENSG00000138326')	0.7955040764111015	0	RPL35	RPS24	ribosomal protein L35	ribosomal protein S24
+('ENSG00000007001', 'ENSG00000183230')	0.7954692223770307	0	UPP2	CTNNA3	uridine phosphorylase 2	catenin alpha 3
+('ENSG00000021645', 'ENSG00000144619')	0.7954568481789841	1	NRXN3	CNTN4	neurexin 3	contactin 4
+('ENSG00000141376', 'ENSG00000171723')	0.7954356270397495	0	BCAS3	GPHN	BCAS3 microtubule associated cell migration factor	gephyrin
+('ENSG00000152208', 'ENSG00000171189')	0.7954141379953328	0	GRID2	GRIK1	glutamate ionotropic receptor delta type subunit 2	glutamate ionotropic receptor kainate type subunit 1
+('ENSG00000136267', 'ENSG00000183230')	0.7953997545366451	0	DGKB	CTNNA3	diacylglycerol kinase beta	catenin alpha 3
+('ENSG00000105372', 'ENSG00000142541')	0.7953725980745004	0	RPS19	RPL13A	ribosomal protein S19	ribosomal protein L13a
+('ENSG00000198712', 'ENSG00000198786')	0.7953582744257708	1	MT-CO2	MT-ND5	mitochondrially encoded cytochrome c oxidase II	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 5
+('ENSG00000151025', 'ENSG00000184611')	0.7953468997647593	0	GPR158	KCNH7	G protein-coupled receptor 158	potassium voltage-gated channel subfamily H member 7
+('ENSG00000164588', 'ENSG00000168959')	0.7953288802694293	0	HCN1	GRM5	hyperpolarization activated cyclic nucleotide gated potassium channel 1	glutamate metabotropic receptor 5
+('ENSG00000083845', 'ENSG00000167526')	0.7953009480026167	0	RPS5	RPL13	ribosomal protein S5	ribosomal protein L13
+('ENSG00000139220', 'ENSG00000185352')	0.7952157647239417	0	PPFIA2	HS6ST3	PTPRF interacting protein alpha 2	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000140988', 'ENSG00000142541')	0.7951860183422594	0	RPS2	RPL13A	ribosomal protein S2	ribosomal protein L13a
+('ENSG00000136942', 'ENSG00000204628')	0.7951714836775978	0	RPL35	RACK1	ribosomal protein L35	receptor for activated C kinase 1
+('ENSG00000142541', 'ENSG00000149273')	0.7951592463261032	0	RPL13A	RPS3	ribosomal protein L13a	ribosomal protein S3
+('ENSG00000148948', 'ENSG00000179915')	0.7951555114498962	1	LRRC4C	NRXN1	leucine rich repeat containing 4C	neurexin 1
+('ENSG00000147485', 'ENSG00000183230')	0.795085964729908	0	PXDNL	CTNNA3	peroxidasin like	catenin alpha 3
+('ENSG00000147485', 'ENSG00000179603')	0.7950430422409726	0	PXDNL	GRM8	peroxidasin like	glutamate metabotropic receptor 8
+('ENSG00000171189', 'ENSG00000183117')	0.79501504467828	0	GRIK1	CSMD1	glutamate ionotropic receptor kainate type subunit 1	CUB and Sushi multiple domains 1
+('ENSG00000171094', 'ENSG00000171587')	0.7950035300860687	0	ALK	DSCAM	ALK receptor tyrosine kinase	DS cell adhesion molecule
+('ENSG00000115464', 'ENSG00000115760')	0.79496117440146	0	USP34	BIRC6	ubiquitin specific peptidase 34	baculoviral IAP repeat containing 6
+('ENSG00000145526', 'ENSG00000188803')	0.7949431355468378	0	CDH18	SHISA6	cadherin 18	shisa family member 6
+('ENSG00000126733', 'ENSG00000149972')	0.7949185015598369	0	DACH2	CNTN5	dachshund family transcription factor 2	contactin 5
+('ENSG00000171587', 'ENSG00000183117')	0.7948209057065231	0	DSCAM	CSMD1	DS cell adhesion molecule	CUB and Sushi multiple domains 1
+('ENSG00000149571', 'ENSG00000183230')	0.794811417152888	0	KIRREL3	CTNNA3	kirre like nephrin family adhesion molecule 3	catenin alpha 3
+('ENSG00000122406', 'ENSG00000198918')	0.7947548419042422	0	RPL5	RPL39	ribosomal protein L5	ribosomal protein L39
+('ENSG00000148948', 'ENSG00000154654')	0.7947361327200824	0	LRRC4C	NCAM2	leucine rich repeat containing 4C	neural cell adhesion molecule 2
+('ENSG00000148948', 'ENSG00000185008')	0.7947330626466527	0	LRRC4C	ROBO2	leucine rich repeat containing 4C	roundabout guidance receptor 2
+('ENSG00000108684', 'ENSG00000150361')	0.7947075694578052	0	ASIC2	KLHL1	acid sensing ion channel subunit 2	kelch like family member 1
+('ENSG00000169760', 'ENSG00000187672')	0.7947011444865676	1	NLGN1	ERC2	neuroligin 1	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000131469', 'ENSG00000198918')	0.7946484651417051	0	RPL27	RPL39	ribosomal protein L27	ribosomal protein L39
+('ENSG00000066032', 'ENSG00000151025')	0.794611268234748	0	CTNNA2	GPR158	catenin alpha 2	G protein-coupled receptor 158
+('ENSG00000151025', 'ENSG00000179603')	0.7945659311848461	0	GPR158	GRM8	G protein-coupled receptor 158	glutamate metabotropic receptor 8
+('ENSG00000178568', 'ENSG00000183117')	0.7945013395397261	0	ERBB4	CSMD1	erb-b2 receptor tyrosine kinase 4	CUB and Sushi multiple domains 1
+('ENSG00000164418', 'ENSG00000169306')	0.7945007361724296	0	GRIK2	IL1RAPL1	glutamate ionotropic receptor kainate type subunit 2	interleukin 1 receptor accessory protein like 1
+('ENSG00000196531', 'ENSG00000198918')	0.7944787088918541	0	NACA	RPL39	nascent polypeptide associated complex subunit alpha	ribosomal protein L39
+('ENSG00000153956', 'ENSG00000187079')	0.7944350027327979	0	CACNA2D1	TEAD1	calcium voltage-gated channel auxiliary subunit alpha2delta 1	TEA domain transcription factor 1
+('ENSG00000145741', 'ENSG00000198755')	0.7944172439549566	0	BTF3	RPL10A	basic transcription factor 3	ribosomal protein L10a
+('ENSG00000139220', 'ENSG00000150275')	0.7943791790039012	0	PPFIA2	PCDH15	PTPRF interacting protein alpha 2	protocadherin related 15
+('ENSG00000105372', 'ENSG00000114391')	0.7943351749848419	0	RPS19	RPL24	ribosomal protein S19	ribosomal protein L24
+('ENSG00000168028', 'ENSG00000177600')	0.7943019199144593	0	RPSA	RPLP2	ribosomal protein SA	ribosomal protein lateral stalk subunit P2
+('ENSG00000007001', 'ENSG00000185352')	0.7942765459163822	0	UPP2	HS6ST3	uridine phosphorylase 2	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000088538', 'ENSG00000186094')	0.7942690955694696	0	DOCK3	AGBL4	dedicator of cytokinesis 3	AGBL carboxypeptidase 4
+('ENSG00000154162', 'ENSG00000169933')	0.7942372283159993	0	CDH12	FRMPD4	cadherin 12	FERM and PDZ domain containing 4
+('ENSG00000151025', 'ENSG00000154162')	0.7941847194303245	0	GPR158	CDH12	G protein-coupled receptor 158	cadherin 12
+('ENSG00000155816', 'ENSG00000169760')	0.7941279224075342	0	FMN2	NLGN1	formin 2	neuroligin 1
+('ENSG00000184408', 'ENSG00000185352')	0.7941264238551814	0	KCND2	HS6ST3	potassium voltage-gated channel subfamily D member 2	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000083845', 'ENSG00000147403')	0.7940765862601582	0	RPS5	RPL10	ribosomal protein S5	ribosomal protein L10
+('ENSG00000156687', 'ENSG00000169933')	0.7940535972207474	0	UNC5D	FRMPD4	unc-5 netrin receptor D	FERM and PDZ domain containing 4
+('ENSG00000108684', 'ENSG00000171094')	0.7940063129074129	0	ASIC2	ALK	acid sensing ion channel subunit 2	ALK receptor tyrosine kinase
+('ENSG00000007001', 'ENSG00000175175')	0.7939829382771948	0	UPP2	PPM1E	uridine phosphorylase 2	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000183230', 'ENSG00000198108')	0.7939445911949925	0	CTNNA3	CHSY3	catenin alpha 3	chondroitin sulfate synthase 3
+('ENSG00000108684', 'ENSG00000169933')	0.7939371242286439	0	ASIC2	FRMPD4	acid sensing ion channel subunit 2	FERM and PDZ domain containing 4
+('ENSG00000100316', 'ENSG00000156508')	0.7938732016289007	0	RPL3	EEF1A1	ribosomal protein L3	eukaryotic translation elongation factor 1 alpha 1
+('ENSG00000150361', 'ENSG00000151025')	0.7938532808866992	0	KLHL1	GPR158	kelch like family member 1	G protein-coupled receptor 158
+('ENSG00000151025', 'ENSG00000185737')	0.7938364769308333	0	GPR158	NRG3	G protein-coupled receptor 158	neuregulin 3
+('ENSG00000186094', 'ENSG00000186952')	0.7938309942007097	0	AGBL4	TMEM232	AGBL carboxypeptidase 4	transmembrane protein 232
+('ENSG00000122406', 'ENSG00000177600')	0.7937533081313424	0	RPL5	RPLP2	ribosomal protein L5	ribosomal protein lateral stalk subunit P2
+('ENSG00000114391', 'ENSG00000147403')	0.7937454003040461	0	RPL24	RPL10	ribosomal protein L24	ribosomal protein L10
+('ENSG00000177954', 'ENSG00000198755')	0.7937240028852222	0	RPS27	RPL10A	ribosomal protein S27	ribosomal protein L10a
+('ENSG00000183117', 'ENSG00000187672')	0.7936158698926682	0	CSMD1	ERC2	CUB and Sushi multiple domains 1	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000198786', 'ENSG00000198938')	0.7935454569062406	0	MT-ND5	MT-CO3	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 5	mitochondrially encoded cytochrome c oxidase III
+('ENSG00000179603', 'ENSG00000186094')	0.793497933819647	0	GRM8	AGBL4	glutamate metabotropic receptor 8	AGBL carboxypeptidase 4
+('ENSG00000152208', 'ENSG00000155816')	0.7934837186714357	0	GRID2	FMN2	glutamate ionotropic receptor delta type subunit 2	formin 2
+('ENSG00000126733', 'ENSG00000152208')	0.7934518897859275	0	DACH2	GRID2	dachshund family transcription factor 2	glutamate ionotropic receptor delta type subunit 2
+('ENSG00000154162', 'ENSG00000155816')	0.7934344401410645	0	CDH12	FMN2	cadherin 12	formin 2
+('ENSG00000102452', 'ENSG00000151025')	0.7933514529316494	0	NALCN	GPR158	sodium leak channel, non-selective	G protein-coupled receptor 158
+('ENSG00000057468', 'ENSG00000184984')	0.7933362709787058	0	MSH4	CHRM5	mutS homolog 4	cholinergic receptor muscarinic 5
+('ENSG00000072315', 'ENSG00000171217')	0.79325256057496	0	TRPC5	CLDN20	transient receptor potential cation channel subfamily C member 5	claudin 20
+('ENSG00000156687', 'ENSG00000164588')	0.7932456875368665	0	UNC5D	HCN1	unc-5 netrin receptor D	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000116117', 'ENSG00000146555')	0.7932357479555457	0	PARD3B	SDK1	par-3 family cell polarity regulator beta	sidekick cell adhesion molecule 1
+('ENSG00000156687', 'ENSG00000169862')	0.7932316301013816	0	UNC5D	CTNND2	unc-5 netrin receptor D	catenin delta 2
+('ENSG00000171189', 'ENSG00000185053')	0.7932133498400513	0	GRIK1	SGCZ	glutamate ionotropic receptor kainate type subunit 1	sarcoglycan zeta
+('ENSG00000145741', 'ENSG00000171863')	0.7931953137463794	0	BTF3	RPS7	basic transcription factor 3	ribosomal protein S7
+('ENSG00000146555', 'ENSG00000169760')	0.7931381427239694	0	SDK1	NLGN1	sidekick cell adhesion molecule 1	neuroligin 1
+('ENSG00000108684', 'ENSG00000149972')	0.793134121349897	0	ASIC2	CNTN5	acid sensing ion channel subunit 2	contactin 5
+('ENSG00000152208', 'ENSG00000198626')	0.793098078575349	0	GRID2	RYR2	glutamate ionotropic receptor delta type subunit 2	ryanodine receptor 2
+('ENSG00000072315', 'ENSG00000130377')	0.7930864652930324	0	TRPC5	ACSBG2	transient receptor potential cation channel subfamily C member 5	acyl-CoA synthetase bubblegum family member 2
+('ENSG00000108684', 'ENSG00000145526')	0.7930816449790531	0	ASIC2	CDH18	acid sensing ion channel subunit 2	cadherin 18
+('ENSG00000150275', 'ENSG00000179242')	0.7930633533547249	0	PCDH15	CDH4	protocadherin related 15	cadherin 4
+('ENSG00000164587', 'ENSG00000196531')	0.7930513866236085	0	RPS14	NACA	ribosomal protein S14	nascent polypeptide associated complex subunit alpha
+('ENSG00000139220', 'ENSG00000198626')	0.7930334758664316	0	PPFIA2	RYR2	PTPRF interacting protein alpha 2	ryanodine receptor 2
+('ENSG00000151025', 'ENSG00000184408')	0.7930152350585381	0	GPR158	KCND2	G protein-coupled receptor 158	potassium voltage-gated channel subfamily D member 2
+('ENSG00000150672', 'ENSG00000172264')	0.7929495378756277	0	DLG2	MACROD2	discs large MAGUK scaffold protein 2	mono-ADP ribosylhydrolase 2
+('ENSG00000148948', 'ENSG00000183230')	0.7929268766163116	0	LRRC4C	CTNNA3	leucine rich repeat containing 4C	catenin alpha 3
+('ENSG00000116251', 'ENSG00000186468')	0.7928972742784275	0	RPL22	RPS23	ribosomal protein L22	ribosomal protein S23
+('ENSG00000171587', 'ENSG00000185352')	0.7928810309596823	0	DSCAM	HS6ST3	DS cell adhesion molecule	heparan sulfate 6-O-sulfotransferase 3
+('ENSG00000178568', 'ENSG00000187672')	0.792873520840794	0	ERBB4	ERC2	erb-b2 receptor tyrosine kinase 4	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000083845', 'ENSG00000116251')	0.7928679754657117	0	RPS5	RPL22	ribosomal protein S5	ribosomal protein L22
+('ENSG00000145526', 'ENSG00000155816')	0.7928674004667823	0	CDH18	FMN2	cadherin 18	formin 2
+('ENSG00000155886', 'ENSG00000169933')	0.7928341416395529	0	SLC24A2	FRMPD4	solute carrier family 24 member 2	FERM and PDZ domain containing 4
+('ENSG00000116117', 'ENSG00000148498')	0.792727295022953	1	PARD3B	PARD3	par-3 family cell polarity regulator beta	par-3 family cell polarity regulator
+('ENSG00000154162', 'ENSG00000184985')	0.7926270350536666	0	CDH12	SORCS2	cadherin 12	sortilin related VPS10 domain containing receptor 2
+('ENSG00000007001', 'ENSG00000154162')	0.7925845222774002	0	UPP2	CDH12	uridine phosphorylase 2	cadherin 12
+('ENSG00000149972', 'ENSG00000164588')	0.7925832337448908	0	CNTN5	HCN1	contactin 5	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000150672', 'ENSG00000178568')	0.7925687038125077	0	DLG2	ERBB4	discs large MAGUK scaffold protein 2	erb-b2 receptor tyrosine kinase 4
+('ENSG00000144278', 'ENSG00000184408')	0.7925500226940019	0	GALNT13	KCND2	polypeptide N-acetylgalactosaminyltransferase 13	potassium voltage-gated channel subfamily D member 2
+('ENSG00000066032', 'ENSG00000148948')	0.7925197408433861	0	CTNNA2	LRRC4C	catenin alpha 2	leucine rich repeat containing 4C
+('ENSG00000139220', 'ENSG00000148948')	0.7925037429834964	0	PPFIA2	LRRC4C	PTPRF interacting protein alpha 2	leucine rich repeat containing 4C
+('ENSG00000156687', 'ENSG00000175175')	0.792499196546896	0	UNC5D	PPM1E	unc-5 netrin receptor D	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000153956', 'ENSG00000169760')	0.792476890469874	0	CACNA2D1	NLGN1	calcium voltage-gated channel auxiliary subunit alpha2delta 1	neuroligin 1
+('ENSG00000155816', 'ENSG00000185737')	0.7924704548921683	0	FMN2	NRG3	formin 2	neuregulin 3
+('ENSG00000136942', 'ENSG00000142541')	0.7924577726607445	0	RPL35	RPL13A	ribosomal protein L35	ribosomal protein L13a
+('ENSG00000152208', 'ENSG00000156395')	0.7924059936069987	1	GRID2	SORCS3	glutamate ionotropic receptor delta type subunit 2	sortilin related VPS10 domain containing receptor 3
+('ENSG00000169760', 'ENSG00000184985')	0.7923848999671353	0	NLGN1	SORCS2	neuroligin 1	sortilin related VPS10 domain containing receptor 2
+('ENSG00000100316', 'ENSG00000198918')	0.7923726317629255	0	RPL3	RPL39	ribosomal protein L3	ribosomal protein L39
+('ENSG00000187323', 'ENSG00000187672')	0.7923726194719753	0	DCC	ERC2	DCC netrin 1 receptor	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000145526', 'ENSG00000155886')	0.7923711735338809	0	CDH18	SLC24A2	cadherin 18	solute carrier family 24 member 2
+('ENSG00000185008', 'ENSG00000218336')	0.7923300844409	0	ROBO2	TENM3	roundabout guidance receptor 2	teneurin transmembrane protein 3
+('ENSG00000146555', 'ENSG00000187391')	0.7922574168890268	0	SDK1	MAGI2	sidekick cell adhesion molecule 1	membrane associated guanylate kinase, WW and PDZ domain containing 2
+('ENSG00000139220', 'ENSG00000164418')	0.7922137933089641	0	PPFIA2	GRIK2	PTPRF interacting protein alpha 2	glutamate ionotropic receptor kainate type subunit 2
+('ENSG00000114757', 'ENSG00000186094')	0.7921992747516378	0	PEX5L	AGBL4	peroxisomal biogenesis factor 5 like	AGBL carboxypeptidase 4
+('ENSG00000007001', 'ENSG00000169933')	0.7921829617791614	0	UPP2	FRMPD4	uridine phosphorylase 2	FERM and PDZ domain containing 4
+('ENSG00000150275', 'ENSG00000151025')	0.7921728018382701	0	PCDH15	GPR158	protocadherin related 15	G protein-coupled receptor 158
+('ENSG00000133112', 'ENSG00000148303')	0.7921628372818078	0	TPT1	RPL7A	tumor protein, translationally-controlled 1	ribosomal protein L7a
+('ENSG00000168959', 'ENSG00000169933')	0.7921191080734943	0	GRM5	FRMPD4	glutamate metabotropic receptor 5	FERM and PDZ domain containing 4
+('ENSG00000066032', 'ENSG00000136267')	0.792046312714048	0	CTNNA2	DGKB	catenin alpha 2	diacylglycerol kinase beta
+('ENSG00000070366', 'ENSG00000140386')	0.7920462955142117	0	SMG6	SCAPER	SMG6 nonsense mediated mRNA decay factor	S-phase cyclin A associated protein in the ER
+('ENSG00000156687', 'ENSG00000184408')	0.7920437702250537	0	UNC5D	KCND2	unc-5 netrin receptor D	potassium voltage-gated channel subfamily D member 2
+('ENSG00000021645', 'ENSG00000066032')	0.7920389024605287	0	NRXN3	CTNNA2	neurexin 3	catenin alpha 2
+('ENSG00000177600', 'ENSG00000204628')	0.7920136730190993	0	RPLP2	RACK1	ribosomal protein lateral stalk subunit P2	receptor for activated C kinase 1
+('ENSG00000142676', 'ENSG00000204628')	0.7919971316170354	0	RPL11	RACK1	ribosomal protein L11	receptor for activated C kinase 1
+('ENSG00000168028', 'ENSG00000198918')	0.7919954910255886	0	RPSA	RPL39	ribosomal protein SA	ribosomal protein L39
+('ENSG00000164197', 'ENSG00000184304')	0.7919433296686826	0	RNF180	PRKD1	ring finger protein 180	protein kinase D1
+('ENSG00000108684', 'ENSG00000187672')	0.7918815926744358	0	ASIC2	ERC2	acid sensing ion channel subunit 2	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000150361', 'ENSG00000185053')	0.7918807994282416	0	KLHL1	SGCZ	kelch like family member 1	sarcoglycan zeta
+('ENSG00000133112', 'ENSG00000149806')	0.7918295682520251	0	TPT1	FAU	tumor protein, translationally-controlled 1	FAU ubiquitin like and ribosomal protein S30 fusion
+('ENSG00000167526', 'ENSG00000198755')	0.7918016513227994	0	RPL13	RPL10A	ribosomal protein L13	ribosomal protein L10a
+('ENSG00000150672', 'ENSG00000153558')	0.7917638936385063	0	DLG2	FBXL2	discs large MAGUK scaffold protein 2	F-box and leucine rich repeat protein 2
+('ENSG00000156687', 'ENSG00000165973')	0.7917382716966753	0	UNC5D	NELL1	unc-5 netrin receptor D	neural EGFL like 1
+('ENSG00000141376', 'ENSG00000143951')	0.7917161938737667	0	BCAS3	WDPCP	BCAS3 microtubule associated cell migration factor	WD repeat containing planar cell polarity effector
+('ENSG00000168028', 'ENSG00000181163')	0.7916869169321904	0	RPSA	NPM1	ribosomal protein SA	nucleophosmin 1
+('ENSG00000067798', 'ENSG00000169946')	0.7916693565651803	0	NAV3	ZFPM2	neuron navigator 3	zinc finger protein, FOG family member 2
+('ENSG00000119509', 'ENSG00000183826')	0.7916240475189448	0	INVS	BTBD9	inversin	BTB domain containing 9
+('ENSG00000142676', 'ENSG00000171858')	0.7916110265622939	0	RPL11	RPS21	ribosomal protein L11	ribosomal protein S21
+('ENSG00000152208', 'ENSG00000179603')	0.7915606542437634	0	GRID2	GRM8	glutamate ionotropic receptor delta type subunit 2	glutamate metabotropic receptor 8
+('ENSG00000146555', 'ENSG00000150672')	0.7915581336374797	0	SDK1	DLG2	sidekick cell adhesion molecule 1	discs large MAGUK scaffold protein 2
+('ENSG00000155897', 'ENSG00000164588')	0.791543315565277	0	ADCY8	HCN1	adenylate cyclase 8	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000164588', 'ENSG00000182601')	0.7915373151820287	0	HCN1	HS3ST4	hyperpolarization activated cyclic nucleotide gated potassium channel 1	heparan sulfate-glucosamine 3-sulfotransferase 4
+('ENSG00000156508', 'ENSG00000171863')	0.7915219247177971	0	EEF1A1	RPS7	eukaryotic translation elongation factor 1 alpha 1	ribosomal protein S7
+('ENSG00000021645', 'ENSG00000169306')	0.7915077252478286	0	NRXN3	IL1RAPL1	neurexin 3	interleukin 1 receptor accessory protein like 1
+('ENSG00000155886', 'ENSG00000164588')	0.7914729128796709	0	SLC24A2	HCN1	solute carrier family 24 member 2	hyperpolarization activated cyclic nucleotide gated potassium channel 1
+('ENSG00000183230', 'ENSG00000187672')	0.7914340235379114	0	CTNNA3	ERC2	catenin alpha 3	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000155816', 'ENSG00000186094')	0.7914138405438014	0	FMN2	AGBL4	formin 2	AGBL carboxypeptidase 4
+('ENSG00000196735', 'ENSG00000231389')	0.7913809398619215	1	HLA-DQA1	HLA-DPA1	major histocompatibility complex, class II, DQ alpha 1	major histocompatibility complex, class II, DP alpha 1
+('ENSG00000171587', 'ENSG00000182601')	0.7913620568678068	0	DSCAM	HS3ST4	DS cell adhesion molecule	heparan sulfate-glucosamine 3-sulfotransferase 4
+('ENSG00000145526', 'ENSG00000196277')	0.7913395689482278	0	CDH18	GRM7	cadherin 18	glutamate metabotropic receptor 7
+('ENSG00000156687', 'ENSG00000185053')	0.7913082343167631	0	UNC5D	SGCZ	unc-5 netrin receptor D	sarcoglycan zeta
+('ENSG00000184611', 'ENSG00000185737')	0.7912779590295911	0	KCNH7	NRG3	potassium voltage-gated channel subfamily H member 7	neuregulin 3
+('ENSG00000149273', 'ENSG00000196531')	0.7912771123241493	0	RPS3	NACA	ribosomal protein S3	nascent polypeptide associated complex subunit alpha
+('ENSG00000066032', 'ENSG00000171587')	0.7912479609114231	0	CTNNA2	DSCAM	catenin alpha 2	DS cell adhesion molecule
+('ENSG00000183230', 'ENSG00000187391')	0.7912166331746082	0	CTNNA3	MAGI2	catenin alpha 3	membrane associated guanylate kinase, WW and PDZ domain containing 2
+('ENSG00000145242', 'ENSG00000185053')	0.7912051478198008	0	EPHA5	SGCZ	EPH receptor A5	sarcoglycan zeta
+('ENSG00000151025', 'ENSG00000175175')	0.7911541156756311	0	GPR158	PPM1E	G protein-coupled receptor 158	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000138326', 'ENSG00000140988')	0.791122719697898	0	RPS24	RPS2	ribosomal protein S24	ribosomal protein S2
+('ENSG00000169306', 'ENSG00000185008')	0.7911208883795284	0	IL1RAPL1	ROBO2	interleukin 1 receptor accessory protein like 1	roundabout guidance receptor 2
+('ENSG00000196735', 'ENSG00000223865')	0.7910602593617012	1	HLA-DQA1	HLA-DPB1	major histocompatibility complex, class II, DQ alpha 1	major histocompatibility complex, class II, DP beta 1
+('ENSG00000108684', 'ENSG00000168959')	0.7910438739929654	0	ASIC2	GRM5	acid sensing ion channel subunit 2	glutamate metabotropic receptor 5
+('ENSG00000183579', 'ENSG00000184304')	0.7910251246783452	0	ZNRF3	PRKD1	zinc and ring finger 3	protein kinase D1
+('ENSG00000150275', 'ENSG00000155886')	0.7910003793071682	0	PCDH15	SLC24A2	protocadherin related 15	solute carrier family 24 member 2
+('ENSG00000155816', 'ENSG00000196090')	0.7909811493506557	0	FMN2	PTPRT	formin 2	protein tyrosine phosphatase receptor type T
+('ENSG00000021645', 'ENSG00000154162')	0.7909624461912704	0	NRXN3	CDH12	neurexin 3	cadherin 12
+('ENSG00000149972', 'ENSG00000169306')	0.790957079023385	0	CNTN5	IL1RAPL1	contactin 5	interleukin 1 receptor accessory protein like 1
+('ENSG00000131469', 'ENSG00000164587')	0.7909490908026476	0	RPL27	RPS14	ribosomal protein L27	ribosomal protein S14
+('ENSG00000136267', 'ENSG00000149972')	0.790935409819637	0	DGKB	CNTN5	diacylglycerol kinase beta	contactin 5
+('ENSG00000169306', 'ENSG00000187323')	0.7908531037371949	0	IL1RAPL1	DCC	interleukin 1 receptor accessory protein like 1	DCC netrin 1 receptor
+('ENSG00000007001', 'ENSG00000187672')	0.7908403405726248	0	UPP2	ERC2	uridine phosphorylase 2	ELKS/RAB6-interacting/CAST family member 2
+('ENSG00000134115', 'ENSG00000145526')	0.7907982418479196	0	CNTN6	CDH18	contactin 6	cadherin 18
+('ENSG00000116251', 'ENSG00000204628')	0.7907837577026865	0	RPL22	RACK1	ribosomal protein L22	receptor for activated C kinase 1
+('ENSG00000140988', 'ENSG00000156508')	0.7907261413052323	0	RPS2	EEF1A1	ribosomal protein S2	eukaryotic translation elongation factor 1 alpha 1
+('ENSG00000007001', 'ENSG00000185666')	0.7907091365652149	0	UPP2	SYN3	uridine phosphorylase 2	synapsin III
+('ENSG00000149972', 'ENSG00000151025')	0.7905958727308566	0	CNTN5	GPR158	contactin 5	G protein-coupled receptor 158
+('ENSG00000164588', 'ENSG00000175175')	0.790588207002467	0	HCN1	PPM1E	hyperpolarization activated cyclic nucleotide gated potassium channel 1	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000130377', 'ENSG00000170820')	0.7905795445741831	0	ACSBG2	FSHR	acyl-CoA synthetase bubblegum family member 2	follicle stimulating hormone receptor
+('ENSG00000152214', 'ENSG00000185053')	0.7905588144012519	0	RIT2	SGCZ	Ras like without CAAX 2	sarcoglycan zeta
+('ENSG00000150275', 'ENSG00000170743')	0.7905543668961619	0	PCDH15	SYT9	protocadherin related 15	synaptotagmin 9
+('ENSG00000108684', 'ENSG00000175175')	0.7905536107121115	0	ASIC2	PPM1E	acid sensing ion channel subunit 2	protein phosphatase, Mg2+/Mn2+ dependent 1E
+('ENSG00000186094', 'ENSG00000187323')	0.7905498446793087	0	AGBL4	DCC	AGBL carboxypeptidase 4	DCC netrin 1 receptor
+('ENSG00000126733', 'ENSG00000183230')	0.7905057568489966	0	DACH2	CTNNA3	dachshund family transcription factor 2	catenin alpha 3
+('ENSG00000168959', 'ENSG00000188803')	0.7905004015226854	0	GRM5	SHISA6	glutamate metabotropic receptor 5	shisa family member 6
