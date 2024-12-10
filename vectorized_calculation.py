@@ -2,8 +2,7 @@
 #Date: Dec 05, 2024
 #Author: Brianna Flynn
 #Description:
-# Refactoring calculation.py to optimize for testing multiple thresholds 
-
+# Refactoring calculation.py to optimize for testing multiple thresholds with HPC
 import sys
 import pickle
 import numpy as np
@@ -60,6 +59,7 @@ def time_function(func, *args, **kwargs):
     elapsed_time = time.time() - start_time
     return result, elapsed_time
 
+# serial
 def compute_pairwise_spearman_loop(df, domain):
     """
     Computes pairwise Spearman correlations using a nested loop.
@@ -82,7 +82,7 @@ def compute_pairwise_spearman_loop(df, domain):
             cor_value = df.loc[gene_].corr(df.loc[gene2_], method="spearman")
             gene_gene2_corr[(gene_, gene2_)] = cor_value
     return gene_gene2_corr
-
+# parallel chunker
 def compute_correlations_for_chunk(chunk, filtered_df, row_indices, k):
     """
     Computes correlations for a subset of row pairs.
@@ -103,7 +103,7 @@ def compute_correlations_for_chunk(chunk, filtered_df, row_indices, k):
         correlation = filtered_df.loc[gene1].corr(filtered_df.loc[gene2], method='spearman')
         result.append((gene1, gene2, correlation))
     return result
-
+# parallel
 def compute_pairwise_spearman_parallel(df, domain, k=1, n_jobs=None):
     """
     Computes pairwise Spearman correlations for the specified rows of a DataFrame
@@ -148,7 +148,7 @@ def compute_pairwise_spearman_parallel(df, domain, k=1, n_jobs=None):
     #print(pairwise_correlations)
 
     return pairwise_correlations
-
+# shared memory chunker
 def compute_correlations_for_chunk_shared(chunk, shm_name, shape, row_indices):
     """
     Computes Spearman correlations for a subset of row pairs using shared memory.
@@ -177,7 +177,7 @@ def compute_correlations_for_chunk_shared(chunk, shm_name, shape, row_indices):
     # Close the shared memory block in the worker
     shm.close()
     return results
-
+# shared memory parallelization
 def compute_pairwise_spearman_parallel_shared(df, domain, k=1, n_jobs=None):
     """
     Computes pairwise Spearman correlations for the specified rows of a DataFrame
@@ -230,8 +230,7 @@ def compute_pairwise_spearman_parallel_shared(df, domain, k=1, n_jobs=None):
     pairwise_correlations = pd.DataFrame(flattened_results, columns=["Row", "Column", "Correlation"])
 
     return pairwise_correlations
-
-
+# testing performance to estimate compute needed
 def benchmark_runtime(func, df, domain, fractions):
     """
     Benchmarks runtime of a function at different scales and fits a predictive model.
@@ -262,7 +261,7 @@ def benchmark_runtime(func, df, domain, fractions):
         sizes.append(sample_size)
     
     return sizes, times
-
+# regression for performance prediction
 def fit_and_predict(sizes, times, target_sizes, degree=2):
     """
     Fits a polynomial regression model and predicts runtimes for target sizes.
@@ -292,8 +291,7 @@ def fit_and_predict(sizes, times, target_sizes, degree=2):
     predictions = model.predict(target_sizes_poly)
     
     return predictions.flatten()
-
-
+    
 # EXECUTION
 if __name__ == "__main__":
     df = pd.read_csv("ratio_of_n_and_n_cells_cell_type.gene.tissue-celltype.ver2.tsv", sep="\t", header=0, index_col=0)
