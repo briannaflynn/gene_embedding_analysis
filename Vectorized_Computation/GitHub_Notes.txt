@@ -1,0 +1,20 @@
+Adding a file to GitHub from termianl
+
+Commands: (in TACC)
+
+git clone #copy and paste GitHUb link
+cd #directory name (Eg. gene_embedding_analysis/)
+ls #to check all files
+emacs #filename 
+    copy and paste code
+    Control X, S #save
+    Control X, C #close
+ls #check if file is added in directory
+
+git add #filename (Eg. vectorized_metrics.py)
+git commit - m "#short description"
+git status #to check
+git push
+    Enter usename
+    Enter personal access token
+
