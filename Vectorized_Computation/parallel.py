@@ -124,12 +124,63 @@ def cal_AUPRC_vectorized(sorted_gene_list, positive_set):
     return AUC
 
 
+def cal_AUROC_vectorized_parallel(input):
+    sorted_gene_list, positive_set = input
+    total = len(sorted_gene_list)
+    actual_positive = positive_set & set(sorted_gene_list)
+    # x: FPR = FP / Actual Negative
+    # y: TPR = TP / Actual Positive
+    AP = len(actual_positive)
+    AN = total - AP
+    positive_array = np.array([1 if gene in actual_positive else 0 for gene in sorted_gene_list])
+    TP_array = np.cumsum(positive_array)
+    FP_array = np.cumsum(1-positive_array)
+    FPR = FP_array / AN
+    TPR = TP_array / AP
+    AUC = metrics.auc(FPR, TPR)
+    return AUC
+
+def cal_AUPRC_vectorized_parallel(input):
+    sorted_gene_list, positive_set = input
+    total = len(sorted_gene_list)
+    actual_positive = positive_set & set(sorted_gene_list)
+    # x: recall = (TP / Actual Positive)
+    # y: precision = (TP / Predicted Positive)
+    AP = len(actual_positive)
+    AN = total - AP
+    PP = len(sorted_gene_list)
+    positive_array = np.array([1 if gene in actual_positive else 0 for gene in sorted_gene_list])
+    TP_array = np.cumsum(positive_array)
+    PP_array = np.arange(1, PP+1, 1)
+    recall = TP_array / AP
+    precision = TP_array / PP_array
+    AUC = metrics.auc(recall, precision)
+    return AUC
+
+def cal_AUROC_parallel(inputs, n_jobs=None):
+    n_jobs = n_jobs or cpu_count()
+
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        results = executor.map(cal_AUROC_vectorized_parallel, inputs)
+    
+        for result in results:
+            print(result)
+
+def cal_AUPRC_parallel(inputs, n_jobs=None):
+    n_jobs = n_jobs or cpu_count()
+
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        results = executor.map(cal_AUPRC_vectorized_parallel, inputs)
+    
+        for result in results:
+            print(result)
+
 def main():
     # print(cpu_count())
 
     sorted_gene_list, positive_set = create_dummy_inputs(5000, positive_fraction=0.9)
-    print(sorted_gene_list)
-    print(positive_set)
+    # print(sorted_gene_list)
+    # print(positive_set)
     
     # AUROC
     print("AUROC:")
@@ -142,8 +193,18 @@ def main():
     print(f"AUROC with vectorized function: {AUROC_2:.4f}")
 
     # optimize runtime with parallel programming
-    # num_pairs = 4
-    
+    num_pairs = 8
+    inputs = []
+    for i in range(num_pairs):
+        sorted_list, positive_set = create_dummy_inputs(5000, positive_fraction=0.9, seed=42+i)
+        inputs.append((sorted_list, positive_set))
+
+    start_time_p = time.time()
+    cal_AUROC_parallel(inputs)
+    end_time_p = time.time()
+    print(f"Time (Parallel Programming): {end_time_p-start_time_p:.4f}")
+
+
     # 1 - multiprocessing
     # processes = []
     
@@ -160,13 +221,13 @@ def main():
 
     # 2 - concurrent.futures
 
-    start_time_p = time.time()
+    # start_time_p = time.time()
 
-    with concurrent.futures.ProcessPoolExecutor() as executor:
-        results = [executor.submit(cal_AUROC_vectorized, sorted_gene_list, positive_set)]
+    # with concurrent.futures.ProcessPoolExecutor() as executor:
+    #     results = [executor.submit(cal_AUROC_vectorized, sorted_gene_list, positive_set)]
         
-        for f in concurrent.futures.as_completed(results):
-            print(f.result())
+    #     for f in concurrent.futures.as_completed(results):
+    #         print(f.result())
     
     # with concurrent.futures.ProcessPoolExecutor() as executor:
     #     results = executor.map(cal_AUROC_vectorized, sorted_gene_list, positive_set)
@@ -174,11 +235,10 @@ def main():
     #     for result in results:
     #         print(result)
     
-    end_time_p = time.time()
+    # end_time_p = time.time()
     
-    print(f"Time (Parallel Programming): {end_time_p-start_time_p:.4f}")
+    # print(f"Time (Parallel Programming): {end_time_p-start_time_p:.4f}")
     print("----------------------------------------")
-
     
     # AUPRC
     print("AUPRC:")
@@ -186,8 +246,10 @@ def main():
     print(f"AUORC with original function: {AUPRC_1:.4f}")
     AUPRC_2 = cal_AUPRC_vectorized(sorted_gene_list, positive_set)
     print(f"AUPRC with vectorized function: {AUPRC_2:.4f}")
-    # AUPRC_3 = cal_AUROC_parallel(sorted_gene_list, positive_set)
-    # print(f"AUROC vectorized & run parallel: {AUPRC_3:.4f}")
+    start_time_p = time.time()
+    cal_AUPRC_parallel(inputs)
+    end_time_p = time.time()
+    print(f"Time (Parallel Programming): {end_time_p-start_time_p:.4f}")
 
 if __name__ == '__main__':
     main()
