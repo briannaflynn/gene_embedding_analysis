@@ -12,6 +12,20 @@ print("Reading in gobp")
 gobpdf =  pd.read_pickle(DIR + 'gobp_size100_level2_debug.pkl')
 df_rename_by_idx(gobpdf)
 
+def convert_to_zeros(merged_data, filter_df, threshold, ground_truth_col, predicted_score_col):
+    modified_data = merged_data.copy()
+    modified_data.loc[modified_data['expression'] < threshold, [ground_truth_col, predicted_score_col]] = 0
+    
+    df1 = modified_data
+    df2 = filter_df
+    common_cols = list(set(df1.columns) & set(df2.columns))
+    if not common_cols:
+        raise ValueError("No common columns found between the two dataframes.")
+    common_col = common_cols[0]  # Use the first common column found
+        
+    merged_df = pd.merge(df1, df2, on=common_col, how='outer').fillna(0)    
+    return merged_df
+
 def save_dict_to_pickle(dictionary, filename):
 
     try:
@@ -30,6 +44,10 @@ def runner(pairwise, gobp, filter_num):
     df_pair = filter_by_obs(pairwise, filter_obs_df)
     print(df_pair.shape)
     print('Startng merge')
+
+    big_merged = merge_pairwise_dataframes(pairdf, gobp)
+
+    big_merged_zero = convert_to_zeros(big_merged, df_pair, filter_num)
 
     merged = merge_pairwise_dataframes(df_pair, gobp) 
     print(merged.shape)
