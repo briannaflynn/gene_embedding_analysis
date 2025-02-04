@@ -24,7 +24,13 @@ bash Anaconda3-2024.06-1-Linux-x86_64.sh source ~/.bashrc
 
 4. Install necessary Python packages:
 
-```pip install scgpt pip install gseapy pip install gdown pip install PyMuPdf pip install fitz```
+```bash
+pip install scgpt 
+pip install gseapy
+pip install gdown
+pip install PyMuPdf
+pip install fitz
+```
 
 Note: Installing scGPT without flash attention is fine when not training.
 
