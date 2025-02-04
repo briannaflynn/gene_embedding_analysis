@@ -1,6 +1,9 @@
 # scGPT Embeddings Download and Set-Up Documentation
-
-This guide provides step-by-step instructions to resolve compilation issues when installing scGPT with flash-attn on Lambda.
+```
+Author: Brianna Flynn
+Date: 02.04.2025
+```
+This guide should help you get scGPT working with flash-attn (on Lambda or other cloud service) while avoiding the pitfalls I encountered.
 
 ---
 ### 1. Setting Up the Instance
@@ -115,4 +118,7 @@ To resolve this:
 - Verify the exact installation versions used in the scGPT Docker branch (see the relevant pull request for details).
 
 ---
-This guide should help you get scGPT working with flash-attn on Lambda or other cloud service while avoiding common pitfalls.
+
+### 9. There is an issue with numpy 2.0 compatibility, must downgrade
+
+```pip install "numpy<2.0"```
