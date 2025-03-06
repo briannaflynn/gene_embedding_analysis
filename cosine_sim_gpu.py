@@ -10,6 +10,7 @@ from itertools import islice
 import time
 from multiprocessing import Pool
 import os
+import h5py
 
 def ensure_tensor(embedding_dict):
     """Ensure all embeddings in the dictionary are PyTorch tensors."""
@@ -69,13 +70,19 @@ def merge_temp_files(output_file, temp_files):
 
 def write_similarity_table_parallel(output_file, label_pairs, similarity_values, chunk_size=1000, num_workers=8):
     """Parallelize writing the similarity table."""
+
+    print('Starting: write_similarity_table_parallel')
+    
     assert len(label_pairs) == len(similarity_values), "Mismatch in label pairs and similarity values lengths."
 
-    # create output directory for temporary files
-    output_dir = os.path.dirname(output_file)
-    if not output_dir:  # If no directory is specified, create tmp from the current directory
-        output_dir = "./tmp/"
-    os.makedirs(output_dir, exist_ok=True)
+    # # create output directory for temporary files
+    # output_dir = os.path.dirname(output_file)
+    # if not output_dir:  # If no directory is specified, create tmp from the current directory
+    #     output_dir = "./tmp/"
+    os.makedirs("./tmp/", exist_ok=True)
+
+    print('output directory should be made')
+    output_dir = "./tmp"
 
     # Split the data into chunks
     total_chunks = (len(label_pairs) + chunk_size - 1) // chunk_size
@@ -135,14 +142,42 @@ def compute_all_pairs_cosine_similarity(embedding_dict, output_file, chunk_size=
     start_dict = time.time()
 
     # Create dictionary with label pairs as keys and similarity values as values
-    similarity_dict = {
-        (pair[0], pair[1]): sim for pair, sim in zip(label_pairs, similarity_values)
-    }
+    # similarity_dict = {
+    #     (pair[0], pair[1]): sim for pair, sim in zip(label_pairs, similarity_values)
+    # }
 
     # Save dictionary as a .pkl file
-    dict_output_file = output_file.replace('.csv', '_dict.pkl')  # Replace .csv with _dict.pkl
-    with open(dict_output_file, 'wb') as f:
-        pickle.dump(similarity_dict, f)
+    # dict_output_file = output_file.replace('.csv', '_dict.pkl')  # Replace .csv with _dict.pkl
+
+    # write_similarity_table_parallel(dict_output_file, label_pairs, similarity_values, chunk_size=1000, num_workers=8)
+    # with open(dict_output_file, 'wb') as f:
+    #     pickle.dump(similarity_dict, f)
+
+    dict_output_file = output_file.replace('.csv', '_dict.h5')
+
+    chunk_size = 100000000
+    # with open(dict_output_file, 'wb') as f:
+    #     for i in range(0, len(label_pairs), chunk_size):
+    #         chunk_pairs = label_pairs[i:i + chunk_size]
+    #         chunk_similarities = similarity_values[i:i + chunk_size]
+    #         pickle.dump(dict(zip(chunk_pairs, chunk_similarities)), f)
+    #         break
+
+    with h5py.File(dict_output_file, 'w') as f:
+        # Create datasets for gene pairs and similarity scores
+        dset_pairs = f.create_dataset("gene_pairs", (len(label_pairs), 2), dtype="S50", chunks=True)
+        dset_similarities = f.create_dataset("similarities", (len(label_pairs),), dtype="float32", chunks=True)
+    
+        for i in range(0, len(label_pairs), chunk_size):
+            chunk_pairs = np.array(label_pairs[i:i + chunk_size], dtype="S50")  # Convert to NumPy string array
+            chunk_similarities = np.array(similarity_values[i:i + chunk_size], dtype="float32")  # Convert to float array
+    
+            # Write chunk to HDF5
+            dset_pairs[i:i + chunk_size] = chunk_pairs
+            dset_similarities[i:i + chunk_size] = chunk_similarities
+    
+            print(f"Processed chunk {i // chunk_size + 1}/{(len(label_pairs) + chunk_size - 1) // chunk_size}")
+
 
     print(f"Cosine similarity dictionary saved to {dict_output_file}")
 
