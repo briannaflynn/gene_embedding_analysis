@@ -15,7 +15,7 @@ import h5py
 def ensure_tensor(embedding_dict):
     """Ensure all embeddings in the dictionary are PyTorch tensors."""
     for key, value in embedding_dict.items():
-        if isinstance(value, np.ndarray):
+        if isinstance(value, np.ndarray) or isinstance(value, list):
             embedding_dict[key] = torch.tensor(value, dtype=torch.float32)
         elif not isinstance(value, torch.Tensor):
             raise TypeError(f"Embedding for key '{key}' must be either a NumPy array or PyTorch tensor.")
@@ -105,91 +105,122 @@ def write_similarity_table_parallel(output_file, label_pairs, similarity_values,
     # Merge all temporary files into the final output
     merge_temp_files(output_file, temp_files)
 
-def compute_all_pairs_cosine_similarity(embedding_dict, output_file, chunk_size=1000):
+def compute_all_pairs_cosine_similarity(embedding_dict, output_file, chunk_size=1000, pairwise_df=None):
     start = time.time()
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+    # Normalize embeddings and move to device
     labels = list(embedding_dict.keys())
     embeddings = torch.stack(list(embedding_dict.values()))
     embeddings = normalize(embeddings, p=2, dim=1)
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
     embeddings = embeddings.to(device)
-    num_embeddings = embeddings.shape[0]
-    similarity_matrix = []
 
-    with tqdm(total=num_embeddings, desc="Computing similarity matrix", unit="rows") as pbar:
-        for start_idx in range(0, num_embeddings, chunk_size):
-            end_idx = min(start_idx + chunk_size, num_embeddings)
-            chunk = embeddings[start_idx:end_idx]
-            similarity_chunk = torch.mm(chunk, embeddings.T).cpu()  # Perform matrix multiplication on the GPU
-            similarity_matrix.append(similarity_chunk)
-            pbar.update(end_idx - start_idx)
+    # Build lookup dictionary for embeddings
+    embedding_lookup = {label: emb for label, emb in zip(labels, embeddings)}
 
-    similarity_matrix = torch.cat(similarity_matrix, dim=0)
+    # Case 1: pairwise_df is provided
+    if pairwise_df is not None:
+        print("Computing cosine similarities for specific pairs from provided dataframe.")
+        gene_a_list = pairwise_df['Gene_A'].tolist()
+        gene_b_list = pairwise_df['Gene_B'].tolist()
+    
+        emb_a_list = []
+        emb_b_list = []
+        missing_genes = set()
+    
+        # Gather all embeddings into two lists
+        for gene_a, gene_b in zip(gene_a_list, gene_b_list):
+            emb_a = embedding_lookup.get(gene_a)
+            emb_b = embedding_lookup.get(gene_b)
+    
+            if emb_a is None or emb_b is None:
+                missing_genes.update([g for g in (gene_a, gene_b) if g not in embedding_lookup])
+                emb_a_list.append(None)
+                emb_b_list.append(None)
+            else:
+                emb_a_list.append(emb_a)
+                emb_b_list.append(emb_b)
+    
+        # Indices for valid (non-missing) entries
+        valid_indices = [i for i, (a, b) in enumerate(zip(emb_a_list, emb_b_list)) if a is not None and b is not None]
+    
+        # Prepare final list
+        final_cosine_similarities = [float('nan')] * len(gene_a_list)
+    
+        batch_size = 100000  # or smaller if needed
+    
+        print(f"Calculating cosine similarities in batches of {batch_size}...")
+    
+        with tqdm(total=len(valid_indices), desc="Calculating batched cosine similarities", unit="pair") as pbar:
+            for start in range(0, len(valid_indices), batch_size):
+                end = min(start + batch_size, len(valid_indices))
+                batch_indices = valid_indices[start:end]
+    
+                emb_a_batch = torch.stack([emb_a_list[i] for i in batch_indices]).to(device)
+                emb_b_batch = torch.stack([emb_b_list[i] for i in batch_indices]).to(device)
+    
+                cos_batch = torch.sum(emb_a_batch * emb_b_batch, dim=1).cpu().tolist()
+    
+                # Write results into final list
+                for idx, cos_sim in zip(batch_indices, cos_batch):
+                    final_cosine_similarities[idx] = cos_sim
+    
+                pbar.update(len(batch_indices))
+    
+        if missing_genes:
+            print(f"Warning: Missing embeddings for {len(missing_genes)} gene(s): {missing_genes}")
+    
+        # Build new dataframe
+        result_df = pd.DataFrame({
+            'Gene_A': gene_a_list,
+            'Gene_B': gene_b_list,
+            'Cosine_Similarity': final_cosine_similarities
+        })
+    
+        # Save as pickle
+        output_pkl = output_file.replace('.csv', '_cosine.pkl')
+        result_df.to_pickle(output_pkl)
+        print(f"Cosine similarity dataframe saved to {output_pkl}")
 
-    print("Final similarity matrix created")
-    print(similarity_matrix)
+    # Case 2: default all-vs-all behavior
+    else:
+        print("Computing full all-vs-all cosine similarity matrix.")
+        num_embeddings = embeddings.shape[0]
+        similarity_matrix = []
 
-    print("Making label pairs")
-    label_pairs = list(product(labels, repeat=2))
-    print("Get similarity values")
-    similarity_values = similarity_matrix.flatten().tolist()
+        with tqdm(total=num_embeddings, desc="Computing similarity matrix", unit="rows") as pbar:
+            for start_idx in range(0, num_embeddings, chunk_size):
+                end_idx = min(start_idx + chunk_size, num_embeddings)
+                chunk = embeddings[start_idx:end_idx]
+                similarity_chunk = torch.mm(chunk, embeddings.T).cpu()
+                similarity_matrix.append(similarity_chunk)
+                pbar.update(end_idx - start_idx)
+
+        similarity_matrix = torch.cat(similarity_matrix, dim=0)
+
+        print("Final similarity matrix created.")
+
+        label_pairs = list(product(labels, repeat=2))
+        similarity_values = similarity_matrix.flatten().tolist()
+
+        dict_output_file = output_file.replace('.csv', '_dict.h5')
+        chunk_size_h5 = min(1000000, len(label_pairs))
+
+        with h5py.File(dict_output_file, 'w') as f:
+            dset_pairs = f.create_dataset("gene_pairs", (len(label_pairs), 2), dtype="S50", chunks=True)
+            dset_similarities = f.create_dataset("similarities", (len(label_pairs),), dtype="float32", chunks=True)
+
+            for i in range(0, len(label_pairs), chunk_size_h5):
+                chunk_pairs = np.array(label_pairs[i:i + chunk_size_h5], dtype="S50")
+                chunk_similarities = np.array(similarity_values[i:i + chunk_size_h5], dtype="float32")
+                dset_pairs[i:i + chunk_size_h5] = chunk_pairs
+                dset_similarities[i:i + chunk_size_h5] = chunk_similarities
+                print(f"Processed chunk {i // chunk_size_h5 + 1}/{(len(label_pairs) + chunk_size_h5 - 1) // chunk_size_h5}")
+
+        print(f"Cosine similarity dictionary saved to {dict_output_file}")
 
     end = time.time()
-
-    cos_sim_calc = end - start
-    print('Cosine similarity calculation elapsed time:', cos_sim_calc)
-
-    start_dict = time.time()
-
-    # Create dictionary with label pairs as keys and similarity values as values
-    # similarity_dict = {
-    #     (pair[0], pair[1]): sim for pair, sim in zip(label_pairs, similarity_values)
-    # }
-
-    # Save dictionary as a .pkl file
-    # dict_output_file = output_file.replace('.csv', '_dict.pkl')  # Replace .csv with _dict.pkl
-
-    # write_similarity_table_parallel(dict_output_file, label_pairs, similarity_values, chunk_size=1000, num_workers=8)
-    # with open(dict_output_file, 'wb') as f:
-    #     pickle.dump(similarity_dict, f)
-
-    dict_output_file = output_file.replace('.csv', '_dict.h5')
-
-    chunk_size = 100000000
-    # with open(dict_output_file, 'wb') as f:
-    #     for i in range(0, len(label_pairs), chunk_size):
-    #         chunk_pairs = label_pairs[i:i + chunk_size]
-    #         chunk_similarities = similarity_values[i:i + chunk_size]
-    #         pickle.dump(dict(zip(chunk_pairs, chunk_similarities)), f)
-    #         break
-
-    with h5py.File(dict_output_file, 'w') as f:
-        # Create datasets for gene pairs and similarity scores
-        dset_pairs = f.create_dataset("gene_pairs", (len(label_pairs), 2), dtype="S50", chunks=True)
-        dset_similarities = f.create_dataset("similarities", (len(label_pairs),), dtype="float32", chunks=True)
-    
-        for i in range(0, len(label_pairs), chunk_size):
-            chunk_pairs = np.array(label_pairs[i:i + chunk_size], dtype="S50")  # Convert to NumPy string array
-            chunk_similarities = np.array(similarity_values[i:i + chunk_size], dtype="float32")  # Convert to float array
-    
-            # Write chunk to HDF5
-            dset_pairs[i:i + chunk_size] = chunk_pairs
-            dset_similarities[i:i + chunk_size] = chunk_similarities
-    
-            print(f"Processed chunk {i // chunk_size + 1}/{(len(label_pairs) + chunk_size - 1) // chunk_size}")
-
-
-    print(f"Cosine similarity dictionary saved to {dict_output_file}")
-
-    end_dict = time.time()
-
-    make_dict = end_dict - start_dict
-    print(f'Export to {dict_output_file} elapsed time:', make_dict)
-
-    #print("Writing similarity table in parallel with progress tracking")
-    # config for 208 core CPU available
-    #write_similarity_table_parallel(output_file, label_pairs, similarity_values, chunk_size=100000, num_workers=208)
-    #print(f"Cosine similarity table saved to {output_file}")
+    print(f"Total cosine similarity calculation elapsed time: {end - start:.2f} seconds")
 
 def create_synthetic_embeddings(output_pkl, num_embeddings=1000, embedding_dim=128):
     embedding_dict = {
@@ -199,30 +230,36 @@ def create_synthetic_embeddings(output_pkl, num_embeddings=1000, embedding_dim=1
         pickle.dump(embedding_dict, f)
     print(f"Synthetic embeddings saved to {output_pkl}")
 
-
 def main():
     parser = argparse.ArgumentParser(description="Compute all-pairs cosine similarity from embedding vectors.")
-    parser.add_argument('pkl_file', nargs='?', type=str, help="Path to the input .pkl file containing the embeddings dictionary.")
-    parser.add_argument('output_file', nargs='?', type=str, help="Path to the output CSV file to save the results.")
-    parser.add_argument('--create_synthetic', type=str, help="Create a synthetic embeddings file for testing.")
+    parser.add_argument('embedding_pkl', type=str, help="Path to the input .pkl file containing the embeddings dictionary.")
+    parser.add_argument('output_file', type=str, help="Path to the output file to save the results (format determined automatically).")
+    parser.add_argument('--pairwise_pkl', type=str, default=None, help="Optional: Path to a .pkl file containing specific gene pairs to compute.")
+    parser.add_argument('--chunk_size', type=int, default=1000, help="Chunk size for matrix multiplication (default: 1000).")
+    parser.add_argument('--create_synthetic', type=str, help="Optional: Path to create a synthetic embeddings file for testing.")
     parser.add_argument('--num_embeddings', type=int, default=1000, help="Number of synthetic embeddings (default: 1000).")
     parser.add_argument('--embedding_dim', type=int, default=128, help="Dimension of synthetic embeddings (default: 128).")
-    parser.add_argument('--chunk_size', type=int, default=1000, help="Chunk size for matrix multiplication (default: 1000).")
     args = parser.parse_args()
 
     start_time = time.time()
 
     if args.create_synthetic:
         create_synthetic_embeddings(args.create_synthetic, args.num_embeddings, args.embedding_dim)
-    elif args.pkl_file and args.output_file:
-        embedding_dict = load_embeddings_from_pkl(args.pkl_file)
-        compute_all_pairs_cosine_similarity(embedding_dict, args.output_file, args.chunk_size)
     else:
-        parser.error("You must provide either --create_synthetic or both pkl_file and output_file.")
+        embedding_dict = load_embeddings_from_pkl(args.embedding_pkl)
 
-    end_time = time.time()  # Stop the timer
-    elapsed_time = end_time - start_time
-    print(f"Total script execution time: {elapsed_time:.2f} seconds")
+        pairwise_df = None
+        if args.pairwise_pkl:
+            print(f"Loading pairwise gene list from {args.pairwise_pkl}")
+            with open(args.pairwise_pkl, 'rb') as f:
+                pairwise_df = pickle.load(f)
+            if not isinstance(pairwise_df, pd.DataFrame):
+                raise ValueError("The pairwise_pkl file must contain a pandas DataFrame with Gene_A and Gene_B columns.")
+
+        compute_all_pairs_cosine_similarity(embedding_dict, args.output_file, args.chunk_size, pairwise_df=pairwise_df)
+
+    end_time = time.time()
+    print(f"Total script execution time: {end_time - start_time:.2f} seconds")
 
 if __name__ == '__main__':
     main()
