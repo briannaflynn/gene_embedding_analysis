@@ -1,37 +1,38 @@
+import numpy as np
 import pandas as pd
 
-def create_embedding_feature_matrix(pair_df, embedding_dict):
+def create_embedding_feature_matrix(pair_df, embedding_dict, gene_columns=('Gene_A', 'Gene_B'), label_column='Same_Complex'):
     """
-    Constructs a feature matrix for gene pairs using their embeddings.
-
-    Parameters:
-        pair_df (pd.DataFrame): Must contain 'Gene_A', 'Gene_B', 'Label'.
-        embedding_dict (dict): gene_name -> embedding (list or np.array)
-
-    Returns:
-        pd.DataFrame: Rows indexed by 'GeneA_GeneB', columns are embedding dims + label
+    Efficiently constructs a feature matrix for gene pairs using their embeddings.
     """
-    records = []
-    for _, row in pair_df.iterrows():
-        gene_a = row['Gene_A']
-        gene_b = row['Gene_B']
-        label = row['Label']
+    gene_a_col, gene_b_col = gene_columns
+    embedding_dim = len(next(iter(embedding_dict.values())))
+    
+    valid_pairs = []
+    features = []
+    labels = []
 
-        if gene_a not in embedding_dict or gene_b not in embedding_dict:
-            continue  # Skip if embeddings are missing
+    for row in pair_df.itertuples(index=False):
+        gene_a = getattr(row, gene_a_col)
+        gene_b = getattr(row, gene_b_col)
+        label = getattr(row, label_column)
 
-        emb_a = embedding_dict[gene_a]
-        emb_b = embedding_dict[gene_b]
+        emb_a = embedding_dict.get(gene_a)
+        emb_b = embedding_dict.get(gene_b)
 
-        record = {
-            **{f'gene_a_{i}': val for i, val in enumerate(emb_a)},
-            **{f'gene_b_{i}': val for i, val in enumerate(emb_b)},
-            'Label': label
-        }
+        if emb_a is None or emb_b is None:
+            continue
 
-        records.append((f"{gene_a}_{gene_b}", record))
+        combined = np.concatenate([emb_a, emb_b])
+        features.append(combined)
+        labels.append(label)
+        valid_pairs.append(f"{gene_a}_{gene_b}")
 
-    feature_df = pd.DataFrame.from_dict(dict(records), orient='index')
+    feature_array = np.array(features)
+    feature_columns = [f"gene_a_{i}" for i in range(embedding_dim)] + [f"gene_b_{i}" for i in range(embedding_dim)]
+    
+    feature_df = pd.DataFrame(feature_array, columns=feature_columns, index=valid_pairs)
+    feature_df["Label"] = labels
     feature_df.index.name = "Gene_Pair"
 
     return feature_df
