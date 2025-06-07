@@ -19,6 +19,7 @@ def generate_run_parallel_script(input_dir, output_dir, num_gpus=8, model_type="
 
         # Build command with optional model_type argument
         model_arg = f"--model-type {model_type}" if model_type else ""
+        model_arg = model_arg + " --num-recycle 0 --num-models 1 --no-use-probs-extra"
         cmd = f'CUDA_VISIBLE_DEVICES={gpu_id} colabfold_batch {model_arg} "{input_file}" "{output_subdir}" &'
         output_lines.append(cmd)
 
