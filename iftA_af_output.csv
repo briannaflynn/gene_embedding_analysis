@@ -1,0 +1,13 @@
+json_path,iptm,ptm,ranking_confidence,bin,pair_dir
+/home/ubuntu/IFT_output/IFT121_IFT140/IFT121-IFT140_scores_rank_001_alphafold2_multimer_v3_model_3_seed_000.json,0.59,0.56,0.584,,IFT121_IFT140
+/home/ubuntu/IFT_output/IFT43_IFT121/IFT43-IFT121_scores_rank_001_alphafold2_multimer_v3_model_5_seed_000.json,0.41,0.67,0.462,,IFT43_IFT121
+/home/ubuntu/IFT_output/IFT121_IFT144/IFT121-IFT144_scores_rank_001_alphafold2_multimer_v3_model_4_seed_000.json,0.56,0.58,0.5640000000000001,,IFT121_IFT144
+/home/ubuntu/IFT_output/IFT43_IFT122/IFT43-IFT122_scores_rank_001_alphafold2_multimer_v3_model_3_seed_000.json,0.27,0.53,0.32200000000000006,,IFT43_IFT122
+/home/ubuntu/IFT_output/IFT122_IFT139/IFT122-IFT139_scores_rank_001_alphafold2_multimer_v3_model_5_seed_000.json,0.51,0.51,0.51,,IFT122_IFT139
+/home/ubuntu/IFT_output/IFT43_IFT144/IFT43-IFT144_scores_rank_001_alphafold2_multimer_v3_model_2_seed_000.json,0.24,0.53,0.29800000000000004,,IFT43_IFT144
+/home/ubuntu/IFT_output/IFT139_IFT140/IFT139-IFT140_scores_rank_001_alphafold2_multimer_v3_model_4_seed_000.json,0.55,0.58,0.556,,IFT139_IFT140
+/home/ubuntu/IFT_output/IFT139_IFT144/IFT139-IFT144_scores_rank_001_alphafold2_multimer_v3_model_5_seed_000.json,0.57,0.54,0.564,,IFT139_IFT144
+/home/ubuntu/IFT_output/IFT121_IFT122/IFT121-IFT122_scores_rank_001_alphafold2_multimer_v3_model_5_seed_000.json,0.82,0.73,0.802,,IFT121_IFT122
+/home/ubuntu/IFT_output/IFT43_IFT139/IFT43-IFT139_scores_rank_001_alphafold2_multimer_v3_model_3_seed_000.json,0.29,0.78,0.388,,IFT43_IFT139
+/home/ubuntu/IFT_output/IFT122_IFT144/IFT122-IFT144_scores_rank_001_alphafold2_multimer_v3_model_5_seed_000.json,0.58,0.52,0.568,,IFT122_IFT144
+/home/ubuntu/IFT_output/IFT43_IFT140/IFT43-IFT140_scores_rank_001_alphafold2_multimer_v3_model_2_seed_000.json,0.31,0.51,0.35,,IFT43_IFT140
