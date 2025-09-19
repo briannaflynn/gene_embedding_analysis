@@ -1,0 +1,8 @@
+pandas==1.5.3
+scipy==1.13.0
+numpy<2.0
+networkx
+scikit-learn
+tqdm
+matplotlib
+tpot
