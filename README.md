@@ -5,11 +5,16 @@ This repository includes a convenience script, `install.sh`, to set up a clean P
 ### Steps
 
 1. **Clone the repository** (if you haven’t already):
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+
+```bash
+   git clone https://github.com/briannaflynn/gene_embedding_analysis.git
+   cd gene_embedding_analysis
+   git checkout GOBP-classifier
+```
 
 2. **Run the install script**:
-   bash install.sh
+   
+   `bash install.sh`
 
    This will:
    - Create a new virtual environment in `./venv` (if one does not already exist).
@@ -19,10 +24,10 @@ This repository includes a convenience script, `install.sh`, to set up a clean P
    - Install this repository as a local package in *editable* mode (`pip install -e .`), so any code changes you make are reflected immediately without reinstalling.
 
 3. **Activate the environment** whenever you want to use the package:
-   source venv/bin/activate
+   `source venv/bin/activate`
 
 4. **Deactivate the environment** when you’re done:
-   deactivate
+   `deactivate`
 
 ---
 
@@ -35,8 +40,7 @@ This repository includes a convenience script, `install.sh`, to set up a clean P
 
 Use `bash install.sh` or use pip to install dependencies (without automatic venv setup):
 
-Bash:
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ---
 
@@ -64,7 +68,7 @@ Combines multiple data sources into a unified dataset:
 
 ### Usage
 
-Python:
+```python
 builder = ComplexDatasetBuilder(
     complex_path='complex_label.pkl',
     pw_path='allpairs_spearman_correlation.pkl',
@@ -75,6 +79,7 @@ builder = ComplexDatasetBuilder(
 
 dataset = builder.build_dataset()
 builder.save_dataset(dataset)
+```
 
 ### Output
 - A single pickle file (`full_dataset.pkl`) containing:
@@ -101,7 +106,7 @@ Performs **balanced group-aware train/test splits**:
 
 ### Usage
 
-Python:
+```python
 folds = stratified_group_split_balanced_per_fold(
     df=prepared_df,
     label_col='Same_Complex',
@@ -114,6 +119,7 @@ for i, (train_idx, test_idx) in enumerate(folds):
     y_train = prepared_df.loc[train_idx, 'Same_Complex']
     y_test = prepared_df.loc[test_idx, 'Same_Complex']
     print(f"Fold {i+1}: Train {len(train_idx)} / Test {len(test_idx)}")
+```
 
 ### Output
 - A list of `(train_idx, test_idx)` tuples for cross-validation.
@@ -140,7 +146,7 @@ Trains and evaluates multiple machine learning models on the prepared dataset, i
 
 ### Usage
 
-Python:
+```python
 df = pd.read_pickle("full_dataset.pkl")
 
 features = ["scGPT_bc_embeddings_Cosine_Similarity", ..., "Correlation"]
@@ -157,6 +163,7 @@ results = runner.run_all_models(models)
 
 with open("model_results.pkl", "wb") as f:
     pickle.dump(results, f)
+```
 
 ### Output
 - `model_results.pkl`: dictionary of model predictions, probabilities, and decision scores for the full dataset.
@@ -179,7 +186,7 @@ Visualizes model performance across all classifiers with:
 
 ### Usage
 
-Python:
+```python
 with open("model_results.pkl", "rb") as f:
     results = pickle.load(f)
 
@@ -188,10 +195,10 @@ for mod in results:
     for p in ["predictions", "probabilities", "decision_scores"]:
         df[f"{mod}_{p}"] = results[mod][p]
 
-# Select test set and plot
-xf = df[df["Test"] == True]
+# Select test set and plot where xf is test set
 plot_roc_curves(xf, "Same_Complex")
 plot_pr_curves(xf, "Same_Complex")
+```
 
 ### Output
 - `full_train_test_roc.png`: ROC curves for all models.  
